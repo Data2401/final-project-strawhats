@@ -36,12 +36,77 @@ plot(pressure)
 ## Loading Data 
 ```{r}
 library(jsonlite)
-## Fruits Data 
-url <- "https://api.api-onepiece.com/v2/fruits/en"
-fruits <- fromJSON(url)
-fruits_df <- as.data.frame(fruits)
-View(fruits_df)
 
+## Character(s) Data 
+url1 <- "https://api.api-onepiece.com/v2/characters/en"
+characters <- fromJSON(url1)
+characters_df <- as.data.frame(characters)
+View(characters_df)
+
+## Locations Data
+url2 <- "https://api.api-onepiece.com/v2/locates/en"
+locations <- fromJSON(url2)
+locations_df <- as.data.frame(locations)
+View(locations_df)
+
+## Episodes Data 
+url3 <- "https://api.api-onepiece.com/v2/episodes/en"
+episodes <- fromJSON(url3)
+episodes_df <- as.data.frame(episodes)
+View(episodes_df)
+
+```
+
+## Data Description 
+
+## Bounty
+
+Which character has the highest bounty in the  series? 
+
+```{r}
 
 
 ```
+
+Which character has the lowest bounty in the series? 
+```{r}
+
+```
+
+## Devil Fruits 
+
+## Islands 
+
+
+How many islands are in East Blue compared to the North Blue?
+
+```{r}
+library(dplyr)
+library(ggplot2)
+
+blue_counts <- locations_df %>%
+  filter(sea_name %in% c("East Blue", "North Blue")) %>%
+  count(sea_name)
+
+
+ggplot(blue_counts, aes(x = sea_name, y = n)) +
+  geom_bar(stat = "identity") +
+  labs(
+    title = "Number of Islands: East Blue vs North Blue",
+    x = "Sea",
+    y = "Number of Islands"
+  )
+```
+
+## Characters 
+ggplot 
+
+How many memebers are in Strawhats 
+``` {r}
+
+```
+
+
+
+
+
