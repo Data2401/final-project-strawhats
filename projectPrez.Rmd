@@ -1,5 +1,5 @@
 ---
-title: "project"
+title: "Data 1 Project"
 author(s): Jezel V., John E., Shelby T.
 output: ioslides_presentation
 date: "2026-04-08"
@@ -15,8 +15,22 @@ knitr::opts_chunk$set(echo = FALSE)
 knitr::include_graphics("https://logos-world.net/wp-content/uploads/2021/09/One-Piece-Logo-1999.png")
 ```
 
+## Introduction 
+In the vast world of anime and adventure, 
 
-## Loading Data
+
+## About the Dataset
+This specific dataframe (characters) has most (if not all) the characters from the famous Manga/Anime series "One Piece". It includes the characters name (ofc) along with their age, size, bounty (in berries), as well what crew the characters are a part of, & even if they have a devil fruit (as well as what kind with a description). The data set is extremely detailed and we were excited to work with it!
+
+### Tools Used 
+
+### Data Sources 
+We were able to find multiple API's with One Piece information, but we ultimately decided to use the one below because it provided mostly all the information we were wanting to use for our project. Only thing is that like all data sets, we had to do some tidying, and some of the information was in French.... 
+
+API Used: 
+- https://api-onepiece.com/en/documentation 
+
+### Tidying Data 
 One Piece has a lot of data that we can work with, but it also has a lot of data that we have to tidy ):
 
 
@@ -27,25 +41,25 @@ library(jsonlite)
 url1 <- "https://api.api-onepiece.com/v2/characters/en"
 characters <- fromJSON(url1)
 characters_df <- as.data.frame(characters)
-
+characters_df
 
 ## Locations Data
 url2 <- "https://api.api-onepiece.com/v2/locates/en"
 locations <- fromJSON(url2)
 locations_df <- as.data.frame(locations)
+locations_df
 
 
 ## Episodes Data 
 url3 <- "https://api.api-onepiece.com/v2/episodes/en"
 episodes <- fromJSON(url3)
 episodes_df <- as.data.frame(episodes)
+episodes_df
 
 
 ```
 
-## Data Description
 
-This specific dataframe (characters) has most (if not all) the characters from the famous Manga/Anime series "One Piece". It includes the characters name (ofc) along with their age, size, bounty (in berries), as well what crew the characters are a part of, & even if they have a devil fruit (as well as what kind with a description). The dataset is extremely detailed and I am excited to work on it!
 
 ## Bounty
 
@@ -73,7 +87,7 @@ What is the average bounty between all pirates?
 
 Which "Blue" region produces pirates with higher average bounties?
 ```{r}
---- can also be a ggplot 
+#can also be a ggplot 
 ```
 
 
@@ -94,6 +108,7 @@ Do the captains have a higher bounty than the fighters?
 
 
 
+
 ## Devil Fruits
 
 How many pirates from each crew has a devil fruit?
@@ -104,6 +119,8 @@ Does having a devil fruit correlate to having a higher bounty?
 
 How many different types of fruits are there? 
 For each fruit, how many pirates contain one of the fruits? 
+Do characters with devil fruits have bounties on their heads? 
+
 
 
 
@@ -129,17 +146,29 @@ ggplot(blue_counts, aes(x = sea_name, y = n)) +
   )
 ```
 
+How many islands are in the Grand Line compared to the other regions 
+
+How many islands are in each region? 
+
 ## Characters
 
 ggplot
 
-How many memebers are in Strawhats
+How many members are in the Strawhats crew?
 
 ```{r}
 
 ```
 
-How many characters are captains of thier crew? 
+How many members are in the Big Mom crew?
+How many members of Big Mom's crew are officers and lieutenants?
 
-How many captains are there compared to naviagtors? 
+How many characters are captains of their crew? 
+
+How many captains are there compared to navigators? 
+
+How many characters are deceased? 
+How many of those deceased characters have bounties on their heads?
+
+
 
