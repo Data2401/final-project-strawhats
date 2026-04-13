@@ -16,8 +16,24 @@ knitr::include_graphics("https://logos-world.net/wp-content/uploads/2021/09/One-
 ```
 
 
-## Loading Data
+## Introduction 
+In the vast world of anime and adventure, 
+
+
+## About the Dataset
+This specific dataframe (characters) has most (if not all) the characters from the famous Manga/Anime series "One Piece". It includes the characters name (ofc) along with their age, size, bounty (in berries), as well what crew the characters are a part of, & even if they have a devil fruit (as well as what kind with a description). The data set is extremely detailed and we were excited to work with it!
+
+### Tools Used 
+
+### Data Sources 
+We were able to find multiple API's with One Piece information, but we ultimately decided to use the one below because it provided mostly all the information we were wanting to use for our project. Only thing is that like all data sets, we had to do some tidying, and some of the information was in French.... 
+
+API Used: 
+- https://api-onepiece.com/en/documentation 
+
+### Tidying Data 
 One Piece has a lot of data that we can work with, but it also has a lot of data that we have to tidy ):
+
 
 
 ```{r}
@@ -52,20 +68,13 @@ fruits <- fromJSON(url5)
 fruits_df <- as.data.frame(fruits)
 ```
 
-## Data Description
 
-This specific dataframe (characters) has most (if not all) the characters from the famous Manga/Anime series "One Piece". It includes the characters name (ofc) along with their age, size, bounty (in berries), as well what crew the characters are a part of, & even if they have a devil fruit (as well as what kind with a description). The dataset is extremely detailed and I am excited to work on it!
 
 ## Bounty
 
 In One Piece, the more chaos you cause, the higher the bounty on your head is. The bounties reflect how dangerous each pirate is. 
 
-
-## Talk about tidying the data
-
-
-
-
+> Talk about tidying the data
 
 Which character has the lowest bounty in the series?
 ```{r}
@@ -86,20 +95,36 @@ crews_df
 What percentage of characters have a bounty?
 
 ```{r}
+# computation
+new_characters_df %>%
+  summarise(
+    total = n(),
+    with_bounty = sum(!is.na(bounty)),
+    without_bounty = sum(is.na(bounty)),
+    pct_with_bounty = mean(!is.na(bounty)) * 100
+  )
 
+# visualization
+new_characters_df %>%
+  mutate(has_bounty = if_else(is.na(bounty), "No", "Yes")) %>%
+  count(has_bounty) %>%
+  ggplot(aes(x = has_bounty, y = n, fill = has_bounty)) +
+  geom_col() +
+  labs(
+    title = "How Many Characters Have a Bounty?",
+    x = "Has Bounty",
+    y = "Count"
+  ) +
+  theme_minimal()
 ```
 
 What is the average bounty between all pirates?
 ```{r}
-
+new_characters_df %>% 
+  summarise(
+    avg_bounty = mean(bounty, na.rm = T)
+  )
 ```
-
-
-Which "Blue" region produces pirates with higher average bounties?
-```{r}
-# can also be a ggplot 
-```
-
 
 Which crew has the highest bounty in total?
 ```{r}
@@ -173,6 +198,7 @@ How many islands are in East Blue compared to the North Blue?
 ```{r}
 library(dplyr)
 library(ggplot2)
+locations_df
 
 blue_counts <- locations_df %>%
   filter(sea_name %in% c("East Blue", "North Blue")) %>%
@@ -188,9 +214,19 @@ ggplot(blue_counts, aes(x = sea_name, y = n)) +
   )
 ```
 
+How many islands are in the Grand Line compared to the other regions 
+
+How many islands are in each region? 
+
+
 ## Characters
 
 ggplot
+
+How many members are in the Big Mom crew?
+How many members of Big Mom's crew are officers and lieutenants?
+How many characters are captains of their crew? 
+
 
 How many memebers are in Strawhats
 
