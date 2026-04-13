@@ -1,5 +1,5 @@
 ---
-title: "Data 1 Project"
+title: "project"
 author(s): Jezel V., John E., Shelby T.
 output: ioslides_presentation
 date: "2026-04-08"
@@ -15,15 +15,10 @@ knitr::opts_chunk$set(echo = FALSE)
 knitr::include_graphics("https://logos-world.net/wp-content/uploads/2021/09/One-Piece-Logo-1999.png")
 ```
 
+
 ## Introduction 
 In the vast world of anime and adventure, 
 
-<<<<<<< HEAD
-## Introduction 
-In the vast world of anime and adventure, 
-
-=======
->>>>>>> 31b186617986a61d1d1dbda9d2a2e9483fab3307
 
 ## About the Dataset
 This specific dataframe (characters) has most (if not all) the characters from the famous Manga/Anime series "One Piece". It includes the characters name (ofc) along with their age, size, bounty (in berries), as well what crew the characters are a part of, & even if they have a devil fruit (as well as what kind with a description). The data set is extremely detailed and we were excited to work with it!
@@ -49,20 +44,18 @@ library(tidyverse)
 url1 <- "https://api.api-onepiece.com/v2/characters/en"
 characters <- fromJSON(url1)
 characters_df <- as.data.frame(characters)
-characters_df
+
 
 ## Locations Data
 url2 <- "https://api.api-onepiece.com/v2/locates/en"
 locations <- fromJSON(url2)
 locations_df <- as.data.frame(locations)
-locations_df
 
 
 ## Episodes Data 
 url3 <- "https://api.api-onepiece.com/v2/episodes/en"
 episodes <- fromJSON(url3)
 episodes_df <- as.data.frame(episodes)
-episodes_df
 
 # crews data
 url4 <- "https://api.api-onepiece.com/v2/crews/en"
@@ -97,7 +90,7 @@ crews_df
 
 ```
 
-
+> Join characters with crew df
 
 What percentage of characters have a bounty?
 
@@ -133,18 +126,6 @@ new_characters_df %>%
   )
 ```
 
-<<<<<<< HEAD
-=======
-
-Which "Blue" region produces pirates with higher average bounties?
-```{r}
-
-# can also be a ggplot 
-
-```
-
-
->>>>>>> 31b186617986a61d1d1dbda9d2a2e9483fab3307
 Which crew has the highest bounty in total?
 ```{r}
 
@@ -170,14 +151,13 @@ What percentage of characters are deceased?
 
 
 
-
 ## Devil Fruits
 
 ```{r}
 fruits_df
 ```
 
-
+> We're going to have to merge the characters to the fruits df as well
 
 How many pirates from each crew has a devil fruit?
 
@@ -197,8 +177,9 @@ Does having a devil fruit correlate to having a higher bounty?
 
 How many different types of fruits are there? 
 For each fruit, how many pirates contain one of the fruits? 
+```{r}
 
-Do characters with devil fruits have bounties on their heads? 
+```
 
 What kind of devil fruit is the most common?
 ```{r}
@@ -237,40 +218,21 @@ How many islands are in the Grand Line compared to the other regions
 
 How many islands are in each region? 
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 31b186617986a61d1d1dbda9d2a2e9483fab3307
 ## Characters
 
 ggplot
 
-<<<<<<< HEAD
 How many members are in the Big Mom crew?
 How many members of Big Mom's crew are officers and lieutenants?
 How many characters are captains of their crew? 
 
 
 How many memebers are in Strawhats
-=======
-How many members are in the Strawhats crew?
->>>>>>> 31b186617986a61d1d1dbda9d2a2e9483fab3307
 
 ```{r}
 
 ```
-
-
-How many members are in the Big Mom crew?
-How many members of Big Mom's crew are officers and lieutenants?
-
-How many characters are captains of their crew? 
-
-How many captains are there compared to navigators? 
-
-How many characters are deceased? 
-How many of those deceased characters have bounties on their heads?
-
 
 How many characters are captains of thier crew? 
 ```{r}
@@ -306,8 +268,6 @@ What is the average amount of chapters per episode?
 ```{r}
 
 ```
-
-
 
 
 
