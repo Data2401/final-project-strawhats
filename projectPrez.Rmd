@@ -17,7 +17,9 @@ knitr::include_graphics("https://logos-world.net/wp-content/uploads/2021/09/One-
 
 
 ## Introduction 
-In the vast world of anime and adventure, 
+Many of you may have heard of anime One Piece, and like me don't want to commit to this 1000+ episode adventure. Luckily we have someone on our team that has committed to it, John, so he has been our personal One Piece Encyclopedia for this project. 
+
+But beyond that, from what I have seen from the live action (lol),  ithe series is filled with action, battles, and unforgettable characters. It is also really rich in detail and data. Because of that, we decided to analyze key elements of the One Piece world to uncover patterns, trends, and hidden insights using data science techniques we learned in class. 
 
 
 ## About the Dataset
