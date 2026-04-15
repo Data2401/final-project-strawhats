@@ -80,25 +80,61 @@ In One Piece, the more chaos you cause, the higher the bounty on your head is. T
 
 Which character has the lowest bounty in the series?
 ```{r}
-characters_df
-
-new_characters_df <- characters_df %>%
+# converted some data types from string to numeric
+characters_df <- characters_df %>%
   mutate(bounty = as.numeric(str_remove_all(bounty, "\\.")), 
          age = as.numeric(str_remove_all(age, "ans")),
          size = as.numeric(str_remove_all(size, "cm")))
 
-new_characters_df
-crews_df
+# removed columns from both dataframes
+# re-rerun every new session (can only be runned once since it gives error a second time)
+#crews_df <- crews_df %>% 
+#  select(-description)
+
+#crews_df <- crews_df %>% 
+  #select(-roman_name)
+
+glimpse(characters_df)
+glimpse(crews_df)
 
 ```
 
 > Join characters with crew df
 
+```{r}
+# crew df inside characters df
+crew_full_df <- as.data.frame(characters_df$crew)
+
+# converting data types
+crew_full_df <- crew_full_df %>%
+  mutate(
+    total_prime = as.numeric(str_remove_all(total_prime, "\\.")),
+    number = as.numeric(str_remove_all(number, "\\."))
+  )
+
+# removed the crew column & joined the actual crew df
+characters_with_crews <- bind_cols(
+  characters_df %>% select(-crew),
+  crew_full_df %>% rename(
+    crew_id = id,
+    crew_name = name,
+    crew_status = status,
+    crew_number = number,
+    crew_roman = roman_name,
+    crew_total_prime = total_prime
+  )
+)
+
+characters_with_crews  # joined table (more cleaning can still be done)
+```
+
+
+
 What percentage of characters have a bounty?
 
 ```{r}
 # computation
-new_characters_df %>%
+characters_df %>%
   summarise(
     total = n(),
     with_bounty = sum(!is.na(bounty)),
@@ -107,7 +143,7 @@ new_characters_df %>%
   )
 
 # visualization
-new_characters_df %>%
+characters_df %>%
   mutate(has_bounty = if_else(is.na(bounty), "No", "Yes")) %>%
   count(has_bounty) %>%
   ggplot(aes(x = has_bounty, y = n, fill = has_bounty)) +
