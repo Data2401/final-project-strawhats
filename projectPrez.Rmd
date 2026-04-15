@@ -9,7 +9,7 @@ date: "2026-04-08"
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-## 
+##                Our project is about: 
 
 ```{r, echo=FALSE, out.width="70%", fig.align="center"}
 knitr::include_graphics("https://logos-world.net/wp-content/uploads/2021/09/One-Piece-Logo-1999.png")
@@ -19,7 +19,7 @@ knitr::include_graphics("https://logos-world.net/wp-content/uploads/2021/09/One-
 ## Introduction 
 Many of you may have heard of anime One Piece, and like me don't want to commit to this 1000+ episode adventure. Luckily we have someone on our team that has committed to it, John, so he has been our personal One Piece Encyclopedia for this project. 
 
-But beyond that, from what I have seen from the live action (lol),  ithe series is filled with action, battles, and unforgettable characters. It is also really rich in detail and data. Because of that, we decided to analyze key elements of the One Piece world to uncover patterns, trends, and hidden insights using data science techniques we learned in class. 
+But beyond that, from what I have seen from the live action (lol), the series is filled with action, battles, and unforgettable characters. It is also really rich in detail and data. Because of that, we decided to analyze key elements of the One Piece world to uncover patterns, trends, and hidden insights using data science techniques we learned in class. 
 
 
 ## About the Dataset
@@ -223,25 +223,26 @@ How many islands are in each region?
 
 ## Characters
 
-ggplot
+How many members of Big Mom's crew are officers and lieutenants?
+
+
+How many members are in Strawhats
+
+```{r}
+
+```
 
 How many members are in the Big Mom crew?
-How many members of Big Mom's crew are officers and lieutenants?
+```{r}
+
+```
+
 How many characters are captains of their crew? 
-
-
-How many memebers are in Strawhats
-
 ```{r}
 
 ```
 
-How many characters are captains of thier crew? 
-```{r}
-
-```
-
-How many captains are there compared to naviagtors? 
+How many captains are there compared to navigators? 
 ```{r}
 
 ```
