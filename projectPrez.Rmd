@@ -120,10 +120,8 @@ characters_with_crews <- bind_cols(
     crew_name = name,
     crew_status = status,
     crew_number = number,
-    crew_total_prime = total_prime
-  ) %>% 
+    crew_total_prime = total_prime)) %>% 
     select(-description, -roman_name)
-)
 
 # translating some crew names from french to english
 characters_with_crews <- characters_with_crews %>%
@@ -131,7 +129,7 @@ characters_with_crews <- characters_with_crews %>%
     crew_name = case_when(
       crew_name == "The Chapeau de Paille crew" ~ "Straw Hat Pirates",
       crew_name == "Armarda du Chapeau de Paille" ~ "Straw Hat Grand Fleet",
-      crew_name == "Baggy's Delivery" ~ "Buggy’s Delivery",
+      crew_name == "Baggy's Delivery" ~ "Buggy's Delivery",
       crew_name == "Le Roux crew" ~ "Red Hair Pirates",
       TRUE ~ crew_name
     )
@@ -185,18 +183,18 @@ characters_df %>%
 
 What is the average bounty between all pirates?
 ```{r}
-full_character_df %>% 
+full_character_df %>%
   summarise(
     avg_bounty = mean(bounty, na.rm = T)
   )
 ```
 
-Which crew has the highest bounty in total?
+Which 5 crew's has the highest bounty in total?
 ```{r}
 characters_with_crews %>%
   select(crew_name, crew_total_prime) %>%
   distinct() %>%
-  slice_max(order_by = crew_total_prime, n = 1)
+  slice_max(order_by = crew_total_prime, n = 5)
 ```
 
 
@@ -222,11 +220,6 @@ characters_with_crews %>%
 thinking median can be added because the numbers can be extreme with us only having a mean 
 would make the average look way bigger than normal. 
 
-
-What percentage of characters are deceased?
-```{r}
-
-```
 
 
 
@@ -308,8 +301,7 @@ locations_df %>%
 How many members of Big Mom's crew are officers and lieutenants?
 
 
-How many members are in Strawhats
-
+How many members are in Strawhats?
 ```{r}
 characters_with_crews %>%
   filter(crew_name == "Straw Hat Pirates") %>% # need to replace with the french name lol
@@ -342,6 +334,7 @@ characters_with_crews %>%
 #lets change this question up a bit, maybe include doctors, or just general crew members 
 ```
 
+<<<<<<< HEAD
 Distribution of character sizes
 
 ```{r}
@@ -366,6 +359,9 @@ full_character_df %>%
   labs(title = "Size Distribution: Fruit Users vs Non‑Users")
 ```
 
+=======
+What is the distribution of height amongst the characters? 
+>>>>>>> e88b5154e73c85efc4f39b04df94485e2b8cd69e
 
 ## Episodes
 ```{r}
