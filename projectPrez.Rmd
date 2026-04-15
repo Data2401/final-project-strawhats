@@ -360,8 +360,8 @@ full_character_df %>%
 ```
 
 =======
-What is the distribution of height amongst the characters? 
->>>>>>> e88b5154e73c85efc4f39b04df94485e2b8cd69e
+What is the distribution of height among the characters? 
+
 
 ## Episodes
 ```{r}
