@@ -110,9 +110,9 @@ crew_full_df <- crew_full_df %>%
   mutate(
     total_prime = as.numeric(str_remove_all(total_prime, "\\.")),
     number = as.numeric(str_remove_all(number, "\\."))
-  )
+  ) 
 
-# removed the crew column & joined the actual crew df
+# removed the crew & joined the actual crew df
 characters_with_crews <- bind_cols(
   characters_df %>% select(-crew),
   crew_full_df %>% rename(
@@ -120,7 +120,6 @@ characters_with_crews <- bind_cols(
     crew_name = name,
     crew_status = status,
     crew_number = number,
-    crew_roman = roman_name,
     crew_total_prime = total_prime
   )
 )
@@ -166,7 +165,10 @@ new_characters_df %>%
 
 Which crew has the highest bounty in total?
 ```{r}
-
+characters_with_crews %>%
+  select(crew_name, crew_total_prime) %>%
+  distinct() %>%
+  slice_max(order_by = crew_total_prime, n = 1)
 ```
 
 
@@ -179,8 +181,19 @@ What is the distribution of bounties? (high or low)
 Do the captains have a higher bounty than the fighters?
 
 ```{r}
+characters_with_crews %>%
+  filter(job %in% c("Captain", "Fighter")) %>%
+  group_by(job) %>%
+  summarise(
+    avg_bounty = mean(bounty, na.rm = TRUE),
+    #maybe we can add a median here too
+    count = n()
+  )
 
 ```
+thinking median can be added because the numbers can be extreme with us only having a mean 
+would make the average look way bigger than normal. 
+
 
 What percentage of characters are deceased?
 ```{r}
@@ -255,7 +268,12 @@ ggplot(blue_counts, aes(x = sea_name, y = n)) +
 How many islands are in the Grand Line compared to the other regions 
 
 How many islands are in each region? 
-
+```{r}
+locations_df %>%
+  count(sea_name) %>%
+  ggplot(aes(x = sea_name, y = n)) +
+  geom_col()
+```
 
 ## Characters
 
@@ -265,6 +283,9 @@ How many members of Big Mom's crew are officers and lieutenants?
 How many members are in Strawhats
 
 ```{r}
+characters_with_crews %>%
+  filter(crew_name == "Straw Hat Pirates") %>% # need to replace with the french name lol
+  summarise(total_members = n())
 
 ```
 
@@ -276,11 +297,21 @@ How many members are in the Big Mom crew?
 How many characters are captains of their crew? 
 ```{r}
 
+characters_with_crews %>%
+  filter(job == "Captain") %>%
+  summarise(total_captains = n())
+
 ```
 
 How many captains are there compared to navigators? 
 ```{r}
 
+characters_with_crews %>%
+  filter(job %in% c("Captain", "Navigator")) %>%
+  distinct(name, job) %>%
+  count(job)
+
+#lets change this question up a bit, maybe include doctors, or just general crew members 
 ```
 
 
