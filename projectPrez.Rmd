@@ -122,12 +122,29 @@ characters_with_crews <- bind_cols(
     crew_number = number,
     crew_roman = roman_name,
     crew_total_prime = total_prime
-  )
+  ) %>% 
+    select(-description, -crew_roman)
 )
 
 characters_with_crews  # joined table (more cleaning can still be done)
 ```
 
+Devil Fruit joined with the rest of the DF
+
+```{r}
+# fruits df column
+dev_fruit_df <- as.data.frame(characters_with_crews$fruit)
+dev_fruit_df
+
+# merging table
+full_character_df <- bind_cols(
+  characters_with_crews %>% select(-fruit),
+  dev_fruit_df %>% rename(
+    devil_fruit = name) %>% 
+    select(-id)
+)
+full_character_df
+```
 
 
 What percentage of characters have a bounty?
