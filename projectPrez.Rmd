@@ -122,7 +122,7 @@ characters_with_crews <- bind_cols(
     crew_number = number,
     crew_total_prime = total_prime
   ) %>% 
-    select(-description, -crew_roman)
+    select(-description, roman_name)
 )
 
 characters_with_crews  # joined table (more cleaning can still be done)
@@ -174,18 +174,18 @@ characters_df %>%
 
 What is the average bounty between all pirates?
 ```{r}
-new_characters_df %>% 
+characters_df %>% 
   summarise(
     avg_bounty = mean(bounty, na.rm = T)
   )
 ```
 
-Which crew has the highest bounty in total?
+Which 5 crew's has the highest bounty in total?
 ```{r}
 characters_with_crews %>%
   select(crew_name, crew_total_prime) %>%
   distinct() %>%
-  slice_max(order_by = crew_total_prime, n = 1)
+  slice_max(order_by = crew_total_prime, n = 5)
 ```
 
 
@@ -211,11 +211,6 @@ characters_with_crews %>%
 thinking median can be added because the numbers can be extreme with us only having a mean 
 would make the average look way bigger than normal. 
 
-
-What percentage of characters are deceased?
-```{r}
-
-```
 
 
 
@@ -297,8 +292,7 @@ locations_df %>%
 How many members of Big Mom's crew are officers and lieutenants?
 
 
-How many members are in Strawhats
-
+How many members are in Strawhats?
 ```{r}
 characters_with_crews %>%
   filter(crew_name == "Straw Hat Pirates") %>% # need to replace with the french name lol
@@ -331,6 +325,7 @@ characters_with_crews %>%
 #lets change this question up a bit, maybe include doctors, or just general crew members 
 ```
 
+What is the distribution of height amongst the characters? 
 
 ## Episodes
 ```{r}
