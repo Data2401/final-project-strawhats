@@ -94,8 +94,8 @@ characters_df <- characters_df %>%
 #crews_df <- crews_df %>% 
   #select(-roman_name)
 
-glimpse(characters_df)
-glimpse(crews_df)
+characters_df
+crews_df
 
 ```
 
@@ -120,11 +120,20 @@ characters_with_crews <- bind_cols(
     crew_name = name,
     crew_status = status,
     crew_number = number,
-    crew_total_prime = total_prime
-  ) %>% 
-    select(-description, roman_name)
-)
+    crew_total_prime = total_prime)) %>% 
+    select(-description, -roman_name)
 
+# translating some crew names from french to english
+characters_with_crews <- characters_with_crews %>%
+  mutate(
+    crew_name = case_when(
+      crew_name == "The Chapeau de Paille crew" ~ "Straw Hat Pirates",
+      crew_name == "Armarda du Chapeau de Paille" ~ "Straw Hat Grand Fleet",
+      crew_name == "Baggy's Delivery" ~ "Buggy's Delivery",
+      crew_name == "Le Roux crew" ~ "Red Hair Pirates",
+      TRUE ~ crew_name
+    )
+  )
 characters_with_crews  # joined table (more cleaning can still be done)
 ```
 
@@ -174,7 +183,7 @@ characters_df %>%
 
 What is the average bounty between all pirates?
 ```{r}
-characters_df %>% 
+full_character_df %>%
   summarise(
     avg_bounty = mean(bounty, na.rm = T)
   )
@@ -300,7 +309,7 @@ characters_with_crews %>%
 
 ```
 
-How many members are in the Big Mom crew?
+How many members are in the Big Mom crew? (comparing to other crews)
 ```{r}
 
 ```
@@ -325,7 +334,34 @@ characters_with_crews %>%
 #lets change this question up a bit, maybe include doctors, or just general crew members 
 ```
 
-What is the distribution of height amongst the characters? 
+<<<<<<< HEAD
+Distribution of character sizes
+
+```{r}
+# all characters
+full_character_df %>%
+  filter(!is.na(size)) %>%
+  ggplot(aes(x = size)) +
+  geom_histogram(aes(y = ..density..), binwidth = 5,
+                 fill = "gray80", color = "gray40") +
+  geom_density(color = "blue", size = 1.2) +
+  labs(
+    title = "Character Size Distribution with Density Overlay",
+    x = "Size (cm)",
+    y = "Density"
+  )
+
+# fruit user vs non fruit users
+full_character_df %>%
+  mutate(has_fruit = !is.na(devil_fruit)) %>%
+  ggplot(aes(x = size, fill = has_fruit)) +
+  geom_density(alpha = 0.4) +
+  labs(title = "Size Distribution: Fruit Users vs Non‑Users")
+```
+
+=======
+What is the distribution of height among the characters? 
+
 
 ## Episodes
 ```{r}
