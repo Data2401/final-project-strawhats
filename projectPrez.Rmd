@@ -87,7 +87,7 @@ characters_df <- characters_df %>%
          size = as.numeric(str_remove_all(size, "cm")))
 
 # removed columns from both dataframes
-# re-rerun every new session (can only be runned once since it gives error a second time)
+# re-rerun every new session (can only be ran once since it gives error a second time)
 #crews_df <- crews_df %>% 
 #  select(-description)
 
@@ -148,7 +148,7 @@ full_character_df
 
 What percentage of characters have a bounty?
 
-```{r}
+```{r echo=FALSE, message=FALSE, warning=FALSE}
 # computation
 characters_df %>%
   summarise(
@@ -185,7 +185,7 @@ Which 5 crew's has the highest bounty in total?
 characters_with_crews %>%
   select(crew_name, crew_total_prime) %>%
   distinct() %>%
-  slice_max(order_by = crew_total_prime, n = 5)
+  slice_max(order_by = crew_total_prime, n = 5) %>% knitr::kable() 
 ```
 
 
@@ -318,9 +318,9 @@ How many captains are there compared to navigators?
 ```{r}
 
 characters_with_crews %>%
-  filter(job %in% c("Captain", "Navigator")) %>%
+ # filter(job %in% c("Captain", "Navigator")) %>%
   distinct(name, job) %>%
-  count(job)
+  count(job, sort = T)
 
 #lets change this question up a bit, maybe include doctors, or just general crew members 
 ```
