@@ -17,18 +17,22 @@ knitr::include_graphics("https://logos-world.net/wp-content/uploads/2021/09/One-
 
 
 ## Introduction 
-Many of you may have heard of anime One Piece, and like me don't want to commit to this 1000+ episode adventure. Luckily we have someone on our team that has committed to it, John, so he has been our personal One Piece Encyclopedia for this project. 
+Many of you may have heard of the anime "One Piece", and like me don't want to commit to this 1000+ episode adventure. Luckily we have someone on our team that has committed to it, John, so he has been our personal One Piece Encyclopedia for this project. 
 
 But beyond that, from what I have seen from the live action (lol), the series is filled with action, battles, and unforgettable characters. It is also really rich in detail and data. Because of that, we decided to analyze key elements of the One Piece world to uncover patterns, trends, and hidden insights using data science techniques we learned in class. 
 
 
+
+
 ## Background Information 
-One piece is a long time running (1999) anime/ manga about pirates searching for treasure. 
+One piece is a long time running (1999) anime/ manga about pirates looking for the One Piece,
+the greatest treasure in the world.
 
-The main character is Monkey D. Luffy and the main pirate crew the show follows are called the Strawhats. 
+The show follows the Strawhat Crew, with the main character being Monkey D. Luffy, along with his friends including
+Zoro, Sanji, Nami, Brook, Robin, Jinbe, & Chopper.
 
-One Piece is essentially about pirate crews exploring different regions and comepeting for power, fame, and treasure. 
-
+One Piece is essentially about pirate crews exploring different regions and competing for power, fame, and treasure. 
+(And for Luffy to make friends along the way)
 --- 
 What is a "Crew"?
 
@@ -40,6 +44,21 @@ Each crew has:
 --- 
 What is a "Bounty"?
 
+- A bounty is a price put on the head of certain
+individuals, typically pirates. 
+- the higher the bounty, the more dangerous
+the world government identifies you as
+
+---
+What is a "Devil Fruit"?
+
+- A devil fruit is a magical fruit in the One Piece
+universe. 
+- grant specific powers to the individual
+- each fruit has a different power
+- The catch?
+
+---
 
 ```{r}
 library(jsonlite)
