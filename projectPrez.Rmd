@@ -22,20 +22,23 @@ Many of you may have heard of anime One Piece, and like me don't want to commit 
 But beyond that, from what I have seen from the live action (lol), the series is filled with action, battles, and unforgettable characters. It is also really rich in detail and data. Because of that, we decided to analyze key elements of the One Piece world to uncover patterns, trends, and hidden insights using data science techniques we learned in class. 
 
 
-## About the Dataset
-This specific dataframe (characters) has most (if not all) the characters from the famous Manga/Anime series "One Piece". It includes the characters name (ofc) along with their age, size, bounty (in berries), as well what crew the characters are a part of, & even if they have a devil fruit (as well as what kind with a description). The data set is extremely detailed and we were excited to work with it!
+## Background Information 
+One piece is a long time running (1999) anime/ manga about pirates searching for treasure. 
 
-### Tools Used 
+The main character is Monkey D. Luffy and the main pirate crew the show follows are called the Strawhats. 
 
-### Data Sources 
-We were able to find multiple API's with One Piece information, but we ultimately decided to use the one below because it provided mostly all the information we were wanting to use for our project. Only thing is that like all data sets, we had to do some tidying, and some of the information was in French.... 
+One Piece is essentially about pirate crews exploring different regions and comepeting for power, fame, and treasure. 
 
-API Used: 
-- https://api-onepiece.com/en/documentation 
+--- 
+What is a "Crew"?
 
-### Tidying Data 
-One Piece has a lot of data that we can work with, but it also has a lot of data that we have to tidy ):
+A crew is a team of pirates 
+Each crew has: 
+- Captain (Leader of the group) 
+- Members with roles (Navigator, Doctor, etc.)
 
+--- 
+What is a "Bounty"?
 
 
 ```{r}
