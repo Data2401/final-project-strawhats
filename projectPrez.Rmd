@@ -167,7 +167,8 @@ characters_with_crews <- characters_with_crews %>%
       TRUE ~ crew_name
     )
   )
-characters_with_crews  # joined table (more cleaning can still be done)
+
+# ignore this just use full_character_df
 ```
 
 Devil Fruit joined with the rest of the DF
