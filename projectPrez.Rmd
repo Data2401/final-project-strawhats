@@ -41,6 +41,17 @@ Each crew has:
 What is a "Bounty"?
 
 
+---
+What is a "Devil Fruit"?
+Devil Fruits are supernatural fruits that grant super human strength and unique powers to those who consume them, but at the cost of their ability to swim (ironic lol). 
+
+Each Devil Fruit power can only be held by one individual at a time, and it will reappear in a new fruit after the original user dies. 
+
+Categories: 
+- Paramecia
+- Zoan 
+- Logica 
+
 ```{r}
 library(jsonlite)
 library(tidyverse)
@@ -234,24 +245,9 @@ fruits_df
 
 > We're going to have to merge the characters to the fruits df as well
 
-How many pirates from each crew has a devil fruit?
+Devil Fruits are considered rare and powerful items scattered throughout the world of One Piece, but it's unclear how they are dstributed amoung characters and how they influence factors like bounty and crew roles. 
 
-```{r}
-
-```
-
-How many characters/what percentage have a devil fruit? 
-```{r}
-
-```
-
-Does having a devil fruit correlate to having a higher bounty?
-```{r}
-
-```
-
-How many different types of fruits are there? 
-For each fruit, how many pirates contain one of the fruits? 
+How many different types of fruits are there?
 ```{r}
 
 ```
@@ -261,10 +257,35 @@ What kind of devil fruit is the most common?
 
 ```
 
-Does the kind of devil fruit correlate with positions on the crew or bounty?
+
+How many pirates in each crew posses a Devil Fruit?
+
 ```{r}
 
 ```
+
+What percentage of characters possess a Devil Fruit? 
+```{r}
+
+```
+
+DO characters with Devil Fruits tend to have higher bounties than those without?
+```{r}
+
+```
+
+What is the average bounty of Devil Fruit users vs non-users?
+
+Who are the highest bounty characters without Devil Fruits?
+
+Are captains more likly to have Devil Fruits than other crew members?
+```{r}
+
+```
+
+
+
+
 
 ## Islands
 
@@ -337,7 +358,6 @@ characters_with_crews %>%
 #lets change this question up a bit, maybe include doctors, or just general crew members 
 ```
 
-<<<<<<< HEAD
 Distribution of character sizes
 
 ```{r}
@@ -362,7 +382,7 @@ full_character_df %>%
   labs(title = "Size Distribution: Fruit Users vs Non‑Users")
 ```
 
-=======
+
 What is the distribution of height among the characters? 
 
 
