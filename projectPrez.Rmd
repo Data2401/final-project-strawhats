@@ -60,17 +60,6 @@ universe.
 
 ---
 
----
-What is a "Devil Fruit"?
-Devil Fruits are supernatural fruits that grant super human strength and unique powers to those who consume them, but at the cost of their ability to swim (ironic lol). 
-
-Each Devil Fruit power can only be held by one individual at a time, and it will reappear in a new fruit after the original user dies. 
-
-Categories: 
-- Paramecia
-- Zoan 
-- Logica 
-
 ```{r}
 library(jsonlite)
 library(tidyverse)
@@ -259,48 +248,193 @@ would make the average look way bigger than normal.
 ## Devil Fruits
 
 ```{r}
-fruits_df
+full_character_df
 ```
 
 > We're going to have to merge the characters to the fruits df as well
 
-Devil Fruits are considered rare and powerful items scattered throughout the world of One Piece, but it's unclear how they are dstributed amoung characters and how they influence factors like bounty and crew roles. 
+Devil Fruits are considered rare and powerful items scattered throughout the world of One Piece, but it's unclear how they are distributed amoung characters and how they influence factors like bounty and crew roles. 
 
+---
 How many different types of fruits are there?
 ```{r}
+library(dplyr)
 
+full_character_df %>%
+  filter(!is.na(devil_fruit)) %>%
+  distinct(devil_fruit) %>%
+  count()
 ```
 
 What kind of devil fruit is the most common?
 ```{r}
+fruit_counts <- full_character_df %>%
+  filter(!is.na(type)) %>%
+  count(type, sort = TRUE)
+
+fruit_counts
+
+library(ggplot2)
+
+ggplot(fruit_counts, aes(x = type, y = n, fill = type)) + geom_col()+ 
+  geom_text(aes(label = n), vjust = -0.3, color = "navy") +
+  labs(
+  x = "Devil Fruit Type", 
+  y = "Total",
+  color = "Fruit Type", 
+  title = "Most Common Devil Fruit Types"
+) + 
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+
 
 ```
 
 
-How many pirates in each crew posses a Devil Fruit?
+
+Which crews have multiple Devil Fruit users?
 
 ```{r}
 
+crew_fruit_counts <- full_character_df %>%
+  filter(!is.na(devil_fruit), !is.na(crew_name)) %>%   # ← this removes NA
+  count(crew_name, sort = TRUE) %>%
+  filter(n > 1)
+
+crew_fruit_counts
+
+ggplot(crew_fruit_counts, aes(x = reorder(crew_name, n), y = n, fill = n)) +
+  geom_col() +
+  geom_text(aes(label = n), hjust = -0.2) +
+  coord_flip()+
+  labs(
+    title = "Number of Devil Fruit Users per Crew",
+    x = "Crew",
+    y = "Number of Pirates"
+  ) +
+  theme(legend.position = "none")+ 
+  scale_fill_gradient(low = "lightyellow", high = "orange") 
 ```
 
 What percentage of characters possess a Devil Fruit? 
 ```{r}
 
+
+library(dplyr)
+library(ggplot2)
+
+full_character_df %>%
+  mutate(has_fruit = ifelse(is.na(devil_fruit), "No Fruit", "Has Fruit")) %>%
+  count(has_fruit) %>%
+  ggplot(aes(x = "", y = n, fill = has_fruit)) +
+  geom_col(width = 1) +
+  coord_polar(theta = "y") +
+  scale_fill_manual(values = c("Has Fruit" = "darkorchid", "No Fruit" = "slateblue")) +
+  labs(
+    title = "Characters with vs Without Devil Fruits",
+    fill = "Category"
+  ) +
+  theme_void()
 ```
 
-DO characters with Devil Fruits tend to have higher bounties than those without?
 ```{r}
+library(dplyr)
+library(ggplot2)
 
+full_character_df %>%
+  mutate(has_fruit = ifelse(is.na(devil_fruit), "No Fruit", "Has Fruit")) %>%
+  count(has_fruit) %>%
+  ggplot(aes(x = has_fruit, y = n, fill = has_fruit)) +
+  geom_col() +
+  scale_fill_manual(values = c("Has Fruit" = "darkorchid", "No Fruit" = "slateblue")) +
+  geom_text(aes(label = n), vjust = -0.3) +
+  labs(
+    title = "Characters with vs Without Devil Fruits",
+    x = "Category",
+    y = "Number of Characters",
+    fill = "Category"
+  ) 
 ```
+Do characters with Devil Fruits tend to have higher bounties than those without?
+```{r}
+library(dplyr)
+library(ggplot2)
+
+bounty_df <- full_character_df %>%
+  mutate(has_fruit = ifelse(is.na(devil_fruit), "No Fruit", "Has Fruit")) %>%
+  filter(!is.na(bounty))
+
+
+ggplot(bounty_df, aes(x = has_fruit, y = bounty, fill = has_fruit)) +
+  geom_boxplot() +
+  scale_y_log10() +
+  scale_fill_manual(values = c("Has Fruit" = "darkorchid", "No Fruit" = "plum2")) +
+  labs(
+    title = "Bounty Distribution (Log Scale): Devil Fruit Users vs Non-Users",
+    x = "Category",
+    y = "Bounty (log scale)"
+  ) 
+```
+- Compares bounty distribution between groups 
+-Median bounty is higher for devil fruit users 
+- Some non-users still have high bounties (outliers)
 
 What is the average bounty of Devil Fruit users vs non-users?
+```{r}
+library(dplyr)
+library(ggplot2)
+
+full_character_df %>%
+  mutate(has_fruit = ifelse(is.na(devil_fruit), "No Fruit", "Has Fruit")) %>%
+  filter(!is.na(bounty)) %>%
+  group_by(has_fruit) %>%
+  summarise(avg_bounty = mean(bounty, na.rm = TRUE)) %>%
+  ggplot(aes(x = has_fruit, y = avg_bounty, fill = has_fruit)) +
+  geom_col() +
+  geom_text(aes(label = round(avg_bounty, 0)), vjust = -0.3) +
+  scale_fill_manual(values = c("Has Fruit" = "darkorchid", "No Fruit" = "slateblue")) +
+  labs(
+    title = "Average Bounty: Devil Fruit Users vs Non-Users",
+    x = "Category",
+    y = "Average Bounty"
+  ) +
+  theme(legend.position = "none")
+```
+- Comparing average bounty between the two groups 
+- devil fruit users have a higher bounty average
+-further supports data seen in the box plot
 
 Who are the highest bounty characters without Devil Fruits?
 
-Are captains more likly to have Devil Fruits than other crew members?
 ```{r}
+library(ggplot2)
+
+full_character_df %>%
+  filter(is.na(devil_fruit), !is.na(bounty)) %>%
+  arrange(desc(bounty)) %>%
+  head(5) %>%
+  ggplot(aes(x = reorder(name, bounty), y = bounty, fill = name)) +
+  geom_col() +
+  geom_text(aes(label = paste0(round(bounty/1e6), "M")), hjust = -0.2) + 
+  coord_flip() +
+  scale_fill_manual(values = c(
+    "Gol D. Roger" = "darkred",
+    "Shanks" = "firebrick",
+    "Roronoa Zoro" = "green4",
+    "Jinbe" = "skyblue2",
+    "Sanji" = "gold"
+  ))
+  labs(
+    title = "Highest Bounty Characters Without Devil Fruits",
+    x = "Character",
+    y = "Bounty"
+  ) +
+  theme(legend.position = "none")
 
 ```
+- Some non-Devil Fruit users still have high bounties 
+- Strength and influence are not limited to Devil Fruit powers 
+
 
 
 
