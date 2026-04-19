@@ -616,13 +616,34 @@ characters_with_crews %>%
 
 ```
 
-How many captains are there compared to navigators? 
+What occupations appear most often in pirate crews?
 ```{r}
+library(dplyr)
+library(ggplot2)
 
-characters_with_crews %>%
+job_counts <- characters_with_crews %>%
+  filter(!is.na(job), job != "") %>%
+  count(job, sort = TRUE) %>%
+  slice_max(n, n = 10)
+
+ggplot(job_counts, aes(x = reorder(job, n), y = n, fill = n)) +
+  geom_col() +
+  geom_text(aes(label = n), hjust = -0.2) +
+  coord_flip() +
+  scale_fill_gradient(low = "plum1", high = "magenta3") +
+  labs(
+    title = "Most Common Occupations in Pirate Crews",
+    x = "Occupation",
+    y = "Number of Characters"
+  ) +
+  theme(legend.position = "none")
+
+
+
+#characters_with_crews %>%
  # filter(job %in% c("Captain", "Navigator")) %>%
-  distinct(name, job) %>%
-  count(job, sort = T)
+  #distinct(name, job) %>%
+  #count(job, sort = T)
 
 #lets change this question up a bit, maybe include doctors, or just general crew members 
 ```
