@@ -156,51 +156,64 @@ characters_with_crews <- characters_with_crews %>%
       TRUE ~ crew_name
     )
   )
-characters_with_crews  # joined table (more cleaning can still be done)
+
+# ignore this just use full_character_df
 ```
 
 Devil Fruit joined with the rest of the DF
 
 ```{r}
 # fruits df column
-dev_fruit_df <- as.data.frame(characters_with_crews$fruit)
-dev_fruit_df
+dev_fruit_df <- as.data.frame(characters_with_crews$fruit) %>%
+  select(-roman_name, -filename, -technicalFile)   # removing unwanted columns
 
 # merging table
 full_character_df <- bind_cols(
   characters_with_crews %>% select(-fruit),
-  dev_fruit_df %>% rename(
-    devil_fruit = name) %>% 
+  dev_fruit_df %>%
+    rename(devil_fruit = name) %>%
     select(-id)
 )
+
 full_character_df
 ```
 
-
 What percentage of characters have a bounty?
 
-```{r echo=FALSE, message=FALSE, warning=FALSE}
+```{r}
 # computation
-characters_df %>%
+library(gt)
+
+full_character_df %>%
   summarise(
     total = n(),
     with_bounty = sum(!is.na(bounty)),
     without_bounty = sum(is.na(bounty)),
     pct_with_bounty = mean(!is.na(bounty)) * 100
+  ) %>%
+  mutate(pct_with_bounty = paste0(round(pct_with_bounty, 1), "%")) %>%
+  gt() %>%
+  tab_header(
+    title = "Bounty Summary"
   )
 
 # visualization
-characters_df %>%
+full_character_df %>%
   mutate(has_bounty = if_else(is.na(bounty), "No", "Yes")) %>%
   count(has_bounty) %>%
   ggplot(aes(x = has_bounty, y = n, fill = has_bounty)) +
   geom_col() +
+  scale_fill_manual(
+    values = c(
+      "Yes" = "darkcyan",   # characters WITH bounty
+      "No"  = "deeppink"      # characters WITHOUT bounty
+    )
+  ) +
   labs(
     title = "How Many Characters Have a Bounty?",
     x = "Has Bounty",
     y = "Count"
-  ) +
-  theme_minimal()
+  )
 ```
 
 What is the average bounty between all pirates?
@@ -211,12 +224,73 @@ full_character_df %>%
   )
 ```
 
+```{r}
+big_mom_count <- full_character_df %>%
+  filter(crew_name == "Big Mom's crew") %>%
+  summarise(n_members = n_distinct(name))
+
+big_mom_count
+
+full_character_df <- full_character_df %>%
+  mutate(
+    crew_number = ifelse(
+      crew_name == "Big Mom's crew" & is.na(crew_number),
+      big_mom_count$n_members,
+      crew_number
+    )
+  )
+
+```
+
+
 Which 5 crew's has the highest bounty in total?
 ```{r}
-characters_with_crews %>%
+# table
+crews_high_bounty <- full_character_df %>%
   select(crew_name, crew_total_prime) %>%
   distinct() %>%
-  slice_max(order_by = crew_total_prime, n = 5) %>% knitr::kable() 
+  slice_max(order_by = crew_total_prime, n = 5)
+crews_high_bounty
+
+#plot
+crews_high_bounty %>%
+  ggplot(aes(x = crew_total_prime / 1e6,
+             y = reorder(crew_name, crew_total_prime))) +
+  geom_point(size = 5, color = "darkcyan") +
+  geom_text(aes(label = round(crew_total_prime / 1e6, 1)),
+            hjust = -0.3, size = 4, color = "black") +
+  labs(
+    title = "Top 5 Crews by Total Bounty",
+    x = "Total Bounty (Millions of Berries)",
+    y = "Crew"
+  ) +
+  xlim(0, max(crews_high_bounty$crew_total_prime / 1e6) * 1.15)
+
+
+# crew members plot
+crews_high_bounty %>%
+  left_join(
+    full_character_df %>% 
+      select(crew_name, crew_number) %>% 
+      distinct(),
+    by = "crew_name"
+  ) %>%
+  ggplot(aes(
+    x = crew_total_prime / 1e9,
+    y = crew_number,
+    size = crew_number,
+    color = crew_name,    
+    label = crew_name
+  )) +
+  geom_point(alpha = 0.7) +
+  geom_text(size = 3, vjust = -1) +
+  labs(
+    title = "Top 5 Crews: Total Bounty vs Crew Size",
+    x = "Total Bounty (Billions of Berries)",
+    y = "Crew Size",
+    color = "Crew"         
+  ) +
+  scale_size_continuous(range = c(5, 15))
 ```
 
 
@@ -248,10 +322,11 @@ would make the average look way bigger than normal.
 ## Devil Fruits
 
 ```{r}
+
 full_character_df
+
 ```
 
-> We're going to have to merge the characters to the fruits df as well
 
 Devil Fruits are considered rare and powerful items scattered throughout the world of One Piece, but it's unclear how they are distributed amoung characters and how they influence factors like bounty and crew roles. 
 
@@ -463,14 +538,21 @@ ggplot(blue_counts, aes(x = sea_name, y = n)) +
   )
 ```
 
-How many islands are in the Grand Line compared to the other regions 
-
 How many islands are in each region? 
 ```{r}
 locations_df %>%
+  filter(sea_name != "", !is.na(sea_name)) %>%   # remove empty + real NA
   count(sea_name) %>%
   ggplot(aes(x = sea_name, y = n)) +
-  geom_col()
+  geom_col(fill = "darkcyan") +
+  geom_text(aes(label = n),
+            vjust = -0.3, 
+            size = 4) +
+  labs(
+    title = "How Many Islands Are in Each Region?",
+    x = "Region",
+    y = "Number of Islands"
+  )
 ```
 
 ## Characters
@@ -537,6 +619,10 @@ full_character_df %>%
 
 
 What is the distribution of height among the characters? 
+
+```{r}
+
+```
 
 
 ## Episodes
