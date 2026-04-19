@@ -1,6 +1,6 @@
 ---
 title: "project"
-author(s): Jezel V., John E., Shelby T.
+author(s): "Jezel V., John E., Shelby T."
 output: ioslides_presentation
 date: "2026-04-08"
 ---
@@ -9,18 +9,19 @@ date: "2026-04-08"
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-##                Our project is about: 
+##                Project Overview: 
 
 ```{r, echo=FALSE, out.width="70%", fig.align="center"}
 knitr::include_graphics("https://logos-world.net/wp-content/uploads/2021/09/One-Piece-Logo-1999.png")
 ```
 
+- Exploring patterns in the One Piece world
+- Focusing on bounties, characters, Devil Fruits, Islands, and episodes.
 
 ## Introduction 
-Many of you may have heard of the anime "One Piece", and like me don't want to commit to this 1000+ episode adventure. Luckily we have someone on our team that has committed to it, John, so he has been our personal One Piece Encyclopedia for this project. 
-
-But beyond that, from what I have seen from the live action (lol), the series is filled with action, battles, and unforgettable characters. It is also really rich in detail and data. Because of that, we decided to analyze key elements of the One Piece world to uncover patterns, trends, and hidden insights using data science techniques we learned in class. 
-
+- One piece is a long running anime (1999) and manga series 
+- The world full of pirates, crews, bounties, and adventures
+- Using data sciecne to explore and uncover patterns in this universe.
 
 
 
@@ -33,34 +34,35 @@ Zoro, Sanji, Nami, Brook, Robin, Jinbe, & Chopper.
 
 One Piece is essentially about pirate crews exploring different regions and competing for power, fame, and treasure. 
 (And for Luffy to make friends along the way)
---- 
-What is a "Crew"?
 
+## What is a "Crew"?
 A crew is a team of pirates 
 Each crew has: 
 - Captain (Leader of the group) 
 - Members with roles (Navigator, Doctor, etc.)
 
---- 
-What is a "Bounty"?
 
+## What is a "Bounty"?
 - A bounty is a price put on the head of certain
 individuals, typically pirates. 
 - the higher the bounty, the more dangerous
 the world government identifies you as
 
----
-What is a "Devil Fruit"?
 
+## What is a "Devil Fruit"?
 - A devil fruit is a magical fruit in the One Piece
 universe. 
 - grant specific powers to the individual
 - each fruit has a different power
 - The catch?
 
----
+## Tidying Data
 
-```{r}
+- Lots of cleaning up 
+- Some things were in french...
+- and yea
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
 library(jsonlite)
 library(tidyverse)
 
@@ -98,7 +100,6 @@ fruits_df <- as.data.frame(fruits)
 
 In One Piece, the more chaos you cause, the higher the bounty on your head is. The bounties reflect how dangerous each pirate is. 
 
-> Talk about tidying the data
 
 Which character has the lowest bounty in the series?
 ```{r}
@@ -123,7 +124,7 @@ crews_df
 
 > Join characters with crew df
 
-```{r}
+```{r, echo=FALSE}
 # crew df inside characters df
 crew_full_df <- as.data.frame(characters_df$crew)
 
@@ -162,7 +163,7 @@ characters_with_crews <- characters_with_crews %>%
 
 Devil Fruit joined with the rest of the DF
 
-```{r}
+```{r echo=FALSE, message=FALSE, warning=FALSE}
 # fruits df column
 dev_fruit_df <- as.data.frame(characters_with_crews$fruit) %>%
   select(-roman_name, -filename, -technicalFile)   # removing unwanted columns
@@ -180,7 +181,7 @@ full_character_df
 
 What percentage of characters have a bounty?
 
-```{r}
+```{r echo=FALSE, message=FALSE, warning=FALSE}
 # computation
 library(gt)
 
@@ -217,14 +218,14 @@ full_character_df %>%
 ```
 
 What is the average bounty between all pirates?
-```{r}
+```{r message=FALSE, warning=FALSE}
 full_character_df %>%
   summarise(
     avg_bounty = mean(bounty, na.rm = T)
   )
 ```
 
-```{r}
+```{r message=FALSE, warning=FALSE}
 big_mom_count <- full_character_df %>%
   filter(crew_name == "Big Mom's crew") %>%
   summarise(n_members = n_distinct(name))
@@ -244,7 +245,7 @@ full_character_df <- full_character_df %>%
 
 
 Which 5 crew's has the highest bounty in total?
-```{r}
+```{r echo=FALSE, message=FALSE, warning=FALSE}
 # table
 crews_high_bounty <- full_character_df %>%
   select(crew_name, crew_total_prime) %>%
@@ -302,7 +303,8 @@ What is the distribution of bounties? (high or low)
 
 Do the captains have a higher bounty than the fighters?
 
-```{r}
+```{r message=FALSE, warning=FALSE, paged.print=FALSE}
+library(kableExtra)
 characters_with_crews %>%
   filter(job %in% c("Captain", "Fighter")) %>%
   group_by(job) %>%
@@ -310,7 +312,9 @@ characters_with_crews %>%
     avg_bounty = mean(bounty, na.rm = TRUE),
     #maybe we can add a median here too
     count = n()
-  )
+  ) %>%
+  kbl() %>%
+  kable_styling(bootstrap_options = "striped", full_width = F, position = "left")
 
 ```
 thinking median can be added because the numbers can be extreme with us only having a mean 
@@ -320,29 +324,64 @@ would make the average look way bigger than normal.
 
 
 ## Devil Fruits
+Devil Fruits are considered rare and powerful items scattered throughout the world of One Piece, but it's unclear how they are distributed amoung characters and how they influence factors like bounties. 
 
-```{r}
+## Why Study Devil Fruits? 
+- Known to be rare and powerful 
+- May influence strength and reputation 
+- We wanted to see how they appear in the data
 
-full_character_df
+## Characters With vs Without Devil Fruits
+- Shows how many characters have Devil Fruits 
+- Majority of characters do not have one
 
-```
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
 
 
-Devil Fruits are considered rare and powerful items scattered throughout the world of One Piece, but it's unclear how they are distributed amoung characters and how they influence factors like bounty and crew roles. 
-
----
-How many different types of fruits are there?
-```{r}
 library(dplyr)
+library(ggplot2)
 
 full_character_df %>%
-  filter(!is.na(devil_fruit)) %>%
-  distinct(devil_fruit) %>%
-  count()
+  mutate(has_fruit = ifelse(is.na(devil_fruit), "No Fruit", "Has Fruit")) %>%
+  count(has_fruit) %>%
+  ggplot(aes(x = "", y = n, fill = has_fruit)) +
+  geom_col(width = 1) +
+  coord_polar(theta = "y") +
+  scale_fill_manual(values = c("Has Fruit" = "darkorchid", "No Fruit" = "slateblue")) +
+  labs(
+    title = "Characters with vs Without Devil Fruits",
+    fill = "Category"
+  ) +
+  theme_void()
 ```
 
-What kind of devil fruit is the most common?
-```{r}
+## Bar Graph (Correct Graph)
+- Compared to the circle graph, this one is better
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+library(dplyr)
+library(ggplot2)
+
+full_character_df %>%
+  mutate(has_fruit = ifelse(is.na(devil_fruit), "No Fruit", "Has Fruit")) %>%
+  count(has_fruit) %>%
+  ggplot(aes(x = has_fruit, y = n, fill = has_fruit)) +
+  geom_col() +
+  scale_fill_manual(values = c("Has Fruit" = "darkorchid", "No Fruit" = "slateblue")) +
+  geom_text(aes(label = n), vjust = -0.3) +
+  labs(
+    title = "Characters with vs Without Devil Fruits",
+    x = "Category",
+    y = "Number of Characters",
+    fill = "Category"
+  ) 
+```
+
+## Most Common Devil Fruit Types
+- Compares different types of Devil Fruits 
+- Some types appear more frequently than others
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
 fruit_counts <- full_character_df %>%
   filter(!is.na(type)) %>%
   count(type, sort = TRUE)
@@ -351,8 +390,10 @@ fruit_counts
 
 library(ggplot2)
 
-ggplot(fruit_counts, aes(x = type, y = n, fill = type)) + geom_col()+ 
-  geom_text(aes(label = n), vjust = -0.3, color = "navy") +
+ggplot(fruit_counts, 
+       aes(x = type, 
+           y = n, 
+           fill = type)) + geom_col() + geom_text(aes(label = n), vjust = -0.3, color = "navy") +
   labs(
   x = "Devil Fruit Type", 
   y = "Total",
@@ -360,16 +401,13 @@ ggplot(fruit_counts, aes(x = type, y = n, fill = type)) + geom_col()+
   title = "Most Common Devil Fruit Types"
 ) + 
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
-
-
-
 ```
 
 
-
-Which crews have multiple Devil Fruit users?
-
-```{r}
+## Crews with Multiple Devil Fruit Users 
+- Shows crews with more than one user 
+- Highlights where Devil Fruits are more concentrated 
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
 
 crew_fruit_counts <- full_character_df %>%
   filter(!is.na(devil_fruit), !is.na(crew_name)) %>%   # ← this removes NA
@@ -391,47 +429,19 @@ ggplot(crew_fruit_counts, aes(x = reorder(crew_name, n), y = n, fill = n)) +
   scale_fill_gradient(low = "lightyellow", high = "orange") 
 ```
 
-What percentage of characters possess a Devil Fruit? 
-```{r}
 
 
-library(dplyr)
-library(ggplot2)
 
-full_character_df %>%
-  mutate(has_fruit = ifelse(is.na(devil_fruit), "No Fruit", "Has Fruit")) %>%
-  count(has_fruit) %>%
-  ggplot(aes(x = "", y = n, fill = has_fruit)) +
-  geom_col(width = 1) +
-  coord_polar(theta = "y") +
-  scale_fill_manual(values = c("Has Fruit" = "darkorchid", "No Fruit" = "slateblue")) +
-  labs(
-    title = "Characters with vs Without Devil Fruits",
-    fill = "Category"
-  ) +
-  theme_void()
-```
+## Do Devil Fruits Affect Bounty?
+- Devil Fruits provide strong abilites
+- Bounties reflect danger and influence 
+- Do these two relate?
 
-```{r}
-library(dplyr)
-library(ggplot2)
-
-full_character_df %>%
-  mutate(has_fruit = ifelse(is.na(devil_fruit), "No Fruit", "Has Fruit")) %>%
-  count(has_fruit) %>%
-  ggplot(aes(x = has_fruit, y = n, fill = has_fruit)) +
-  geom_col() +
-  scale_fill_manual(values = c("Has Fruit" = "darkorchid", "No Fruit" = "slateblue")) +
-  geom_text(aes(label = n), vjust = -0.3) +
-  labs(
-    title = "Characters with vs Without Devil Fruits",
-    x = "Category",
-    y = "Number of Characters",
-    fill = "Category"
-  ) 
-```
-Do characters with Devil Fruits tend to have higher bounties than those without?
-```{r}
+## Do Devil Fruit users have higher bounties?
+- Compares bounty distribution between groups 
+- Median bounty is higher for devil fruit users 
+- Some non-users still have high bounties (outliers)
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
 library(dplyr)
 library(ggplot2)
 
@@ -450,12 +460,13 @@ ggplot(bounty_df, aes(x = has_fruit, y = bounty, fill = has_fruit)) +
     y = "Bounty (log scale)"
   ) 
 ```
-- Compares bounty distribution between groups 
--Median bounty is higher for devil fruit users 
-- Some non-users still have high bounties (outliers)
 
-What is the average bounty of Devil Fruit users vs non-users?
-```{r}
+
+## Average bounty of Devil Fruit users vs non-users?
+- Comparing average bounty between the two groups 
+- devil fruit users have a higher bounty average
+-further supports data seen in the box plot
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
 library(dplyr)
 library(ggplot2)
 
@@ -475,13 +486,13 @@ full_character_df %>%
   ) +
   theme(legend.position = "none")
 ```
-- Comparing average bounty between the two groups 
-- devil fruit users have a higher bounty average
--further supports data seen in the box plot
 
-Who are the highest bounty characters without Devil Fruits?
 
-```{r}
+## Highest bounty characters without Devil Fruits?
+- Some non-Devil Fruit users still have high bounties 
+- Strength and influence are not limited to Devil Fruit powers 
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
 library(ggplot2)
 
 full_character_df %>%
@@ -507,19 +518,22 @@ full_character_df %>%
   theme(legend.position = "none")
 
 ```
-- Some non-Devil Fruit users still have high bounties 
-- Strength and influence are not limited to Devil Fruit powers 
 
 
 
 
 
 
-## Islands
 
-How many islands are in East Blue compared to the North Blue?
+## Islands by Region
+- Compares islands across regions 
+- Shows which seas/regions have the most islands in the dataset
 
-```{r}
+## East Blue vs North Blue
+- Focuses on two secific regions 
+- Makes the comparison easier to see
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
 library(dplyr)
 library(ggplot2)
 locations_df
@@ -538,8 +552,11 @@ ggplot(blue_counts, aes(x = sea_name, y = n)) +
   )
 ```
 
-How many islands are in each region? 
-```{r}
+## Island  Distribution by Region
+- Comapres number of islands across regions 
+Some regions appear more frequently in the dataset
+- Aligns with anime/manga
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
 locations_df %>%
   filter(sea_name != "", !is.na(sea_name)) %>%   # remove empty + real NA
   count(sea_name) %>%
@@ -552,13 +569,10 @@ locations_df %>%
     title = "How Many Islands Are in Each Region?",
     x = "Region",
     y = "Number of Islands"
-  )
+  ) 
 ```
 
 ## Characters
-
-How many members of Big Mom's crew are officers and lieutenants?
-
 
 How many members are in Strawhats?
 ```{r}
@@ -570,6 +584,26 @@ characters_with_crews %>%
 
 How many members are in the Big Mom crew? (comparing to other crews)
 ```{r}
+library(dplyr)
+library(ggplot2)
+
+crew_counts <- full_character_df %>%
+  filter(!is.na(crew_name)) %>%
+  count(crew_name, sort = TRUE) %>%
+  filter(n > 6)
+
+ggplot(crew_counts, aes(x = reorder(crew_name, n), y = n,
+                        fill = n)) +
+  geom_col() +
+  geom_text(aes(label = n), hjust = -0.2) +
+  coord_flip() +
+  scale_fill_gradient(low = "plum1", high = "magenta3") +
+  labs(
+    title = "Crew Size Comparison (Crews with More Than 6 Members)",
+    x = "Crew",
+    y = "Number of Members"
+  )+
+  theme(legend.position = "none")
 
 ```
 
@@ -578,7 +612,7 @@ How many characters are captains of their crew?
 
 characters_with_crews %>%
   filter(job == "Captain") %>%
-  summarise(total_captains = n())
+  summarise(total_captains = n()) 
 
 ```
 
