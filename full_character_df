@@ -1,0 +1,789 @@
+"","id","name","size","age","bounty","job","status","crew_id","crew_name","crew_status","crew_number","crew_total_prime","is_yonko","devil_fruit","description","type"
+"1",1,"Monkey D Luffy",174,19,3e+09,"Captain","vivant",1,"Straw Hat Pirates","assets",10,3161000100,TRUE,"Hito Hito no Mi, Nika model","Hito Hito no Mi, Nika model, is a Mythical Zoan Demon Fruit that enables its user to transform into Nika, the ""God of the Sun"".","Zoan Mythique"
+"2",2,"Roronoa Zoro",181,21,1.101e+09,"Right-hand man","living",1,"Straw Hat Pirates","assets",10,3161000100,TRUE,NA,NA,NA
+"3",3,"Nami",170,20,3.66e+08,"Navigator","living",1,"Straw Hat Pirates","assets",10,3161000100,TRUE,NA,NA,NA
+"4",4,"Usopp",176,19,5e+08,"Sniper","living",1,"Straw Hat Pirates","assets",10,3161000100,TRUE,NA,NA,NA
+"5",5,"Sanji",180,21,1.032e+09,"Cook","living",1,"Straw Hat Pirates","assets",10,3161000100,TRUE,NA,NA,NA
+"6",6,"Tony-Tony Chopper",90,17,1000,"Doctor","living",1,"Straw Hat Pirates","assets",10,3161000100,TRUE,"Fruit of the Human","whoever eats it becomes half-human. As the user was originally a reindeer, he acquired an intelligence that enabled him to acquire a vast amount of knowledge. Before the ellipse, Chopper had to take a Rumble-Ball to get more transformations for 3 minutes1 (if after 3 minutes he took another Rumble-Ball, he no longer controlled his transformations, and if he took a 3rd Rumble-Ball, he became a gigantic but unconscious monster, destroying enemies and allies alike). After the ellipse, he masters all transformations perfectly, and when he takes a Rumble-Ball he becomes the gigantic monster, but in control of himself.","Zoan"
+"7",7,"Nico Robin",188,30,9.3e+08,"Archaeologist","living",1,"Straw Hat Pirates","assets",10,3161000100,TRUE,"Fruit Des Éclosions","Allows the user to grow body parts (or even clones) anywhere, even on another person. He can assemble several copies of the same limb to create, for example, giant hands, or create clones of himself to deceive opponents.","Paramecia"
+"8",8,"Franky",240,36,3.94e+08,"Carpenter","living",1,"Straw Hat Pirates","assets",10,3161000100,TRUE,NA,NA,NA
+"9",9,"Brook",277,90,3.83e+08,"Musician","living",1,"Straw Hat Pirates","assets",10,3161000100,TRUE,"Fruit of the Resurrection","Allows the owner to come back to life after death (this power only works once). Its possessor can take his soul out of his body, take it through walls and return it to his body as he wishes. Similarly, if his head is cut off, his fruit enables him to bring it back to his shoulders by sheer force of will (the soul is still connected to his body). If his power is combined with a sword, he can freeze any enemy he touches, thanks to the icy cold of the depths that his soul brings to his sword.","Paramecia"
+"10",10,"Jinbe",301,46,1.1e+09,"Helmsman","living",1,"Straw Hat Pirates","assets",10,3161000100,TRUE,NA,NA,NA
+"11",11,"Zeus",232,NA,NA,"Nami Arme","living",1,"Straw Hat Pirates","assets",10,3161000100,TRUE,NA,NA,NA
+"12",12,"Cavendish",208,26,3.3e+08,"Captain","living",87,"Straw Hat Grand Fleet","actif",5640,1022000,FALSE,NA,NA,NA
+"13",13,"Suleiman",240,40,6.7e+08,"Fighter","living",87,"Straw Hat Grand Fleet","actif",5640,1022000,FALSE,NA,NA,NA
+"14",14,"Bartolomeo",220,24,2e+08,"Captain","living",87,"Straw Hat Grand Fleet","actif",5640,1022000,FALSE,"Fruit of the Barrier","Enables its user to generate almost invisible barriers to deflect or block any attack. These barriers can take on a wide range of shapes (racket, stairs, etc.).","Paramecia"
+"15",15,"Gambia",NA,NA,6.7e+08,"Advisor","living",87,"Straw Hat Grand Fleet","actif",5640,1022000,FALSE,NA,NA,NA
+"16",16,"Sai",242,28,2.1e+08,"13th Chief Commander","living",87,"Straw Hat Grand Fleet","actif",5640,1022000,FALSE,NA,NA,NA
+"17",17,"Boo",NA,NA,NA,"second-in-command","living",87,"Straw Hat Grand Fleet","actif",5640,1022000,FALSE,NA,NA,NA
+"18",18,"Baby 5",181,24,NA,"","living",87,"Straw Hat Grand Fleet","actif",5640,1022000,FALSE,"Armo-Fruit","Enables the user to transform body parts into weapons of all kinds (revolver, cannon, saber, missile...).","Paramecia"
+"19",19,"Ideo",225,22,NA,"Captain","living",87,"Straw Hat Grand Fleet","actif",5640,1022000,FALSE,NA,NA,NA
+"20",20,"Blue Gilly",314,24,NA,"","living",87,"Straw Hat Grand Fleet","actif",5640,1022000,FALSE,NA,NA,NA
+"21",21,"Abdullah",NA,NA,NA,"","living",87,"Straw Hat Grand Fleet","actif",5640,1022000,FALSE,NA,NA,NA
+"22",22,"Jeet",NA,NA,NA,"","living",87,"Straw Hat Grand Fleet","actif",5640,1022000,FALSE,NA,NA,NA
+"23",23,"Léo",23,25,NA,"Captain","living",87,"Straw Hat Grand Fleet","actif",5640,1022000,FALSE,"Fruit de la Couture","Allows the user to sew and unstitch anything on flat surfaces. These seams are strong enough to hold people 'hooked' to the floor.","Paramecia"
+"24",24,"Kabu",NA,NA,NA,"","living",87,"Straw Hat Grand Fleet","actif",5640,1022000,FALSE,"Fruit of the Insect, Scarab-Rhinoceros version","whoever eats it can transform into a rhinoceros beetle. It enables the user to fly.","Zoan"
+"25",25,"Bee Anne",NA,NA,NA,"","living",87,"Straw Hat Grand Fleet","actif",5640,1022000,FALSE,"Fruit of the Insect, Wasp version","whoever eats it can turn into a wasp. It enables the user to fly.","Zoan"
+"26",26,"Hajrudin",NA,81,NA,"Captain","living",87,"Straw Hat Grand Fleet","actif",5640,1022000,FALSE,NA,NA,NA
+"27",27,"Stansen",NA,NA,NA,"Carpenter","living",87,"Straw Hat Grand Fleet","actif",5640,1022000,FALSE,NA,NA,NA
+"28",28,"Road",NA,63,NA,"Browser","living",87,"Straw Hat Grand Fleet","actif",5640,1022000,FALSE,NA,NA,NA
+"29",29,"Goldberg",NA,63,NA,"Cook","living",87,"Straw Hat Grand Fleet","actif",5640,1022000,FALSE,NA,NA,NA
+"30",30,"Gerd",NA,75,NA,"Doctor","living",87,"Straw Hat Grand Fleet","actif",5640,1022000,FALSE,NA,NA,NA
+"31",31,"Orlumbus",480,42,1.48e+08,"Admiral","living",87,"Straw Hat Grand Fleet","actif",5640,1022000,FALSE,NA,NA,NA
+"32",32,"Baggy / Le Clown",192,39,1.5e+08,"Chairman","living",88,"Buggy's Delivery","actif",22,3.44e+08,FALSE,"Fruit of Fragmentation","Allows you to separate your body into several parts and levitate them. The parts can fly in an area 200 meters in diameter around the feet. The feet, on the other hand, cannot levitate (although they can walk). This power makes the user immune to sharp weapons. Any part of the user will nevertheless remain sensitive to the pain felt by other detached body parts.","Paramecia"
+"33",33,"Alvida",198,27,5e+06,"","living",88,"Buggy's Delivery","actif",22,3.44e+08,FALSE,"Fruit Glisse-Glisse","Smoothes the user's skin, making it more beautiful. What's more, the skin becomes ultra-slick, deflecting objects touching the body.","Paramecia"
+"34",34,"Galdino",179,37,2.4e+07,"","living",88,"Buggy's Delivery","actif",22,3.44e+08,FALSE,"Ciro-Fruit","Produces a fast-hardening wax that can be molded into any shape. This wax becomes very resistant when hardened, but remains just as vulnerable to heat as normal wax. Note that it can block most poisons.","Paramecia"
+"35",35,"Morge",197,29,NA,"","living",88,"Buggy's Delivery","actif",22,3.44e+08,FALSE,NA,NA,NA
+"36",36,"Cabaji",208,34,NA,"","living",88,"Buggy's Delivery","actif",22,3.44e+08,FALSE,NA,NA,NA
+"37",37,"Kuro",207,35,1.6e+07,"Captain","living",7,"The Black Cat crew","unknown",5,3.2e+07,FALSE,NA,NA,NA
+"38",38,"Sham",201,23,7e+06,"Officer","living",7,"The Black Cat crew","unknown",5,3.2e+07,FALSE,NA,NA,NA
+"39",39,"Buchi",216,23,7e+06,"Officer","living",7,"The Black Cat crew","unknown",5,3.2e+07,FALSE,NA,NA,NA
+"40",40,"Krieg / Don Krieg",243,44,1.7e+07,"Captain","living",8,"Don Krieg's Pirate Armada","unknown",6,2.9e+07,FALSE,NA,NA,NA
+"41",41,"Gyn",186,27,1.2e+07,"Vice-Admiral","living",8,"Don Krieg's Pirate Armada","unknown",6,2.9e+07,FALSE,NA,NA,NA
+"42",42,"Pearl",239,25,NA,"Captain (2nd Battalion)","living",8,"Don Krieg's Pirate Armada","unknown",6,2.9e+07,FALSE,NA,NA,NA
+"43",43,"Montblanc Cricket",242,43,2.5e+07,"Commander-in-Chief","living",17,"Primate League","unknown",4,8.4e+07,FALSE,NA,NA,NA
+"44",44,"Masira",345,25,2.3e+07,"","living",17,"Primate League","unknown",4,8.4e+07,FALSE,NA,NA,NA
+"45",45,"Shojo",351,27,3.6e+07,"","living",17,"Primate League","unknown",4,8.4e+07,FALSE,NA,NA,NA
+"46",46,"Foxy",180,38,2.4e+07,"Captain","living",24,"The Foxy crew","assets",500,2.4e+07,FALSE,"Ramollo fruit","Emits a ray that slows down the movement of any mass for 30 seconds. This ray can be reflected by a mirror, and the user is not immune to its effects.","Paramecia"
+"47",47,"Porché",NA,NA,NA,"Fighter","living",24,"The Foxy crew","assets",500,2.4e+07,FALSE,NA,NA,NA
+"48",48,"Hamburg",NA,NA,NA,"Fighter","living",24,"The Foxy crew","assets",500,2.4e+07,FALSE,NA,NA,NA
+"49",49,"Gecko Moria",692,50,3.2e+08,"Captain","living",28,"Thriller Bark","unknown",NA,NA,FALSE,"Fruit of the Shadow","Allows its user to control shadows. He can cut the shadows of anyone with a pair of scissors, and the shadows thus removed can be locked into inert bodies, giving rise to zombies possessing the combat techniques of the person to whom the shadow belonged. If shadows are enclosed in the body of a living being, they can only remain for a short time, depending on the latter's mental strength. For example, its user has consumed up to 1000 of them. It should also be noted that the user can use his own shadow and make it tangible. He can therefore use his shadow to teleport or protect himself from physical attacks.","Paramecia"
+"50",50,"Hogback",223,47,NA,"Mysterious Four","living",28,"Thriller Bark","unknown",NA,NA,FALSE,NA,NA,NA
+"51",51,"Absalom",195,36,NA,"Mysterious Four","deceased",28,"Thriller Bark","unknown",NA,NA,FALSE,"Fruit of Invisibility","Enables the user to make himself and everything he touches (living beings, firearms, etc.) invisible.","Paramecia"
+"52",52,"Perona",160,25,NA,"Mysterious Four","living",28,"Thriller Bark","unknown",NA,NA,FALSE,"Fruit of Ectoplasm","Allows its user to create ghosts with various abilities, such as undermining morale or exploding. It also allows its user to make himself intangible: the user can float in the air and pass through walls, but has the great disadvantage of leaving his inert body defenseless.","Paramecia"
+"53",53,"Laura",215,26,2.4e+07,"Captain","living",29,"The crew of the Rolling","unknown",3,NA,FALSE,NA,NA,NA
+"54",54,"Trafalgar D. Water Law",191,26,5e+08,"Captain","living",32,"The Hearth crew","assets",11,5e+08,FALSE,"Fruit of the Scalpel","This fruit allows the eater to create a sphere in which he can do anything from interchanging one thing with another to extending the range of his sword strokes. It can also cut up its victims without killing them, or cancel the gravity of anything in the sphere. Its user can even remove a person's heart while leaving them alive, or swap the personalities of several people. This fruit is considered the ""ultimate demon fruit"" because of its unique ability to grant another person eternal youth in exchange for the user's life.","Paramecia"
+"55",55,"Bepo",240,22,500,"Browser","living",32,"The Hearth crew","assets",11,5e+08,FALSE,NA,NA,NA
+"56",56,"Jean Bart",NA,NA,NA,"","living",32,"The Hearth crew","assets",11,5e+08,FALSE,NA,NA,NA
+"57",57,"Shachi",NA,27,NA,"","living",32,"The Hearth crew","assets",11,5e+08,FALSE,NA,NA,NA
+"58",58,"Pingouin",NA,28,NA,"","living",32,"The Hearth crew","assets",11,5e+08,FALSE,NA,NA,NA
+"59",59,"Eustass Kidd",205,23,4.7e+08,"Captain","living",33,"The Kid crew","assets",22,6.7e+08,FALSE,"Magnéto-Fruit","Allows the user to manipulate magnetic forces, attracting metals to him or her but also repelling them. It can also create a metal golem when a large quantity is gathered.","Paramecia"
+"60",60,"Killer",195,27,2e+08,"Fighter","living",33,"The Kid crew","assets",22,6.7e+08,FALSE,NA,NA,NA
+"61",61,"Heat",NA,NA,NA,"Fighter","living",33,"The Kid crew","assets",22,6.7e+08,FALSE,NA,NA,NA
+"62",62,"Wire",NA,NA,NA,"Captain","living",33,"The Kid crew","assets",22,6.7e+08,FALSE,NA,NA,NA
+"63",63,"Capone Bege",166,42,3.5e+08,"Captain","living",38,"The Fire Tank crew","assets",7,4.85e+08,FALSE,"Fruit du Château","Allows the user to become a man-castle, with the following special features: anyone within a certain range of him (marked by a red zone) is miniaturized, and anyone who comes out is restored to normal size; the holder can create loopholes in his body to enable the besieged to ""defend the fortress"". The user's interior is made up of different rooms where members can live. The user can also miniaturize himself to join his guests, but leaves his physical body inert. He can replace his legs with a system of caterpillar tracks to move around more easily, or transform himself into a sort of armed, fortified golem that can serve as a refuge for his allies.","Paramecia"
+"64",64,"Vito",242,36,9.5e+07,"Advisor","living",38,"The Fire Tank crew","assets",7,4.85e+08,FALSE,NA,NA,NA
+"65",65,"Gotti",375,33,9e+07,"Assassin","living",38,"The Fire Tank crew","assets",7,4.85e+08,FALSE,NA,NA,NA
+"66",66,"Charlotte Chiffon",215,26,NA,"","living",38,"The Fire Tank crew","assets",7,4.85e+08,FALSE,NA,NA,NA
+"67",67,"Charlotte Pets",NA,1,NA,"","living",38,"The Fire Tank crew","assets",7,4.85e+08,FALSE,NA,NA,NA
+"68",68,"Jewelry Bonney",174,24,1.4e+08,"Captain","living",38,"The Fire Tank crew","assets",7,4.85e+08,FALSE,"Fruit of age","age manipulation
+aging / rejuvenation
+temporary biological alteration","Paramecia"
+"69",69,"Urouge",388,47,1.08e+08,"Captain","living",39,"The crew of Les Moines Dépravés","assets",5,1.08e+08,FALSE,NA,NA,NA
+"70",70,"Boa Hancock",191,31,8e+07,"Captain","living",41,"The Kuja Pirates crew","assets",14,1.6e+08,FALSE,"Passion fruit","Allows its possessor to use love as a lethal weapon through a variety of means. These techniques are designed to petrify people or objects, and are all heart-shaped (rays, piercing kisses, kicks, etc.). This power only works on people with an attraction (however slight) for the user. When the user reverses the process, the victim has no memory of the time spent petrified.","Paramecia"
+"71",71,"Boa Sandersonia",453,30,4e+07,"","living",41,"The Kuja Pirates crew","assets",14,1.6e+08,FALSE,"Fruit of the Reptile, Anaconda version","allows its user to transform himself into an anaconda as he pleases: the user can turn his hair into steel-hard snakes.","Zoan"
+"72",72,"Boa Marigold",432,28,4e+07,"","living",41,"The Kuja Pirates crew","assets",14,1.6e+08,FALSE,"Fruit of the Reptile, Cobra Royal version","allows the user to transform himself into a cobra as he pleases: he can cast deadly poison, can transform his hair into a snake and is impervious to fire.","Zoan"
+"73",73,"Margaret",178,18,NA,"","living",41,"The Kuja Pirates crew","assets",14,1.6e+08,FALSE,NA,NA,NA
+"74",74,"Shiki",NA,NA,NA,"Admiral","living",45,"The crew of the Lion d'Or","unknown",NA,NA,FALSE,"Floating Fruit","It enables its user to lift objects by controlling gravity. Since its user has swords for legs, he can also fly. (Although this fruit appeared in a movie, its use was demonstrated in chapter 0 of One Piece explaining Shiki's escape from Impel Down prison).","Paramecia"
+"75",75,"Indigo",NA,NA,NA,"","living",45,"The crew of the Lion d'Or","unknown",NA,NA,FALSE,NA,NA,NA
+"76",76,"Caribou",228,32,2.1e+08,"Co-Captain","living",49,"The Caribou crew","unknown",4,4e+08,FALSE,"Fruit du Marais","the body of the eater turns to mud and becomes a living swamp. He can create bottomless swamps to prevent his victims from escaping: the more his victims struggle, the deeper they sink. Thanks to this principle, he can enclose them in his body while retaining his original size. It also allows him to keep weapons inside his body, such as a machine gun or a scythe, and to draw them out for use when needed.","Logia"
+"77",77,"Coribou",250,29,1.9e+08,"Co-Captain","living",49,"The Caribou crew","unknown",4,4e+08,FALSE,NA,NA,NA
+"78",78,"Ficher Tiger",4520,48,2.3e+08,"Captain","deceased",26,"The Sun Pirates crew","assets",17,NA,FALSE,NA,NA,NA
+"79",79,"Aladdin",627,46,NA,"Vice-Captain","living",26,"The Sun Pirates crew","assets",17,NA,FALSE,NA,NA,NA
+"80",80,"Charlotte Praliné",800,29,NA,"","living",26,"The Sun Pirates crew","assets",17,NA,FALSE,NA,NA,NA
+"81",81,"Dracule Mihawk",198,43,NA,"","living",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"82",82,"Crocodile",253,46,8.1e+07,"","living",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"83",83,"Das Bones",212,31,7.5e+07,"","living",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"84",84,"Edward Weeble",680,35,4.8e+08,"","living",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"85",85,"Shanks",199,39,4048900000,"Captain","living",2,"Red Hair Pirates","assets",10,4142900000,TRUE,NA,NA,NA
+"86",86,"Ben Beckmann",206,50,NA,"Vice-Captain","living",2,"Red Hair Pirates","assets",10,4142900000,TRUE,NA,NA,NA
+"87",87,"Lucky Roo",241,35,NA,"Lieutenant","living",2,"Red Hair Pirates","assets",10,4142900000,TRUE,NA,NA,NA
+"88",88,"Yassop",183,47,NA,"Lieutenant","living",2,"Red Hair Pirates","assets",10,4142900000,TRUE,NA,NA,NA
+"89",89,"Limejuice",NA,NA,NA,"Lieutenant","living",2,"Red Hair Pirates","assets",10,4142900000,TRUE,NA,NA,NA
+"90",90,"Bonk Punch",NA,NA,NA,"Lieutenant","living",2,"Red Hair Pirates","assets",10,4142900000,TRUE,NA,NA,NA
+"91",91,"Monster",NA,NA,NA,"Lieutenant","living",2,"Red Hair Pirates","assets",10,4142900000,TRUE,NA,NA,NA
+"92",92,"Building Snake",NA,NA,NA,"Lieutenant","living",2,"Red Hair Pirates","assets",10,4142900000,TRUE,NA,NA,NA
+"93",93,"Hongo",NA,NA,NA,"Lieutenant","living",2,"Red Hair Pirates","assets",10,4142900000,TRUE,NA,NA,NA
+"94",94,"Howling Dab",NA,NA,NA,"Lieutenant","living",2,"Red Hair Pirates","assets",10,4142900000,TRUE,NA,NA,NA
+"95",95,"Rockstar",NA,NA,9.4e+07,"","living",2,"Red Hair Pirates","assets",10,4142900000,TRUE,NA,NA,NA
+"96",96,"Charlotte Linlin / Big Mom",880,68,4.388e+09,"Captain","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,"Fruit of Souls","Allows you to manipulate the souls of human beings as you wish. The user can introduce a soul into an object or animal to bring it to life and humanize it, i.e. give it consciousness and the gift of speech. These beings are called 'Homies'. The user can also divide his or her own soul into fragments that live on as avatars of the fruit eater. The main role of these avatars is to harvest fragments of life from living beings and redistribute them to their owners. People with no fear of death or psychic powers are more resistant to this fruit.","Paramecia"
+"97",97,"Charlotte Dent-de-chien",509,48,1.057e+09,"General Sucré","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,"Glutinous Rice Fruit","Allows the user to generate glutinous rice at will. This allows the user to block anyone's attacks and trap them in a large quantity of glutinous rice. What's more, it has several similarities with the Gum Gum fruit, such as elongating limbs and blocking all gunfire. However, the substance dissolves after receiving a large quantity of water. It's a special Paramecia.","Paramecia"
+"98",98,"Charlotte Smoothie",464,35,9.32e+08,"General Sucré","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,"Horse Fruit","whoever eats it becomes half-horse. Since its user is a bird, this has turned him into a half-bird, half-horse creature. This transforms him into a kind of pegasus.","Zoan"
+"99",99,"Charlotte Cracker",307,45,8.6e+08,"General Sucré","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,"Cookie Fruit","Allows the user to produce and manipulate cookies at will. The user can cover himself in cookies to create an alter-ego different from himself, and create a multitude of copies of the same alter-ego. Cookies can be rendered ineffective by the use of water, making them easier for enemies to eat.","Paramecia"
+"100",100,"Charlotte Slurp",333,50,7e+08,"Lieutenant","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,"Fruit de la Léchouille","Allows the user to turn objects into sweets and then lick them off. It can also turn living creatures into sweets, killing them in the process. In addition, the user can create complex objects such as escalators with the same functions as their 'real' versions. On the other hand, sweets can melt after a certain period of time due to heat or fire, and can also be eaten.","Paramecia"
+"101",101,"Charlotte Daifuku",489,48,3e+08,"Lieutenant","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,"Fruit of the Lamp","Enables the user to summon a powerful genie from his body and attack opponents with it. This genie is armed with a halberd.","Paramecia"
+"102",102,"Charlotte Oven",492,48,3e+08,"Lieutenant","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,"Fruit of Heat","Allows the user to heat body parts and transfer heat to objects. The heat generated by the user makes him/her more resistant to edged weapons.","Paramecia"
+"103",103,"Charlotte Amande",NA,47,NA,"Lieutenant","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"104",104,"Charlotte Opéra",NA,46,NA,"Lieutenant","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,"Fruit de la Crème","Allows the user to produce and manipulate cream at will.","Paramecia"
+"105",105,"Charlotte Brûlée",350,43,NA,"Lieutenant","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,"Fruit of the Mirror","Allows the user to repeat the gestures of opponents and reflect their attacks. It is also possible to reflect people onto animals. Living beings can be captured in the mirrors and find themselves in a world where the mirrors are merely access points to that world. These mirrors are sources of information for the user and others currently in the mirror world, following questions that may be asked by them (e.g., communicating a person's position, etc.).","Paramecia"
+"106",106,"Charlotte Mont d’Or",260,38,1.2e+08,"Lieutenant","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,"Fruit of the Book","Allows the user to manipulate books at will, creating dimensions within the book's pages to trap objects or living beings. However, burning the books will free those trapped inside.","Paramecia"
+"107",107,"Charlotte Galette",NA,31,NA,"Lieutenant","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,"Butter Fruit","Allows the user to produce and manipulate butter at will.","Paramecia"
+"108",108,"Charlotte Snack",NA,30,6e+08,"Lieutenant","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"109",109,"Charlotte Pudding",166,16,NA,"Lieutenant","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,"Fruit of Memories","Allows the user to extract a person's memory in film format. In this way, he can manipulate the person's memory by subtracting unwanted memories and/or inserting memories previously taken from other victims. When certain people become amnesiac, the user can make them temporarily recover their memories.","Paramecia"
+"110",110,"Charlotte Flampée",170,15,NA,"Lieutenant","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"111",111,"Charlotte Compote",NA,49,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"112",112,"Charlotte Mondé",NA,47,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"113",113,"Charlotte Hachée",NA,47,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"114",114,"Charlotte Effilée",NA,47,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"115",115,"Charlotte Counter",NA,46,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"116",116,"Charlotte Cadenza",NA,46,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"117",117,"Charlotte Cabaletta",NA,46,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"118",118,"Charlotte Gala",NA,46,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"119",119,"Charlotte Angel",NA,45,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"120",120,"Charlotte Crème",NA,45,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"121",121,"Charlotte Zuccoto",NA,44,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"122",122,"Charlotte Broyée",NA,43,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"123",123,"Charlotte Nusstorte",NA,42,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"124",124,"Charlotte Basskarte",NA,42,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"125",125,"Charlotte Dosmarché",NA,42,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"126",126,"Charlotte Noisette",NA,41,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"127",127,"Charlotte Moscato",NA,40,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"128",128,"Charlotte Mash",NA,40,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"129",129,"Charlotte Corn Starch",NA,40,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"130",130,"Charlotte Compo",NA,39,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"131",131,"Charlotte Laurin",NA,39,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"132",132,"Charlotte Mozart",NA,37,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"133",133,"Charlotte Marnier",NA,37,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"134",134,"Charlotte High-Fat",NA,36,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"135",135,"Charlotte Tablet",NA,36,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"136",136,"Charlotte Citron",NA,35,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"137",137,"Charlotte Cannelle",NA,35,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"138",138,"Charlotte Saint-Marc",NA,34,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"139",139,"Charlotte Basans",NA,33,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"140",140,"Charlotte Mélisée",NA,33,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"141",141,"Charlotte Dacquoise",NA,32,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"142",142,"Charlotte Poire",NA,31,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"143",143,"Charlotte Bavarois",NA,30,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"144",144,"Charlotte Prim",NA,29,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"145",145,"Charlotte Kanten",NA,28,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"146",146,"Charlotte Kato",NA,28,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"147",147,"Charlotte Montb",NA,28,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"148",148,"Charlotte Chiboust",NA,27,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"149",149,"Charlotte Mobile",NA,25,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"150",150,"Charlotte Marble",NA,25,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"151",151,"Charlotte Mucre",NA,25,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"152",152,"Charlotte Mapple",NA,25,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"153",153,"Charlotte Brownie",NA,24,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"154",154,"Charlotte Joconde",NA,23,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"155",155,"Charlotte Raisin",NA,22,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"156",156,"Charlotte Panna",NA,21,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"157",157,"Charlotte Mascarpone",NA,20,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"158",158,"Charlotte Joscarpone",NA,20,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"159",159,"Charlotte Yu Yuan",NA,19,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"160",160,"Charlotte Newichi",NA,18,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"161",161,"Charlotte Newji",NA,18,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"162",162,"Charlotte Newsan",NA,18,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"163",163,"Charlotte Newshi",NA,18,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,"Fruit of the Mix","Allows the user to merge with other people.","Paramecia"
+"164",164,"Charlotte Newgo",NA,18,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"165",165,"Charlotte Muscade",NA,18,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"166",166,"Charlotte Muscadia",NA,18,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"167",167,"Charlotte Muscadelle",NA,18,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"168",168,"Charlotte Muscadine",NA,18,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"169",169,"Charlotte Muscadette",NA,18,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"170",170,"Charlotte Nougat",NA,17,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"171",171,"Charlotte Anglais",NA,14,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"172",172,"Charlotte Wafers",NA,13,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"173",173,"Charlotte Wiro",NA,12,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"174",174,"Charlotte De-Chat",NA,11,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"175",175,"Charlotte Normande",NA,10,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"176",176,"Charlotte Dolce",NA,9,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"177",177,"Charlotte Dragée",NA,9,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"178",178,"Charlotte Anana",NA,8,NA,"Officer","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"179",179,"Pekoms",232,27,3.3e+08,"Fighter","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,"Turtle Fruit","whoever eats it can transform into a turtle with an indestructible shell. As strong as diamond, it protects its user from firearms and collapsing buildings, among other hazards.","Zoan"
+"180",180,"Delœuf",301,46,4.29e+08,"Fighter","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,"Fruit of the Egg","allows the user to transform his body composition into an egg. Each time it is seriously injured, the user regenerates into a more and more accomplished form of chicken, exponentially increasing its physical capacities.","Zoan"
+"181",181,"Boddin",NA,NA,1.55e+08,"Fighter","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"182",182,"Streusen",140,92,NA,"Cook","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,"Fruit of the Cook","Allows the user to transform natural objects into ingredients for subsequent consumption.","Paramecia"
+"183",183,"Prométhée",239,NA,NA,"Homie","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"184",184,"Napoléon",NA,NA,NA,"Homie","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"185",185,"Héra",NA,NA,NA,"Homie","living",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"186",186,"Kingbaum",NA,NA,NA,"Homie","deceased",53,"Big Mom's crew","assets",NA,11121500000,TRUE,NA,NA,NA
+"187",187,"Kaido",710,59,4611100000,"Captain","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,"Fruit of the Fish, Azure Dragon version","whoever eats it can transform into an azure dragon.","Zoan Mythique"
+"188",188,"King",613,47,1.39e+09,"Superstar","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,"Fruit of the Dinosaur, Pteranodon version","whoever eats it can turn into a pteranodon.","Zoan Antique"
+"189",189,"Queen",612,56,1.32e+09,"Superstar","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,"Fruit of the Dinosaur, Brachiosaurus version","whoever eats it can turn into a brachiosaurus.","Zoan Antique"
+"190",190,"Jack",730,28,1e+09,"Superstar","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,"Fruit of the Pachyderm, Mammoth version","whoever eats it can turn into a mammoth. It increases the strength and length of its owner in an exceptional way. The hardness of its skin also gives it a certain resistance to physical attack.","Zoan Antique"
+"191",191,"Page One",171,20,2.9e+08,"Tobi Roppo","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,"Fruit of the Dinosaur, Spinosaurus version","whoever eats it can turn into a spinosaurus.","Zoan Antique"
+"192",192,"Ulti",173,22,4e+08,"Tobi Roppo","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,"Fruit of the Dinosaur, Pachycephalosaurus version","whoever eats it can turn into a pachycephalosaurus.","Zoan Antique"
+"193",193,"Who’s Who",336,38,5.46e+08,"Tobi Roppo","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,"Fruit du Félin, saber-toothed tiger version","whoever eats it can turn into a phoenix. It can regenerate and heal the wounds of other living beings.","Zoan Mythique"
+"194",194,"Black Maria",820,29,4.8e+08,"Tobi Roppo","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,"Spider fruit, Rosamygale grauvogeli version","whoever eats it can turn into a rosamygale grauvogeli.","Zoan Antique"
+"195",195,"Sasaki",318,34,4.72e+08,"Tobi Roppo","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,"Fruit of the Dinosaur, Triceratops version","whoever eats it can turn into a triceratops.","Zoan Antique"
+"196",196,"Sheep’s Head",293,24,NA,"Vedette","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,"Sheep SMILE","it transforms you into a sheep.","Smile"
+"197",197,"Basil Hawkins",210,31,3.2e+08,"Vedette","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,"Fruit de la Paille","Allows the user to produce and manipulate straw at will. It can also be used to redirect damage.","Paramecia"
+"198",198,"Holdem",312,30,NA,"Vedette","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,"Lion SMILE","it transforms you into a lion.","Smile"
+"199",199,"Speed",298,24,NA,"Vedette","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,"Horse SMILE","it transforms you into a horse.","Smile"
+"200",200,"Trouduc",NA,NA,NA,"Vedette","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,"SMILE of the scorpion","it transforms you into a scorpion.","Smile"
+"201",201,"Pouilleux",NA,NA,NA,"Vedette","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,"SMILE of the elephant","it transforms you into an elephant.","Smile"
+"202",202,"Solitaire",NA,NA,NA,"Vedette","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,"Monkey SMILE","it transforms you into a monkey.","Smile"
+"203",203,"Bao Huang",NA,NA,NA,"Vedette","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,"Flying Squirrel SMILE","it transforms into a flying squirrel.","Smile"
+"204",204,"Ginrummy",NA,NA,NA,"Vedette","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,NA,NA,NA
+"205",205,"Plouf",NA,NA,NA,"Vedette","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,"Hippopotamus SMILE","it transforms you into a hippopotamus.","Smile"
+"206",206,"Briscola",NA,NA,NA,"Vedette","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,"Gorilla SMILE","it transforms you into a gorilla","Smile"
+"207",207,"Fourtricks",NA,NA,NA,"Vedette","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,"SMILE du coq","it transforms you into a rooster","Smile"
+"208",208,"Hamlet",NA,NA,NA,"Vedette","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,"Giraffe SMILE","transforms into a giraffe","Smile"
+"209",209,"Mizerka",NA,NA,NA,"Vedette","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,"Gorilla SMILE","it transforms you into a gorilla","Smile"
+"210",210,"Poker",NA,NA,NA,"Vedette","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,"Rattlesnake SMILE","transforms into a rattlesnake","Smile"
+"211",211,"Batman",NA,NA,NA,"Gifters","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,"Bat SMILE","it transforms you into a bat.","Smile"
+"212",212,"Gazelleman",NA,NA,NA,"Gifters","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,"SMILE de gazelle","it transforms you into a gazelle.","Smile"
+"213",213,"Mouseman",NA,NA,NA,"Gifters","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,"Mouse SMILE","it transforms into a mouse.","Smile"
+"214",214,"Snakeman",NA,NA,NA,"Gifters","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,"SMILE of snake","it transforms you into a snake.","Smile"
+"215",215,"Rabitman",NA,NA,NA,"Gifters","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,"Rabbit SMILE","it transforms you into a rabbit.","Smile"
+"216",216,"Sarehebi",NA,NA,NA,"Gifters","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,"SMILE of snake","it transforms you into a snake.","Smile"
+"217",217,"Alpagaman",NA,NA,NA,"Gifters","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,"SMILE from alpaca","it transforms into an alpaca.","Smile"
+"218",218,"Tatouman",NA,NA,NA,"Gifters","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,"Armadillo SMILE","it transforms you into an armadillo.","Smile"
+"219",219,"Dachoman",NA,NA,NA,"Gifters","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,"Ostrich SMILE","it transforms you into an ostrich.","Smile"
+"220",220,"Tenjo-Sagari",NA,NA,NA,"Gifters","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,"SMILE of the white snake","it transforms you into a white snake.","Smile"
+"221",221,"Caimanlady",NA,NA,NA,"Gifters","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,"Caiman SMILE","it transforms you into a caiman","Smile"
+"222",222,"Nuré-Onna",NA,NA,NA,"Gifters","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,"SMILE of the scorpion","it transforms you into a scorpion.","Smile"
+"223",223,"Wa-Nyudo",NA,NA,NA,"Gifters","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,"Pug SMILE","transforms into a pug","Smile"
+"224",224,"Inbi",NA,NA,NA,"Numbers","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,NA,NA,NA
+"225",225,"Fuga",NA,NA,NA,"Numbers","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,NA,NA,NA
+"226",226,"Zanki",NA,NA,NA,"Numbers","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,NA,NA,NA
+"227",227,"Jaki",NA,NA,NA,"Numbers","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,NA,NA,NA
+"228",228,"Goki",NA,NA,NA,"Numbers","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,NA,NA,NA
+"229",229,"Rokki",NA,NA,NA,"Numbers","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,NA,NA,NA
+"230",230,"Nangi",NA,NA,NA,"Numbers","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,NA,NA,NA
+"231",231,"Hacha",NA,NA,NA,"Numbers","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,NA,NA,NA
+"232",232,"Kunyun",NA,NA,NA,"Numbers","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,NA,NA,NA
+"233",233,"Juki",NA,NA,NA,"Numbers","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,NA,NA,NA
+"234",234,"Fukurokuju",NA,NA,NA,"","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,NA,NA,NA
+"235",235,"Daikoku",NA,NA,NA,"Samurai","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,NA,NA,NA
+"236",236,"Hanzo",NA,NA,NA,"Samurai","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,NA,NA,NA
+"237",237,"Sarutobi",NA,NA,NA,"Samurai","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,NA,NA,NA
+"238",238,"Kazekage",NA,NA,NA,"Samurai","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,NA,NA,NA
+"239",239,"Jigoku Benten",NA,NA,NA,"Samurai","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,NA,NA,NA
+"240",240,"Fujin",NA,NA,NA,"Samurai","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,NA,NA,NA
+"241",241,"Raijin",NA,NA,NA,"Samurai","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,NA,NA,NA
+"242",242,"Bishamon",NA,NA,NA,"Samurai","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,NA,NA,NA
+"243",243,"Tohomé",NA,NA,NA,"Samurai","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,NA,NA,NA
+"244",244,"Yazaémon",NA,NA,NA,"Samurai","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,NA,NA,NA
+"245",245,"Hotei",NA,NA,NA,"Samurai","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,NA,NA,NA
+"246",246,"Scratchmen Apoo",NA,NA,NA,"Informer","living",44,"The Hundred Beasts crew","assets",100,11179100000,TRUE,"Fruit of the Sound","Enables the user to transform body parts into instruments and use them as weapons.","Paramecia"
+"247",247,"Marchall D. Teach / Barbe Noire",344,40,2247600000,"Pirate","living",22,"Blackbeard's crew","assets",10,2445800000,TRUE,"Fruit of Darkness","the body of the eater is transformed into darkness. It becomes capable of altering gravity so as to attract and absorb just about anything in a 'black hole' and then release it. It can also cancel the powers of other demon fruit users when it touches them. Moreover, it is the only Logia that cannot avoid physical blows, so its user becomes highly sensitive to pain. It can also absorb the power of its owner's demon fruit, as Marshall D. Teach will do with Whitebeard.","Logia"
+"248",248,"Jesus Burgess",355,29,2e+07,"Admiral ship's captain","living",22,"Blackbeard's crew","assets",10,2445800000,TRUE,"Fruit of strength","It's a fruit that allows the eater to acquire Herculean strength.","Paramecia"
+"249",249,"Shiliew",340,44,NA,"Commander 2nd Ship","living",22,"Blackbeard's crew","assets",10,2445800000,TRUE,"Fruit of Invisibility","Enables the user to make himself and everything he touches (living beings, firearms, etc.) invisible.","Paramecia"
+"250",250,"Van Auger",340,27,6.4e+07,"Commander 3rd Ship","living",22,"Blackbeard's crew","assets",10,2445800000,TRUE,"Fruit of teleportation","It's a demon fruit that allows the eater to teleport himself and anything else from one place to another.","Paramecia"
+"251",251,"Avalo Pizarro",505,42,NA,"Commander 4th Ship","living",22,"Blackbeard's crew","assets",10,2445800000,TRUE,"Island fruit","It's a demon fruit that allows its user to become one with an entire island, thus becoming an Island Man.","Paramecia"
+"252",252,"Lafitte",340,41,42200000,"Commander 5th Ship","living",22,"Blackbeard's crew","assets",10,2445800000,TRUE,NA,NA,NA
+"253",253,"Catarina Devon",361,36,NA,"Commander 6th Ship","living",22,"Blackbeard's crew","assets",10,2445800000,TRUE,"Fruit of the Canidae, Nine-tailed Fox version","whoever eats it can turn into a nine-tailed fox.","Zoan Mythique"
+"254",254,"Sanjuan Wolf",NA,99,NA,"Commander 7th Ship","living",22,"Blackbeard's crew","assets",10,2445800000,TRUE,"The fruit of gigantism","It's a demon fruit that allows its user to increase his size, making him a Gigantified Man.","Paramecia"
+"255",255,"Vasco Shot",573,38,NA,"Commander 8th Ship","living",22,"Blackbeard's crew","assets",10,2445800000,TRUE,"Fruit of the Gobbledygook","It's a demon fruit that allows its user to control alcohol, making him a Man-Alcohol.","Paramecia"
+"256",256,"Doc Q",NA,28,7.2e+07,"Commander 9th Ship","living",22,"Blackbeard's crew","assets",10,2445800000,TRUE,"Fruit of the disease","It's a demon fruit that allows the eater to create any form of contagious, virulent disease.","Paramecia"
+"257",257,"Barbe Rose",NA,NA,5.2e+07,"","living",22,"Blackbeard's crew","assets",10,2445800000,TRUE,NA,NA,NA
+"258",258,"Gol D. Roger",274,53,5564800000,"Captain","deceased",5,"The Pirates Roger crew","dissolved",30,5564800000,TRUE,NA,NA,NA
+"259",259,"Silvers Rayleigh",188,78,NA,"Right-hand man","living",5,"The Pirates Roger crew","dissolved",30,5564800000,TRUE,NA,NA,NA
+"260",260,"Scopper Gaban",NA,NA,NA,"Carpenter","living",5,"The Pirates Roger crew","dissolved",30,5564800000,TRUE,NA,NA,NA
+"261",261,"Seagull Guns Nozdon",NA,NA,NA,"","living",5,"The Pirates Roger crew","dissolved",30,5564800000,TRUE,NA,NA,NA
+"262",262,"Taro",NA,NA,NA,"","living",5,"The Pirates Roger crew","dissolved",30,5564800000,TRUE,NA,NA,NA
+"263",263,"Dringo",NA,NA,NA,"","living",5,"The Pirates Roger crew","dissolved",30,5564800000,TRUE,NA,NA,NA
+"264",264,"Sanjuan Wolf",NA,NA,NA,"","living",5,"The Pirates Roger crew","dissolved",30,5564800000,TRUE,NA,NA,NA
+"265",265,"Millet Pine",NA,NA,NA,"","living",5,"The Pirates Roger crew","dissolved",30,5564800000,TRUE,NA,NA,NA
+"266",266,"Ganryu",NA,NA,NA,"","living",5,"The Pirates Roger crew","dissolved",30,5564800000,TRUE,NA,NA,NA
+"267",267,"CB Galant",NA,NA,NA,"","living",5,"The Pirates Roger crew","dissolved",30,5564800000,TRUE,NA,NA,NA
+"268",268,"Donquino",NA,NA,NA,"","living",5,"The Pirates Roger crew","dissolved",30,5564800000,TRUE,NA,NA,NA
+"269",269,"Mr Momora",NA,NA,NA,"","living",5,"The Pirates Roger crew","dissolved",30,5564800000,TRUE,NA,NA,NA
+"270",270,"Moon Isaac Jr.",NA,NA,NA,"","living",5,"The Pirates Roger crew","dissolved",30,5564800000,TRUE,NA,NA,NA
+"271",271,"Yui",NA,NA,NA,"","living",5,"The Pirates Roger crew","dissolved",30,5564800000,TRUE,NA,NA,NA
+"272",272,"Rangram",NA,NA,NA,"","living",5,"The Pirates Roger crew","dissolved",30,5564800000,TRUE,NA,NA,NA
+"273",273,"Colonel Mugren",NA,NA,NA,"","living",5,"The Pirates Roger crew","dissolved",30,5564800000,TRUE,NA,NA,NA
+"274",274,"Max Marks",NA,NA,NA,"","living",5,"The Pirates Roger crew","dissolved",30,5564800000,TRUE,NA,NA,NA
+"275",275,"Spencer",NA,NA,NA,"","living",5,"The Pirates Roger crew","dissolved",30,5564800000,TRUE,NA,NA,NA
+"276",276,"Bankro",NA,NA,NA,"","living",5,"The Pirates Roger crew","dissolved",30,5564800000,TRUE,NA,NA,NA
+"277",277,"Blumarine",NA,NA,NA,"","living",5,"The Pirates Roger crew","dissolved",30,5564800000,TRUE,NA,NA,NA
+"278",278,"Elio",NA,NA,NA,"","living",5,"The Pirates Roger crew","dissolved",30,5564800000,TRUE,NA,NA,NA
+"279",279,"Rowing",NA,NA,NA,"","living",5,"The Pirates Roger crew","dissolved",30,5564800000,TRUE,NA,NA,NA
+"280",280,"Jacsonbaner",NA,NA,NA,"","living",5,"The Pirates Roger crew","dissolved",30,5564800000,TRUE,NA,NA,NA
+"281",281,"Yamon",NA,NA,NA,"","living",5,"The Pirates Roger crew","dissolved",30,5564800000,TRUE,NA,NA,NA
+"282",282,"Arlong",263,41,2e+07,"Captain","living",10,"The Arlong crew","unknown",10,4.25e+08,FALSE,NA,NA,NA
+"283",283,"Kuroobi",252,38,9e+06,"Lieutenant","living",10,"The Arlong crew","unknown",10,4.25e+08,FALSE,NA,NA,NA
+"284",284,"Smack",257,35,5500000,"Lieutenant","living",10,"The Arlong crew","unknown",10,4.25e+08,FALSE,NA,NA,NA
+"285",285,"Yorki",NA,NA,NA,"Captain","deceased",12,"The Rumbar crew","dissolved",5,3.3e+07,FALSE,NA,NA,NA
+"286",286,"Madaisky Mizuta",NA,NA,NA,"","deceased",12,"The Rumbar crew","dissolved",5,3.3e+07,FALSE,NA,NA,NA
+"287",287,"Mawaritovsky Mizuta",NA,NA,NA,"","deceased",12,"The Rumbar crew","dissolved",5,3.3e+07,FALSE,NA,NA,NA
+"288",288,"Sarquiss",228,27,3.8e+07,"","deceased",147,"Equipage de Bellamy","actif",NA,NA,FALSE,NA,NA,NA
+"289",289,"Edward Newgate / Barbe Blanche",666,72,5.046e+09,"Captain","deceased",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,"Fruit of Trembling","Enables the user to create seismic waves, causing earthquakes or cracks (even in the surrounding air) that destroy anything within their zone of effect. The strength of these waves varies according to the user's desire, and they can be disproportionately large. The power of this fruit is so great that it can also cause tsunamis or abysses. Seismic waves can cover weapons to increase the power of their blows tenfold.","Paramecia"
+"290",290,"Portgas D. Ace",185,20,5.5e+08,"Commander 2nd Ship","deceased",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,"Pyro-Fruit","the body of the eater is transformed into fire. It can therefore create powerful explosions and control ambient temperatures. It can also use its fire to propel itself and move much faster. However, fire is no match for magma.","Logia"
+"291",291,"Diamond Joz",503,42,NA,"Commander 3rd Ship","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,"Sparkling Fruit","Enables the user to transform his body into a diamond. It then possesses extraordinary resistance.","Paramecia"
+"292",292,"Thatch",NA,NA,NA,"Commander 4th Ship","deceased",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"293",293,"Vista",328,47,NA,"Commander 5th Ship","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"294",294,"Blamenco",NA,NA,NA,"Commander 6th Ship","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,"Fruit de la Poche","Allows the user to create pockets on their body to store objects.","Paramecia"
+"295",295,"Rakuyo",NA,NA,NA,"Commander 7th Ship","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"296",296,"Blenheim",NA,NA,NA,"Commander 9th Ship","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"297",297,"Curiel",NA,NA,NA,"Commander 10th Ship","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"298",298,"Kingdew",NA,NA,NA,"Commander 11th Ship","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"299",299,"Haruta",NA,NA,NA,"Commander 12th Ship","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"300",300,"Atmos",NA,NA,NA,"Commander 13th Ship","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"301",301,"Speed Jill",NA,NA,NA,"Commander 14th Ship","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"302",302,"Fossa",NA,NA,NA,"Commander 15th Ship","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"303",303,"Izou",NA,45,NA,"Commander 16th Ship","deceased",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"304",304,"Doma",NA,NA,NA,"Subordinate","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"305",305,"Frères DeCalvan",NA,NA,NA,"Subordinate","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"306",306,"Squardo",NA,52,2.1e+08,"Subordinate","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"307",307,"Whitey Bay",NA,NA,NA,"Subordinate","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"308",308,"Little Oz Junior",NA,72,5.5e+08,"Subordinate","unknown",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"309",309,"Mc Guy",NA,NA,NA,"Subordinate","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"310",310,"A.O",NA,NA,NA,"Subordinate","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"311",311,"Karma",NA,NA,NA,"Subordinate","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"312",312,"Elmy",NA,NA,NA,"Subordinate","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"313",313,"Ramba",NA,NA,NA,"Subordinate","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"314",314,"Delacuaji",NA,NA,NA,"Subordinate","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"315",315,"Zodia",NA,NA,NA,"Subordinate","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"316",316,"Palms",NA,NA,NA,"Subordinate","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"317",317,"Bizarre",NA,NA,NA,"Subordinate","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"318",318,"Pavlik",NA,NA,NA,"Subordinate","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"319",319,"Vitan",NA,NA,NA,"Subordinate","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"320",320,"Islewan",NA,NA,NA,"Subordinate","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"321",321,"Epoida",NA,NA,NA,"Subordinate","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"322",322,"Kechatch",NA,NA,NA,"Subordinate","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"323",323,"Choi",NA,NA,NA,"Subordinate","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"324",324,"Arhur",NA,NA,NA,"Subordinate","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"325",325,"Hangan",NA,NA,NA,"Subordinate","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"326",326,"Reforte",NA,NA,NA,"Subordinate","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"327",327,"Andre",NA,NA,NA,"Subordinate","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"328",328,"Ninth",NA,NA,NA,"Subordinate","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"329",329,"Blondie",NA,NA,NA,"Subordinate","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"330",330,"Nosgarl",NA,NA,NA,"Subordinate","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"331",331,"Amadob",NA,NA,NA,"Subordinate","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"332",332,"Baggaley",NA,NA,NA,"Subordinate","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"333",333,"Wakkem",NA,NA,NA,"Subordinate","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"334",334,"Brew",NA,NA,NA,"Subordinate","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"335",335,"Brocca",NA,NA,NA,"Subordinate","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"336",336,"Rush",NA,NA,NA,"Subordinate","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"337",337,"Great Micheal",NA,NA,NA,"Subordinate","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"338",338,"Zucca",NA,NA,NA,"Subordinate","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"339",339,"Cands",NA,NA,NA,"Subordinate","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"340",340,"Kinga",NA,NA,NA,"Subordinate","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"341",341,"Colscon",NA,NA,NA,"Subordinate","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"342",342,"Agsilly",NA,NA,NA,"Subordinate","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"343",343,"Julius",NA,NA,NA,"Subordinate","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"344",344,"Happygun",NA,NA,NA,"Subordinate","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"345",345,"Sleepy",NA,NA,NA,"Subordinate","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"346",346,"Forliewbs",NA,NA,NA,"Subordinate","living",16,"Whitebeard's crew","unknown",1600,7.48e+09,TRUE,NA,NA,NA
+"347",347,"Barbos Bruneriguez / Barbe Brune",691,45,80060000,"Captain","living",43,"The crew of Barbe Brune","unknown",8,80060000,FALSE,NA,NA,NA
+"348",348,"Bluejam",261,42,14300000,"Captain","deceased",46,"The Bluejam crew","unknown",9,17700000,FALSE,NA,NA,NA
+"349",349,"Porchemy",320,25,3400000,"","deceased",46,"The Bluejam crew","unknown",9,17700000,FALSE,NA,NA,NA
+"350",350,"Demaro Black",245,36,2.6e+07,"Captain","living",48,"Faux Equipage du Chapeau de Paille","unknown",8,2.6e+07,FALSE,NA,NA,NA
+"351",351,"Manjaro",202,NA,NA,"","living",48,"Faux Equipage du Chapeau de Paille","unknown",8,2.6e+07,FALSE,NA,NA,NA
+"352",352,"Chocolat",181,26,NA,"","living",48,"Faux Equipage du Chapeau de Paille","unknown",8,2.6e+07,FALSE,NA,NA,NA
+"353",353,"Mounblutain",294,30,NA,"","living",48,"Faux Equipage du Chapeau de Paille","unknown",8,2.6e+07,FALSE,NA,NA,NA
+"354",354,"Drip",208,24,NA,"","living",48,"Faux Equipage du Chapeau de Paille","unknown",8,2.6e+07,FALSE,NA,NA,NA
+"355",355,"Nora Gitsune",103,13,NA,"","living",48,"Faux Equipage du Chapeau de Paille","unknown",8,2.6e+07,FALSE,NA,NA,NA
+"356",356,"Cocoa",138,27,NA,"","living",48,"Faux Equipage du Chapeau de Paille","unknown",8,2.6e+07,FALSE,NA,NA,NA
+"357",357,"Turco",258,45,NA,"","living",48,"Faux Equipage du Chapeau de Paille","unknown",8,2.6e+07,FALSE,NA,NA,NA
+"358",358,"Hody Jones",331,30,NA,"Captain","living",50,"The New Fishmen crew","unknown",10,NA,FALSE,NA,NA,NA
+"359",359,"Dosun",418,30,NA,"Lieutenant","living",50,"The New Fishmen crew","unknown",10,NA,FALSE,NA,NA,NA
+"360",360,"Zeo",325,30,NA,"Lieutenant","living",50,"The New Fishmen crew","unknown",10,NA,FALSE,NA,NA,NA
+"361",361,"Daruma",122,30,NA,"Lieutenant","living",50,"The New Fishmen crew","unknown",10,NA,FALSE,NA,NA,NA
+"362",362,"Ikaros Much",499,30,NA,"Lieutenant","living",50,"The New Fishmen crew","unknown",10,NA,FALSE,NA,NA,NA
+"363",363,"Hyozo",327,39,NA,"Lieutenant","living",50,"The New Fishmen crew","unknown",10,NA,FALSE,NA,NA,NA
+"364",364,"Vander Decken IX",352,35,NA,"Captain","unknown",51,"The Flying Pirates crew","unknown",5,NA,FALSE,NA,NA,NA
+"365",365,"Don Quijote Doflamingo",305,41,3.4e+08,"Captain","living",21,"Don Quixote's crew","inactive",23,1.113e+09,FALSE,"Fruit du Fil","Allows you to take control of someone and use them as a puppet, as well as to easily cut people and objects of various sizes in a large area. It also enables its user to cling to clouds to 'fly', to link several wires together to create a sharp whip, and in a 'combined' version in ball form to 'fire' wire bullets like a pistol shot. And last but not least, he can create a clone from strings that has the same abilities as its owner, and this clone is impervious to bladed weapons. Thanks to his fruit, the user can administer first aid by stitching up organs and open wounds.","Paramecia"
+"366",366,"Trébol",349,49,9.9e+07,"Lieutenant-Chef","living",21,"Don Quixote's crew","inactive",23,1.113e+09,FALSE,"Poisse-Poisse fruit","the eater's body can generate mucus at will. This mucus has the following characteristics: sticky, adherent and flammable. It can therefore be used to grip objects, stick to any surface or ignite it.","Paramecia"
+"367",367,"Diamante",525,45,9.9e+07,"Lieutenant-Chef","living",21,"Don Quixote's crew","inactive",23,1.113e+09,FALSE,"Fruit of the Wind Thief","Transforms the hard consistency of an object such as a steel cape into that of a flag. Its user can even make a sword 'soft' and then re-solidify it once it has taken on a different shape. It can also become a floating flag in its own right.","Paramecia"
+"368",368,"Pica",470,40,9.9e+07,"Lieutenant-Chef","living",21,"Don Quixote's crew","inactive",23,1.113e+09,FALSE,"Fruit de la Caillasse","Allows its holder to melt into stone and create any shape he wishes as an exponentially larger clone of himself. It can alter and control the shape of any rock object or structure at will.","Paramecia"
+"369",369,"Vergo",247,41,NA,"Lieutenant-Chef","deceased",21,"Don Quixote's crew","inactive",23,1.113e+09,FALSE,NA,NA,NA
+"370",370,"Sugar",110,22,NA,"Lieutenant of the Trebol Army","living",21,"Don Quixote's crew","inactive",23,1.113e+09,FALSE,"Fruit du Joujou","Transforms any person into a toy by simply touching them. Transformed people no longer have control over their bodies and obey orders given to them (at least, if the user has given them any). The effects of this fruit stop the growth of its user the moment he eats it. People turned into toys are forgotten, all memories of them disappear and they are preserved from aging. If the user falls unconscious, all the people become themselves again, and the memories of those who had forgotten them resurface.","Paramecia"
+"371",371,"Jora",221,61,NA,"Lieutenant of the Trebol Army","living",21,"Don Quixote's crew","inactive",23,1.113e+09,FALSE,"Fruit of Art","Enables the user to create a mist that transforms everything it touches into a work of art. Any being or object transformed into a work of art loses its original functionality.","Paramecia"
+"372",372,"Lao G",157,70,6.1e+07,"Lieutenant of the Army of Diamante","living",21,"Don Quixote's crew","inactive",23,1.113e+09,FALSE,NA,NA,NA
+"373",373,"Señor Pink",244,46,5.8e+07,"Lieutenant of the Army of Diamante","living",21,"Don Quixote's crew","inactive",23,1.113e+09,FALSE,"Fruit of the Barbotage","Allows the user to liquefy any surface around him. This means he can swim through surfaces such as walls or even the floor.","Paramecia"
+"374",374,"Machvise",440,52,1.1e+07,"Lieutenant of the Army of Diamante","living",21,"Don Quixote's crew","inactive",23,1.113e+09,FALSE,"Fruit of the Tonne-Tonne","Its user can float in the air and then land on the enemy to crush him to the ground, very quickly.","Paramecia"
+"375",375,"Dellinger",145,16,1.5e+08,"Lieutenant of the Army of Diamante","living",21,"Don Quixote's crew","inactive",23,1.113e+09,FALSE,NA,NA,NA
+"376",376,"Gladius",260,33,3.1e+07,"Pica Army Lieutenant","living",21,"Don Quixote's crew","inactive",23,1.113e+09,FALSE,"Fruit of the Paf-Paf","Inflates an object to the point of rupture, causing it to explode and the user to explode on contact.","Paramecia"
+"377",377,"Buffallo",696,30,NA,"Pica Army Lieutenant","living",21,"Don Quixote's crew","inactive",23,1.113e+09,FALSE,"Fruit of the whirlwind","Allows the user to make every part of his body rotate, enabling him to fly through the air and produce hurricanes by rotating a specific part of his body at full speed.","Paramecia"
+"378",378,"Monet",227,30,NA,"Lieutenant","deceased",21,"Don Quixote's crew","inactive",23,1.113e+09,FALSE,"Fruit du Flocon","the body of the eater turns to snow. It can create a violent blizzard, solid snow barriers or even igloos. He can also use his body to chill opponents, putting them in a state of stasis, for example. He can also transform himself into a snow ""monster"", endowing himself with a pair of snow wings and transforming these parts into ice as sharp and solid as steel. It can also shape snow creatures (e.g. snow rabbits) and use them as projectiles. Finally, the user can use his power to manipulate snow spikes as sabers.","Logia"
+"379",379,"Rocks D. Xebec",NA,NA,NA,"Captain","unknown",62,"The Rocks crew","inactive",8,5e+08,FALSE,NA,NA,NA
+"380",380,"Im Sama",NA,NA,NA,"Manager","living",89,"Buggy's Delivery","actif",NA,NA,FALSE,NA,NA,NA
+"381",381,"1er Doyen",NA,NA,NA,"Council of Five Deans","living",89,"Buggy's Delivery","actif",NA,NA,FALSE,NA,NA,NA
+"382",382,"2e Doyen",NA,NA,NA,"Council of Five Deans","living",89,"Buggy's Delivery","actif",NA,NA,FALSE,NA,NA,NA
+"383",383,"3e Doyen",NA,NA,NA,"Council of Five Deans","living",89,"Buggy's Delivery","actif",NA,NA,FALSE,NA,NA,NA
+"384",384,"4e Doyen",NA,NA,NA,"Council of Five Deans","living",89,"Buggy's Delivery","actif",NA,NA,FALSE,NA,NA,NA
+"385",385,"5e Doyen",NA,NA,NA,"Council of Five Deans","living",89,"Buggy's Delivery","actif",NA,NA,FALSE,NA,NA,NA
+"386",386,"Roswald",215,55,NA,"","living",83,"Dragon Célestes","actif",NA,NA,FALSE,NA,NA,NA
+"387",387,"Charloss",230,24,NA,"","living",83,"Dragon Célestes","actif",NA,NA,FALSE,NA,NA,NA
+"388",388,"Sharlia",178,17,NA,"","living",83,"Dragon Célestes","actif",NA,NA,FALSE,NA,NA,NA
+"389",389,"Don Quijote Myosgard",NA,NA,NA,"","deceased",83,"Dragon Célestes","actif",NA,NA,FALSE,NA,NA,NA
+"390",390,"Jalmack",NA,NA,NA,"","living",83,"Dragon Célestes","actif",NA,NA,FALSE,NA,NA,NA
+"391",391,"Guernica",NA,NA,NA,"","unknown",90,"Cipher Pol","actif",NA,NA,FALSE,NA,NA,NA
+"392",392,"Rob Lucci",212,30,NA,"","living",90,"Cipher Pol","actif",NA,NA,FALSE,"Fruit of the Pachyderm","whoever eats it becomes half-elephant. Given that its user is a sword, this has turned it into a half-sword, half-elephant being. Having acquired consciousness and thus a certain intelligence, it can have phenomenal reach.","Zoan"
+"393",393,"Hittori",NA,NA,NA,"","living",90,"Cipher Pol","actif",NA,NA,FALSE,NA,NA,NA
+"394",394,"Spandam",192,41,NA,"","living",90,"Cipher Pol","actif",NA,NA,FALSE,NA,NA,NA
+"395",395,"Funckfreed",NA,NA,NA,"","living",90,"Cipher Pol","actif",NA,NA,FALSE,"Fruit of the Pachyderm","whoever eats it becomes half-elephant. Given that its user is a sword, this has turned it into a half-sword, half-elephant being. Having acquired consciousness and thus a certain intelligence, it can have phenomenal reach.","Zoan"
+"396",396,"Kaku",193,25,NA,"","living",90,"Cipher Pol","actif",NA,NA,FALSE,"Fruit du Bovin, Giraffe version","whoever eats it becomes half giraffe. His kicks and nose strikes are much more powerful (especially with the Rokushiki Shigan).","Zoan"
+"397",397,"Stussy",179,NA,NA,"Spy","living",90,"Cipher Pol","actif",NA,NA,FALSE,"Bat-fruit / vampire (fruit-bat model)","A Zoan-type fruit that transforms its user into a vampiric creature, specializing in infiltration and stealth attacks rather than brute force.","Logia"
+"398",398,"Maha",NA,NA,NA,"","living",90,"Cipher Pol","actif",NA,NA,FALSE,NA,NA,NA
+"399",399,"Jerry",676,46,NA,"","living",90,"Cipher Pol","actif",NA,NA,FALSE,NA,NA,NA
+"400",400,"Wanzé",173,28,NA,"","living",90,"Cipher Pol","actif",NA,NA,FALSE,NA,NA,NA
+"401",401,"Bas",NA,50,NA,"","living",91,"Enies Lobby","inconnu",NA,NA,FALSE,NA,NA,NA
+"402",402,"And",NA,55,NA,"","living",91,"Enies Lobby","inconnu",NA,NA,FALSE,NA,NA,NA
+"403",403,"Kerville",NA,44,NA,"","living",91,"Enies Lobby","inconnu",NA,NA,FALSE,NA,NA,NA
+"404",404,"Hannyabal",355,35,NA,"director","living",92,"Impel Down","actif",NA,NA,FALSE,NA,NA,NA
+"405",405,"Magellan",425,47,NA,"vice-president","living",92,"Impel Down","actif",NA,NA,FALSE,"Poison Fruit","Allows its user to secrete a panoply of poisons and toxic gases. The effects of these venoms change according to the user's needs. Users can shape their creations in any way they like, and can even cover their entire body with poison to protect themselves.","Paramecia"
+"406",406,"Domino",NA,NA,NA,"Head guard","living",92,"Impel Down","actif",NA,NA,FALSE,NA,NA,NA
+"407",407,"Saldeath",218,18,NA,"Chief of guards","living",92,"Impel Down","actif",NA,NA,FALSE,NA,NA,NA
+"408",408,"Sadi",183,23,NA,"Chief of the demonic guard","living",92,"Impel Down","actif",NA,NA,FALSE,NA,NA,NA
+"409",409,"Minotaure",NA,NA,NA,"Bestial Guard","living",92,"Impel Down","actif",NA,NA,FALSE,NA,NA,NA
+"410",410,"Minokoala",NA,NA,NA,"Bestial Guard","living",92,"Impel Down","actif",NA,NA,FALSE,NA,NA,NA
+"411",411,"Minorhinocéros",NA,NA,NA,"Bestial Guard","living",92,"Impel Down","actif",NA,NA,FALSE,NA,NA,NA
+"412",412,"Minozèbre",NA,NA,NA,"Bestial Guard","living",92,"Impel Down","actif",NA,NA,FALSE,NA,NA,NA
+"413",413,"Minochihuabua",NA,NA,NA,"Bestial Guard","living",92,"Impel Down","actif",NA,NA,FALSE,NA,NA,NA
+"414",414,"Sakazuki / Akainu",306,55,NA,"Chief Admiral","living",82,"Marine","actif",NA,NA,FALSE,"Magma Fruit","the body of the eater is transformed into lava. It can then melt anything and almost anyone. It can also create giant lava hands which, after being launched into the atmosphere, bring volcanic particles down to earth, causing great damage. Fire is powerless against magma.","Logia"
+"415",415,"Borsalino / Kizaru",302,58,NA,"Admiral","living",82,"Marine","actif",NA,NA,FALSE,"Luminescent Fruit","the body of the eater is transformed into light. He can then move and strike almost anyone quickly. It can also move at the speed of light, emit explosive rays of light, blind enemies and create weapons made of light (swords, spears, etc.).","Logia"
+"416",416,"Issho / Fujitora",270,54,NA,"Admiral","living",82,"Marine","actif",NA,NA,FALSE,"Fruit of Gravity","Allows the user to manipulate gravity around a specific location by sending gravitational forces such as boulders, meteorites or exerting force against an opponent on the ground.","Paramecia"
+"417",417,"Aramaki / Ryokugyu",NA,NA,NA,"Admiral","living",82,"Marine","actif",NA,NA,FALSE,NA,NA,NA
+"418",418,"Monkey D. Garp",287,78,NA,"Vice-Admiral","living",82,"Marine","actif",NA,NA,FALSE,NA,NA,NA
+"419",419,"Tsuru",204,76,NA,"Vice-Admiral","living",82,"Marine","actif",NA,NA,FALSE,"Fruit of the Laundry","Enables its user to cleanse people of their impure hearts and lay them on a thread. These people can then no longer move.","Paramecia"
+"420",420,"John Giant",NA,NA,NA,"Vice-Admiral","living",82,"Marine","actif",NA,NA,FALSE,NA,NA,NA
+"421",421,"Comir",NA,NA,NA,"Vice-Admiral","living",82,"Marine","actif",NA,NA,FALSE,NA,NA,NA
+"422",422,"Momonga",251,48,NA,"Vice-Admiral","living",82,"Marine","actif",NA,NA,FALSE,NA,NA,NA
+"423",423,"Onigumo",NA,NA,NA,"Vice-Admiral","living",82,"Marine","actif",NA,NA,FALSE,NA,NA,NA
+"424",424,"Doberman",NA,NA,NA,"Vice-Admiral","living",82,"Marine","actif",NA,NA,FALSE,NA,NA,NA
+"425",425,"Strawberry",NA,NA,NA,"Vice-Admiral","living",82,"Marine","actif",NA,NA,FALSE,NA,NA,NA
+"426",426,"Yamakaji",NA,NA,NA,"Vice-Admiral","living",82,"Marine","actif",NA,NA,FALSE,NA,NA,NA
+"427",427,"Dalmatien",NA,NA,NA,"Vice-Admiral","living",82,"Marine","actif",NA,NA,FALSE,NA,NA,NA
+"428",428,"Bastille",NA,NA,NA,"Vice-Admiral","living",82,"Marine","actif",NA,NA,FALSE,NA,NA,NA
+"429",429,"Smoker",209,36,NA,"Vice-Admiral","living",82,"Marine","actif",NA,NA,FALSE,"Fruit Smoke","the eater's body turns to smoke. He can then create smoke to catch his opponents, and can propel himself with his smoke to move faster and fly.","Logia"
+"430",430,"Maynard",NA,NA,NA,"Vice-Admiral","living",82,"Marine","actif",NA,NA,FALSE,NA,NA,NA
+"431",431,"Tokikake",NA,NA,NA,"Vice-Admiral","living",82,"Marine","actif",NA,NA,FALSE,NA,NA,NA
+"432",432,"Hina",181,34,NA,"Sub-Admiral","living",82,"Marine","actif",NA,NA,FALSE,"Fruit du Séquestre","Enables the user to imprison opponents by coming into contact with them. These constrictive bonds are made of a rapidly hardening substance.","Paramecia"
+"433",433,"T. Bone",200,53,NA,"Sub-Admiral","living",82,"Marine","actif",NA,NA,FALSE,NA,NA,NA
+"434",434,"Pudding",NA,NA,NA,"Rear Admiral","deceased",82,"Marine","actif",NA,NA,FALSE,NA,NA,NA
+"435",435,"Jenfétro",220,NA,NA,"Rear Admiral","living",82,"Marine","actif",NA,NA,FALSE,NA,NA,NA
+"436",436,"Brandnew",190,56,NA,"Rear Admiral","living",82,"Marine","actif",NA,NA,FALSE,NA,NA,NA
+"437",437,"Verygood",NA,NA,NA,"Colonel","living",82,"Marine","actif",NA,NA,FALSE,"Berry Fruit","Enables its user to divide his body into berry-like parts and thus bounce off any surface. It is therefore immune to punches and blunt weapons.","Paramecia"
+"438",438,"Shu",NA,NA,NA,"Colonel","living",82,"Marine","actif",NA,NA,FALSE,"Rust fruit","Enables its owner to rust anything he touches. It can therefore rust any bladed weapon or living creature's limbs.","Paramecia"
+"439",439,"Sharinguru",NA,NA,NA,"Colonel","living",82,"Marine","actif",NA,NA,FALSE,"Fruit of the Wheels","Allows its owner to transform body parts into wheels and spin them at high speed.","Paramecia"
+"440",440,"Tashigi",170,23,NA,"Colonel","living",82,"Marine","actif",NA,NA,FALSE,NA,NA,NA
+"441",441,"Kobby",167,18,NA,"Colonel","living",82,"Marine","actif",NA,NA,FALSE,NA,NA,NA
+"442",442,"Nezumi",182,36,NA,"Colonel","living",82,"Marine","actif",NA,NA,FALSE,NA,NA,NA
+"443",443,"Don Quijote Rosinante",293,26,NA,"Lieutenant-Colonel","deceased",82,"Marine","actif",NA,NA,FALSE,"Sourdine fruit","Create sound-absorbing barriers to totally cancel out the sounds produced by the system (or from an area in which it is located) and those coming from outside.","Paramecia"
+"444",444,"Hermep",179,22,NA,"Lieutenant","living",82,"Marine","actif",NA,NA,FALSE,NA,NA,NA
+"445",445,"Fullbody",184,28,NA,"Lieutenant","living",82,"Marine","actif",NA,NA,FALSE,NA,NA,NA
+"446",446,"Jango",207,29,NA,"Lieutenant","living",82,"Marine","actif",NA,NA,FALSE,NA,NA,NA
+"447",447,"Sengoku",278,79,NA,"Observer","living",82,"Marine","actif",NA,NA,FALSE,"Fruit of the Human, Buddha version","whoever eats it can transform into an imposing Daibutsu, considerably increasing his physical strength. It can generate shockwaves.","Zoan Mythique"
+"448",448,"Sentomaru",279,34,NA,"Captain of the Scientific Brigade","living",82,"Marine","actif",NA,NA,FALSE,NA,NA,NA
+"449",449,"X-Drake",233,33,NA,"Captain of the Sword","living",82,"Marine","actif",NA,NA,FALSE,"Fruit of the Dinosaur, Allosaurus version","whoever eats it can turn into an allosaurus.","Zoan Antique"
+"450",450,"Kaiser Moustache",NA,NA,NA,"Vice-Admiral","living",82,"Marine","actif",NA,NA,FALSE,NA,NA,NA
+"451",451,"Cancer",NA,NA,NA,"Vice-Admiral","living",82,"Marine","actif",NA,NA,FALSE,NA,NA,NA
+"452",452,"Mozambia",NA,NA,NA,"Vice-Admiral","living",82,"Marine","actif",NA,NA,FALSE,NA,NA,NA
+"453",453,"Lacroix",NA,NA,NA,"Vice-Admiral","living",82,"Marine","actif",NA,NA,FALSE,NA,NA,NA
+"454",454,"Ronz",NA,NA,NA,"Vice-Admiral","living",82,"Marine","actif",NA,NA,FALSE,NA,NA,NA
+"455",455,"Dohn Deynon",NA,NA,NA,"Vice-Admiral","living",82,"Marine","actif",NA,NA,FALSE,NA,NA,NA
+"456",456,"Draw",NA,NA,NA,"Vice-Admiral","living",82,"Marine","actif",NA,NA,FALSE,NA,NA,NA
+"457",457,"Sicily",NA,NA,NA,"Sub-Admiral","living",82,"Marine","actif",NA,NA,FALSE,NA,NA,NA
+"458",458,"Akehende",NA,NA,NA,"Sub-Admiral","living",82,"Marine","actif",NA,NA,FALSE,NA,NA,NA
+"459",459,"Catacombo",NA,NA,NA,"Sub-Admiral","living",82,"Marine","actif",NA,NA,FALSE,NA,NA,NA
+"460",460,"Kadar",NA,NA,NA,"Sub-Admiral","living",82,"Marine","actif",NA,NA,FALSE,NA,NA,NA
+"461",461,"Daigin",NA,NA,NA,"Rear Admiral","living",82,"Marine","actif",NA,NA,FALSE,NA,NA,NA
+"462",462,"Gorilla",NA,NA,NA,"Colonel","living",82,"Marine","actif",NA,NA,FALSE,NA,NA,NA
+"463",463,"Stelly",180,20,NA,"Sovereign","living",93,"Royaume de Goa","actif",NA,NA,FALSE,NA,NA,NA
+"464",464,"Sally Entoilette",NA,NA,NA,"Queen","living",93,"Royaume de Goa","actif",NA,NA,FALSE,NA,NA,NA
+"465",465,"Outlook III",NA,NA,NA,"Residents of Haute Ville","living",93,"Royaume de Goa","actif",NA,NA,FALSE,NA,NA,NA
+"466",466,"Didit",NA,NA,NA,"Residents of Haute Ville","living",93,"Royaume de Goa","actif",NA,NA,FALSE,NA,NA,NA
+"467",467,"Makino",166,31,NA,"Bar owner","living",93,"Royaume de Goa","actif",NA,NA,FALSE,NA,NA,NA
+"468",468,"Woop Slap",NA,NA,NA,"Mayor of the village of Fuchsia","living",93,"Royaume de Goa","actif",NA,NA,FALSE,NA,NA,NA
+"469",469,"Curly Dadan",221,55,NA,"Mount Corvo resident","living",93,"Royaume de Goa","actif",NA,NA,FALSE,NA,NA,NA
+"470",470,"Dogra",NA,NA,NA,"Mount Corvo resident","living",93,"Royaume de Goa","actif",NA,NA,FALSE,NA,NA,NA
+"471",471,"Magra",NA,NA,NA,"Mount Corvo resident","living",93,"Royaume de Goa","actif",NA,NA,FALSE,NA,NA,NA
+"472",472,"Higuma",190,46,NA,"Resident","deceased",93,"Royaume de Goa","actif",NA,NA,FALSE,NA,NA,NA
+"473",473,"Kozaburo Shimotsuki",NA,NA,NA,"Resident","deceased",94,"Village de Shimotsuki","actif",NA,NA,FALSE,NA,NA,NA
+"474",474,"Koshiro",184,51,NA,"Dojo Master","living",94,"Village de Shimotsuki","actif",NA,NA,FALSE,NA,NA,NA
+"475",475,"Kuina",150,11,NA,"Resident","deceased",94,"Village de Shimotsuki","actif",NA,NA,FALSE,NA,NA,NA
+"476",476,"Boodle",172,75,NA,"Mayor of the village of Orange","living",95,"Archipel des Argao","actif",NA,NA,FALSE,NA,NA,NA
+"477",477,"Chouchou",40,14,NA,"Store owner","living",95,"Archipel des Argao","actif",NA,NA,FALSE,NA,NA,NA
+"478",478,"Gaimone",130,45,NA,"Guard","living",96,"Île des animaux étranges","actif",NA,NA,FALSE,NA,NA,NA
+"479",479,"Sarfunkel",NA,NA,NA,"Resident","living",96,"Île des animaux étranges","actif",NA,NA,FALSE,NA,NA,NA
+"480",480,"Kaya",169,19,NA,"Medical student","living",97,"Archipel des Gecko","actif",NA,NA,FALSE,NA,NA,NA
+"481",481,"Merry",NA,NA,NA,"Butler","living",97,"Archipel des Gecko","actif",NA,NA,FALSE,NA,NA,NA
+"482",482,"Oignon",124,11,NA,"Resident of vilalge de Sirop","living",97,"Archipel des Gecko","actif",NA,NA,FALSE,NA,NA,NA
+"483",483,"Piment",120,11,NA,"Resident of vilalge de Sirop","living",97,"Archipel des Gecko","actif",NA,NA,FALSE,NA,NA,NA
+"484",484,"Carotte",127,11,NA,"Resident of vilalge de Sirop","living",97,"Archipel des Gecko","actif",NA,NA,FALSE,NA,NA,NA
+"485",485,"Banchina",NA,NA,NA,"Resident of vilalge de Sirop","deceased",97,"Archipel des Gecko","actif",NA,NA,FALSE,NA,NA,NA
+"486",486,"Zeff",189,67,NA,"Owner and Chef","living",98,"Baratie","actif",NA,NA,FALSE,NA,NA,NA
+"487",487,"Patty",204,29,NA,"Pastry chef","living",98,"Baratie","actif",NA,NA,FALSE,NA,NA,NA
+"488",488,"Canne",171,34,NA,"Meat cook","living",98,"Baratie","actif",NA,NA,FALSE,NA,NA,NA
+"489",489,"Belmer",186,30,NA,"Tangerine grower","deceased",99,"Archipel Conomi","actif",NA,NA,FALSE,NA,NA,NA
+"490",490,"Nojiko",170,22,NA,"Tangerine grower","living",99,"Archipel Conomi","actif",NA,NA,FALSE,NA,NA,NA
+"491",491,"Genzo",173,48,NA,"Sheriff","living",99,"Archipel Conomi","actif",NA,NA,FALSE,NA,NA,NA
+"492",492,"Nako",NA,NA,NA,"Doctor","living",99,"Archipel Conomi","actif",NA,NA,FALSE,NA,NA,NA
+"493",493,"Chabo",NA,NA,NA,"Tangerine grower","living",99,"Archipel Conomi","actif",NA,NA,FALSE,NA,NA,NA
+"494",494,"Johny",186,25,NA,"Fisherman","living",99,"Archipel Conomi","actif",NA,NA,FALSE,NA,NA,NA
+"495",495,"Yosaku",185,26,NA,"Fisherman","living",99,"Archipel Conomi","actif",NA,NA,FALSE,NA,NA,NA
+"496",496,"Ipponmatsu",157,40,NA,"Armurier","living",100,"Loguetown","actif",NA,NA,FALSE,NA,NA,NA
+"497",497,"Montblanc Norland",220,39,NA,"Explorer","deceased",101,"Royaume de Lvneel","inconnu",NA,NA,FALSE,NA,NA,NA
+"498",498,"Don Quijote Homing",NA,NA,NA,"","deceased",83,"Dragon Célestes","actif",NA,NA,FALSE,NA,NA,NA
+"499",499,"Portgas D. Rouge",NA,NA,NA,"","deceased",102,"Baterilla","actif",NA,NA,FALSE,NA,NA,NA
+"500",500,"Wapol",207,29,NA,"King","living",103,"Royaume maléfique de Black Drum","actif",NA,NA,FALSE,"Fruit of the Glutton","Allows its user to eat anything and integrate this food into his own body. For example, if he eats a cannon, his tongue can transform into a real cannon. It can also fuse together the beings it has eaten, and self-ingest to slim down.","Paramecia"
+"501",501,"Kinderella",NA,NA,NA,"Queen","living",103,"Royaume maléfique de Black Drum","actif",NA,NA,FALSE,NA,NA,NA
+"502",502,"Clover",172,85,NA,"Library Manager","deceased",104,"Ohara","inactif",NA,NA,FALSE,NA,NA,NA
+"503",503,"Nico Olvia",186,33,NA,"Archaeologist","deceased",104,"Ohara","inactif",NA,NA,FALSE,NA,NA,NA
+"504",504,"Haguar D. Sauro",NA,105,NA,"Vice-Admiral","deceased",104,"Ohara","inactif",NA,NA,FALSE,NA,NA,NA
+"505",505,"Ramen",NA,NA,NA,"King","unknown",105,"Pays des fleurs","actif",NA,NA,FALSE,NA,NA,NA
+"506",506,"Chinjao",520,78,5.42e+08,"","living",105,"Pays des fleurs","actif",NA,NA,FALSE,NA,NA,NA
+"507",507,"Crocus",203,73,NA,"Lighthouse keeper","living",146,"Cap des Jumeaux","actif",NA,NA,FALSE,NA,NA,NA
+"508",508,"Laboon",NA,53,NA,"Resident","living",146,"Cap des Jumeaux","actif",NA,NA,FALSE,NA,NA,NA
+"509",509,"Miss Monday",NA,NA,NA,"Resident","living",107,"Île aux cactus","actif",NA,NA,FALSE,NA,NA,NA
+"510",510,"Mr 9",NA,NA,NA,"Resident","living",107,"Île aux cactus","actif",NA,NA,FALSE,NA,NA,NA
+"511",511,"Dorry",NA,160,NA,"Resident","living",108,"Little Garden","actif",NA,NA,FALSE,NA,NA,NA
+"512",512,"Broggy",NA,160,NA,"Resident","living",108,"Little Garden","actif",NA,NA,FALSE,NA,NA,NA
+"513",513,"Dolton",218,35,NA,"Sovereign","living",109,"Île de Drum","actif",NA,NA,FALSE,NA,NA,NA
+"514",514,"Kureha",188,141,NA,"Doctor","living",109,"Île de Drum","actif",NA,NA,FALSE,NA,NA,NA
+"515",515,"Hiluluk",213,68,NA,"Doctor","deceased",109,"Île de Drum","actif",NA,NA,FALSE,NA,NA,NA
+"516",516,"Chess",194,32,NA,"Chief of Staff","living",109,"Île de Drum","actif",NA,NA,FALSE,NA,NA,NA
+"517",517,"Kuromarimo",186,30,NA,"Director","living",109,"Île de Drum","actif",NA,NA,FALSE,NA,NA,NA
+"518",518,"Nefertari Cobra",182,50,NA,"12th King","living",110,"Alabasta","actif",NA,NA,FALSE,NA,NA,NA
+"519",519,"Nefertari Titi",NA,NA,NA,"Queen","deceased",110,"Alabasta","actif",NA,NA,FALSE,NA,NA,NA
+"520",520,"Nefertari Vivi",169,18,NA,"Princess","living",110,"Alabasta","actif",NA,NA,FALSE,NA,NA,NA
+"521",521,"Igaram",218,50,NA,"Commander of the Royal Guard","living",110,"Alabasta","actif",NA,NA,FALSE,NA,NA,NA
+"522",522,"Chaka",213,41,NA,"Deputy Commander of the Royal Guard","living",110,"Alabasta","actif",NA,NA,FALSE,"Fruit of the Canidae, Jackal version","whoever eats it becomes half jackal. Its agility in hybrid form is far superior to the average.","Zoan"
+"523",523,"Pell",189,35,NA,"Deputy Commander of the Royal Guard","living",110,"Alabasta","actif",NA,NA,FALSE,"Fruit du Volatile, Falcon version","whoever eats it becomes half hawk. This power gives him keen eyesight, surprising speed and the ability to fly.","Zoan"
+"524",524,"Kaloo",150,16,NA,"Super Duck Squadron","living",110,"Alabasta","actif",NA,NA,FALSE,NA,NA,NA
+"525",525,"Longs-Cils",190,17,NA,"Resident","living",110,"Alabasta","actif",NA,NA,FALSE,NA,NA,NA
+"526",526,"Stomp",NA,NA,NA,"Super Duck Squadron","living",110,"Alabasta","actif",NA,NA,FALSE,NA,NA,NA
+"527",527,"Ivan X",NA,NA,NA,"Super Duck Squadron","living",110,"Alabasta","actif",NA,NA,FALSE,NA,NA,NA
+"528",528,"Cowboy",NA,NA,NA,"Super Duck Squadron","living",110,"Alabasta","actif",NA,NA,FALSE,NA,NA,NA
+"529",529,"Bourdon Jr.",NA,NA,NA,"Super Duck Squadron","living",110,"Alabasta","actif",NA,NA,FALSE,NA,NA,NA
+"530",530,"Kentarôs",NA,NA,NA,"Super Duck Squadron","living",110,"Alabasta","actif",NA,NA,FALSE,NA,NA,NA
+"531",531,"Hikoichi",NA,NA,NA,"Super Duck Squadron","living",110,"Alabasta","actif",NA,NA,FALSE,NA,NA,NA
+"532",532,"Koza",177,22,NA,"Minister for the Environment","living",110,"Alabasta","actif",NA,NA,FALSE,NA,NA,NA
+"533",533,"Toto",NA,NA,NA,"Resident","living",110,"Alabasta","actif",NA,NA,FALSE,NA,NA,NA
+"534",534,"Tonjit",110,63,NA,"Nomad","living",111,"Long Ring Long Land","actif",NA,NA,FALSE,NA,NA,NA
+"535",535,"Shelly",NA,NA,NA,"Resident","living",111,"Long Ring Long Land","actif",NA,NA,FALSE,NA,NA,NA
+"536",536,"Gedatsu",220,31,NA,"Employee","living",112,"Source de l'insouciance","actif",NA,NA,FALSE,NA,NA,NA
+"537",537,"Icebarg",199,40,NA,"Galley-La Company (manager)","living",113,"Water Seven","actif",NA,NA,FALSE,NA,NA,NA
+"538",538,"Pauly",195,26,NA,"Galley-La Company (vice-manager)","living",113,"Water Seven","actif",NA,NA,FALSE,NA,NA,NA
+"539",539,"Peeply Lulu",206,33,NA,"Galley-La Company (head of coaters and blacksmiths)","living",113,"Water Seven","actif",NA,NA,FALSE,NA,NA,NA
+"540",540,"Tilestone",255,35,NA,"Galley-La Company (head of cabinetmakers, sailmakers and sailmakers)","living",113,"Water Seven","actif",NA,NA,FALSE,NA,NA,NA
+"541",541,"Zanbai",227,35,NA,"Galley-La Company (Zanbai syndicate)","living",113,"Water Seven","actif",NA,NA,FALSE,NA,NA,NA
+"542",542,"Mozu",187,21,NA,"Bartender","living",113,"Water Seven","actif",NA,NA,FALSE,NA,NA,NA
+"543",543,"Kiwi",187,22,NA,"Bartender","living",113,"Water Seven","actif",NA,NA,FALSE,NA,NA,NA
+"544",544,"Tom",296,67,NA,"Tom's Workers (boss)","deceased",113,"Water Seven","actif",NA,NA,FALSE,NA,NA,NA
+"545",545,"Kokoro",168,72,NA,"Shift Station Station Manager","living",113,"Water Seven","actif",NA,NA,FALSE,NA,NA,NA
+"546",546,"Chimney",115,10,NA,"Shift Station Sunday stationmaster","living",113,"Water Seven","actif",NA,NA,FALSE,NA,NA,NA
+"547",547,"Gonbei",NA,NA,NA,"Resident","living",113,"Water Seven","actif",NA,NA,FALSE,NA,NA,NA
+"548",548,"Yokozuma",NA,NA,NA,"Resident","living",113,"Water Seven","actif",NA,NA,FALSE,NA,NA,NA
+"549",549,"Silvers Rayleigh",188,78,NA,"Resident","living",114,"Archipel des Sabaody","actif",NA,NA,FALSE,NA,NA,NA
+"550",550,"Shakuyaku",186,64,NA,"Resident","living",114,"Archipel des Sabaody","actif",NA,NA,FALSE,NA,NA,NA
+"551",551,"Disco",NA,NA,NA,"Resident","living",114,"Archipel des Sabaody","actif",NA,NA,FALSE,NA,NA,NA
+"552",552,"Duval",470,25,NA,"Resident","living",114,"Archipel des Sabaody","actif",NA,NA,FALSE,NA,NA,NA
+"553",553,"Héraclès",214,51,NA,"Resident","living",115,"Archipel de Boing","actif",NA,NA,FALSE,NA,NA,NA
+"554",554,"Loki",NA,63,NA,"Prince","living",116,"Erbaf","actif",NA,NA,FALSE,NA,NA,NA
+"555",555,"Jorl",NA,344,NA,"Resident","deceased",116,"Erbaf","actif",NA,NA,FALSE,NA,NA,NA
+"556",556,"Jarl",NA,408,NA,"Resident","living",116,"Erbaf","actif",NA,NA,FALSE,NA,NA,NA
+"557",557,"Oimo",NA,153,NA,"Resident","living",116,"Erbaf","actif",NA,NA,FALSE,NA,NA,NA
+"558",558,"Kaashii",NA,156,NA,"Resident","living",116,"Erbaf","actif",NA,NA,FALSE,NA,NA,NA
+"559",559,"Sukiyaki Kozuki",214,81,NA,"Shogun","living",117,"Pays des Wa","actif",NA,NA,FALSE,NA,NA,NA
+"560",560,"Oden Kozuki",382,39,NA,"Lord of Kuri","deceased",117,"Pays des Wa","actif",NA,NA,FALSE,NA,NA,NA
+"561",561,"Toki Kozuki",190,36,NA,"Resident","deceased",117,"Pays des Wa","actif",NA,NA,FALSE,"Fruit of Time","Allows the user to travel into the future.","Paramecia"
+"562",562,"Mononosuké Kozuki",110,8,NA,"Shogun","living",117,"Pays des Wa","actif",NA,NA,FALSE," Artificial demon fruit from Vegapunk","","Smile"
+"563",563,"Hiyori Kozuki",170,26,NA,"Courtesan","living",117,"Pays des Wa","actif",NA,NA,FALSE,NA,NA,NA
+"564",564,"Kinémon",295,36,NA,"Red sheaths","living",117,"Pays des Wa","actif",NA,NA,FALSE,"Fruit of the Garment","Enables its user to create garments from leaves or stones.","Paramecia"
+"565",565,"Denjiro",306,47,NA,"Red sheaths","living",117,"Pays des Wa","actif",NA,NA,FALSE,NA,NA,NA
+"566",566,"Izo",192,45,5.1e+08,"Red sheaths","deceased",117,"Pays des Wa","actif",NA,NA,FALSE,NA,NA,NA
+"567",567,"Kikunojo",287,22,NA,"Red sheaths","living",117,"Pays des Wa","actif",NA,NA,FALSE,NA,NA,NA
+"568",568,"Raizo",331,35,NA,"Red sheaths","living",117,"Pays des Wa","actif",NA,NA,FALSE,NA,NA,NA
+"569",569,"Ashura Doji",544,56,NA,"Red sheaths","deceased",117,"Pays des Wa","actif",NA,NA,FALSE,NA,NA,NA
+"570",570,"Kawamatsu",271,41,NA,"Red sheaths","living",117,"Pays des Wa","actif",NA,NA,FALSE,NA,NA,NA
+"571",571,"Shinobu",180,49,NA,"Red sheaths","living",117,"Pays des Wa","actif",NA,NA,FALSE,"Fruit of Maturation","Enables the user to ripen and decompose inanimate objects. It can also age living beings.","Paramecia"
+"572",572,"Orochi Kurozumi",350,54,NA,"Shogun","deceased",117,"Pays des Wa","actif",NA,NA,FALSE,"Fruit of the Reptile, eight-headed dragon version","whoever eats it can turn into an eight-headed dragon.","Zoan Mythique"
+"573",573,"Kanjuro Kurozumi",347,34,NA,"Red sheaths","living",117,"Pays des Wa","actif",NA,NA,FALSE,"Fruit of the Brush","Allows users to generate ink from their bodies and transform the drawings created with this ink into realistic, three-dimensional objects.","Paramecia"
+"574",574,"Semimaru Kurozumi",NA,NA,NA,"Kurozumo clan","deceased",117,"Pays des Wa","actif",NA,NA,FALSE,"Fruit of the Barrier","Enables its user to generate almost invisible barriers to deflect or block any attack. These barriers can take on a wide range of shapes (racket, stairs, etc.).","Paramecia"
+"575",575,"Higurashi Kurozumi",NA,NA,NA,"Kurozumo clan","deceased",117,"Pays des Wa","actif",NA,NA,FALSE,"Travesti-Fruit","Allows you to change your appearance by touching your face with your right hand, and to return to your normal appearance by touching your face with your left hand. You only need to touch a person once for their appearance to be remembered forever. The user can also assemble parts of different people, but is unable to attack unless he possesses his own face and body.","Paramecia"
+"576",576,"Ryuma Shimotsuki",179,47,NA,"Shimotsuki clan","deceased",117,"Pays des Wa","actif",NA,NA,FALSE,NA,NA,NA
+"577",577,"Yasui Shimotsuki",155,71,NA,"Shimotsuki clan","deceased",117,"Pays des Wa","actif",NA,NA,FALSE,NA,NA,NA
+"578",578,"Toko",89,8,NA,"Shimotsuki clan","deceased",117,"Pays des Wa","actif",NA,NA,FALSE,NA,NA,NA
+"579",579,"Onimaru",428,69,NA,"Resident","living",117,"Pays des Wa","actif",NA,NA,FALSE,"Fruit of the Human, Onyudo version","whoever eats it can turn into an Onyudo","Zoan Mythique"
+"580",580,"Hyogoro",100,70,NA,"head of a yakuza clan in the capital of flowers","living",117,"Pays des Wa","actif",NA,NA,FALSE,NA,NA,NA
+"581",581,"Omasa",NA,NA,NA,"head of a yakuza clan in the Udon region","living",117,"Pays des Wa","actif",NA,NA,FALSE,NA,NA,NA
+"582",582,"Tsunagoro",NA,NA,NA,"head of a yakuza clan in the Hakumai region","living",117,"Pays des Wa","actif",NA,NA,FALSE,NA,NA,NA
+"583",583,"Cho",NA,NA,NA,"head of a yakuza clan in the Ringo region","living",117,"Pays des Wa","actif",NA,NA,FALSE,NA,NA,NA
+"584",584,"Yatappé",NA,NA,NA,"head of a yakuza clan in the Kibi region","living",117,"Pays des Wa","actif",NA,NA,FALSE,NA,NA,NA
+"585",585,"Tama",108,8,NA,"Resident","living",117,"Pays des Wa","actif",NA,NA,FALSE,"Millet fruit","Allows the user to generate dangos and then render servile any animal that consumes them. This works on SMILES users, but not on Zoan demon fruit users.","Paramecia"
+"586",586,"Tsurujo",191,55,NA,"Resident","living",117,"Pays des Wa","actif",NA,NA,FALSE,NA,NA,NA
+"587",587,"Komachiyo",NA,NA,NA,"Resident","living",117,"Pays des Wa","actif",NA,NA,FALSE,NA,NA,NA
+"588",588,"Baboumaru",NA,NA,NA,"Resident","living",117,"Pays des Wa","actif",NA,NA,FALSE,NA,NA,NA
+"589",589,"Bunbuku",NA,NA,NA,"Resident","living",117,"Pays des Wa","actif",NA,NA,FALSE,"Canid Fruit, Tanuki version","whoever eats it can transform into a tanuki.","Zoan"
+"590",590,"Yamato",263,28,NA,"Resident","living",117,"Pays des Wa","actif",NA,NA,FALSE,"Fruit of the Canid, Divine Wolf version","whoever eats it can turn into a divine wolf.","Zoan Mythique"
+"591",591,"Rock",NA,25,2e+07,"Yeti Cool Brothers","living",118,"Punk Hazard","actif",NA,NA,FALSE,NA,NA,NA
+"592",592,"Scotch",NA,25,2e+07,"Yeti Cool Brothers","living",118,"Punk Hazard","actif",NA,NA,FALSE,NA,NA,NA
+"593",593,"Smiley",NA,4,NA,"Resident","deceased",118,"Punk Hazard","actif",NA,NA,FALSE,"Fruit of the Salamander, Axolotl version","Those who eat it can transform into an axolotl, the user being an enormous living gelatinous mass made of a flammable product, it can move much faster to charge its victims and subdivide into a multitude of smaller creatures like the original version.","Zoan"
+"594",594,"Riku Dold III",261,60,NA,"King","living",119,"Dressrosa","actif",NA,NA,FALSE,NA,NA,NA
+"595",595,"Scarlett",NA,25,NA,"Princess","deceased",119,"Dressrosa","actif",NA,NA,FALSE,NA,NA,NA
+"596",596,"Kyros",268,44,NA,"Commander-in-Chief","living",119,"Dressrosa","actif",NA,NA,FALSE,NA,NA,NA
+"597",597,"Viola",178,29,NA,"Princess","living",119,"Dressrosa","actif",NA,NA,FALSE,"Fruit of the Eye","Enables its user to read people's minds, transmit his own memories to someone else, and generate tears of various shapes (e.g. whale-shaped tears with enough power to pulverize wooden crates and stun a group of people). It also enables its user to observe events taking place far away, by ""transmuting"" his gaze into a bird's-eye view of everything happening within a given perimeter.","Paramecia"
+"598",598,"Rebecca",171,16,NA,"Next","living",119,"Dressrosa","actif",NA,NA,FALSE,NA,NA,NA
+"599",599,"Gatz",NA,NA,NA,"Resident","living",119,"Dressrosa","actif",NA,NA,FALSE,NA,NA,NA
+"600",600,"Tank Lepanto",NA,NA,NA,"Resident","living",119,"Dressrosa","actif",NA,NA,FALSE,NA,NA,NA
+"601",601,"Guncho",NA,NA,NA,"King","living",120,"Green Bit","actif",NA,NA,FALSE,NA,NA,NA
+"602",602,"Manshelly",NA,25,NA,"Princess","living",120,"Green Bit","actif",NA,NA,FALSE,"Fruit of Healing","Temporarily heals any living thing through the user's tears. It can permanently heal the wounded by taking a little vital energy from healthy people (this energy takes the form of a dandelion flower). By extension, its user can repair any object, but at the expense of its life expectancy.","Paramecia"
+"603",603,"Zunesh",NA,NA,NA,"","living",121,"Zo","actif",NA,NA,FALSE,NA,NA,NA
+"604",604,"Bêgis Khan",NA,NA,NA,"Lord","living",121,"Zo","actif",NA,NA,FALSE,NA,NA,NA
+"605",605,"Caborage",511,40,NA,"Day Lord / Red Sheaths","living",121,"Zo","actif",NA,NA,FALSE,NA,NA,NA
+"606",606,"Chavipère",522,40,NA,"Seigneur Nocture / Fourreaux Rouges","living",121,"Zo","actif",NA,NA,FALSE,NA,NA,NA
+"607",607,"Sicilion",196,34,NA,"Captain of the Musketeers unit","living",121,"Zo","actif",NA,NA,FALSE,NA,NA,NA
+"608",608,"Cancelot",204,29,NA,"Musketeer unit","living",121,"Zo","actif",NA,NA,FALSE,NA,NA,NA
+"609",609,"Giovanni",226,30,NA,"Musketeer unit","living",121,"Zo","actif",NA,NA,FALSE,NA,NA,NA
+"610",610,"Wanda",181,28,NA,"Musketeer unit","living",121,"Zo","actif",NA,NA,FALSE,NA,NA,NA
+"611",611,"Carrot",161,15,NA,"Musketeer unit","living",121,"Zo","actif",NA,NA,FALSE,NA,NA,NA
+"612",612,"Pedro",233,32,NA,"Musketeer unit","deceased",121,"Zo","actif",NA,NA,FALSE,NA,NA,NA
+"613",613,"Elizabello II",436,57,NA,"Sovereign","living",122,"Royaume de Prodence","actif",NA,NA,FALSE,NA,NA,NA
+"614",614,"Dagama",NA,NA,NA,"Strategist","living",122,"Royaume de Prodence","actif",NA,NA,FALSE,NA,NA,NA
+"615",615,"Kelly Funk",168,36,5.7e+07,"Assassin","living",123,"Royaume de Mogalo","actif",NA,NA,FALSE,"Fruit de la Pelisse","Allows the user to appropriate the physical and mental capacities of a living being (human or animal) by wearing it in the same way as a jacket.","Paramecia"
+"616",616,"Bobby Funk",320,33,3.6e+07,"Assassin","living",123,"Royaume de Mogalo","actif",NA,NA,FALSE,NA,NA,NA
+"617",617,"Judge Vinsmoke",272,56,NA,"Sovereign","living",124,"Royaume de Germa","actif",NA,NA,FALSE,NA,NA,NA
+"618",618,"Sora Vinsmoke",NA,NA,NA,"Queen","deceased",124,"Royaume de Germa","actif",NA,NA,FALSE,NA,NA,NA
+"619",619,"Reiju Vinsmoke",173,24,NA,"Princess","living",124,"Royaume de Germa","actif",NA,NA,FALSE,NA,NA,NA
+"620",620,"Ichiji Vinsmoke",186,21,NA,"Prince","living",124,"Royaume de Germa","actif",NA,NA,FALSE,NA,NA,NA
+"621",621,"Niji Vinsmoke",185,21,NA,"Prince","living",124,"Royaume de Germa","actif",NA,NA,FALSE,NA,NA,NA
+"622",622,"Yonji Vinsmoke",194,21,NA,"Prince","living",124,"Royaume de Germa","actif",NA,NA,FALSE,NA,NA,NA
+"623",623,"Marco",203,45,1.374e+09,"Sphinx (doctor) / Command 1st Whitebeard Fleet","living",125,"Sphinx","actif",NA,NA,FALSE,"Phoenix Fruit","It transforms into a Phoenix or a hybrid form","Zoan Mythique"
+"624",624,"Gan Forr",180,68,NA,"God","living",126,"Skypiea","actif",NA,NA,FALSE,NA,NA,NA
+"625",625,"Pierre",NA,NA,NA,"Resident","living",126,"Skypiea","actif",NA,NA,FALSE,"Horse Fruit","whoever eats it becomes half-horse. Since its user is a bird, this has turned him into a half-bird, half-horse creature. This transforms him into a kind of pegasus.","Zoan"
+"626",626,"Conis",176,21,NA,"Resident","living",126,"Skypiea","actif",NA,NA,FALSE,NA,NA,NA
+"627",627,"Pagaya",179,54,NA,"Resident","living",126,"Skypiea","actif",NA,NA,FALSE,NA,NA,NA
+"628",628,"Amazon",120,79,NA,"Resident","living",126,"Skypiea","actif",NA,NA,FALSE,NA,NA,NA
+"629",629,"Chef Shandia",179,65,NA,"Resident / Shandia tribe (chief)","living",126,"Skypiea","actif",NA,NA,FALSE,NA,NA,NA
+"630",630,"Wiper",183,24,NA,"Divine Guard / Shandia Tribe","living",126,"Skypiea","actif",NA,NA,FALSE,NA,NA,NA
+"631",631,"Kamakiri",214,24,NA,"Divine Guard / Shandia Tribe","living",126,"Skypiea","actif",NA,NA,FALSE,NA,NA,NA
+"632",632,"Braham",179,24,NA,"Divine Guard / Shandia Tribe","living",126,"Skypiea","actif",NA,NA,FALSE,NA,NA,NA
+"633",633,"Genbo",193,25,NA,"Divine Guard / Shandia Tribe","living",126,"Skypiea","actif",NA,NA,FALSE,NA,NA,NA
+"634",634,"Laki",179,22,NA,"Resident / Shandia tribe","living",126,"Skypiea","actif",NA,NA,FALSE,NA,NA,NA
+"635",635,"Aisa",140,11,NA,"Resident / Shandia tribe","living",126,"Skypiea","actif",NA,NA,FALSE,NA,NA,NA
+"636",636,"Nora",NA,400,NA,"Resident / Shandia tribe","living",126,"Skypiea","actif",NA,NA,FALSE,NA,NA,NA
+"637",637,"Calgara",222,39,NA,"Shandia tribe","deceased",126,"Skypiea","actif",NA,NA,FALSE,NA,NA,NA
+"638",638,"Om",189,29,NA,"Skypiea (exiled) / Clan Ener (Prelate of the Iron ordalia)","living",126,"Skypiea","actif",NA,NA,FALSE,NA,NA,NA
+"639",639,"Satori",179,27,NA,"Skypiea (exiled) / Clan Ener (Prelate of the Balloon Ordinary)","living",126,"Skypiea","actif",NA,NA,FALSE,NA,NA,NA
+"640",640,"Shura",191,33,NA,"Skypiea (exiled) / Clan Ener (Prelate of the ordination of sons)","living",126,"Skypiea","actif",NA,NA,FALSE,NA,NA,NA
+"641",641,"Yama",366,45,NA,"Skypiea (exile) / Clan Ener (captain of the sacred guard)","living",126,"Skypiea","actif",NA,NA,FALSE,NA,NA,NA
+"642",642,"Hotori",179,27,NA,"Skypiea (exiled) / Clan Ener (vice captain of the sacred guard)","living",126,"Skypiea","actif",NA,NA,FALSE,NA,NA,NA
+"643",643,"Kotori",179,27,NA,"Skypiea (exiled) / Clan Ener (vice captain of the sacred guard)","living",126,"Skypiea","actif",NA,NA,FALSE,NA,NA,NA
+"644",644,"Haredas",253,97,NA,"Resident","living",127,"Weatheria","actif",NA,NA,FALSE,NA,NA,NA
+"645",645,"Neptune",NA,70,NA,"Monarch","living",128,"Île des hommes-poissons","actif",NA,NA,FALSE,NA,NA,NA
+"646",646,"Otohime",224,36,NA,"Queen","deceased",128,"Île des hommes-poissons","actif",NA,NA,FALSE,NA,NA,NA
+"647",647,"Fukaboshi",604,24,NA,"Prince","living",128,"Île des hommes-poissons","actif",NA,NA,FALSE,NA,NA,NA
+"648",648,"Ryuboshi",544,23,NA,"Prince","living",128,"Île des hommes-poissons","actif",NA,NA,FALSE,NA,NA,NA
+"649",649,"Mamboshi",473,20,NA,"Prince","living",128,"Île des hommes-poissons","actif",NA,NA,FALSE,NA,NA,NA
+"650",650,"Shirahoshi",NA,16,NA,"Princess","living",128,"Île des hommes-poissons","actif",NA,NA,FALSE,NA,NA,NA
+"651",651,"Hoé",NA,NA,NA,"Resident","living",128,"Île des hommes-poissons","actif",NA,NA,FALSE,NA,NA,NA
+"652",652,"Mégalo",NA,NA,NA,"Resident","living",128,"Île des hommes-poissons","actif",NA,NA,FALSE,NA,NA,NA
+"653",653,"Ministre Sénestre",435,62,NA,"Minister Sénestre","living",128,"Île des hommes-poissons","actif",NA,NA,FALSE,NA,NA,NA
+"654",654,"Ministre Dextre",313,55,NA,"Minister Dextre","living",128,"Île des hommes-poissons","actif",NA,NA,FALSE,NA,NA,NA
+"655",655,"Shyarly",520,29,NA,"Owner Café des Sirènes","living",128,"Île des hommes-poissons","actif",NA,NA,FALSE,NA,NA,NA
+"656",656,"Keimi",167,18,NA,"Café des Sirènes employee","living",128,"Île des hommes-poissons","actif",NA,NA,FALSE,NA,NA,NA
+"657",657,"Pappag",50,33,NA,"Founder / Designer of the ""Criminal"" brand","living",128,"Île des hommes-poissons","actif",NA,NA,FALSE,NA,NA,NA
+"658",658,"Octy",220,38,8e+06,"Takoyaki merchant","living",128,"Île des hommes-poissons","actif",NA,NA,FALSE,NA,NA,NA
+"659",659,"Den",435,62,NA,"Carpenter","living",128,"Île des hommes-poissons","actif",NA,NA,FALSE,NA,NA,NA
+"660",660,"Ener",266,39,NA,"Manager","living",129,"La lune","actif",NA,NA,FALSE,"Fulguro-Fruit","the body of the eater is transformed into lightning. It can therefore move at lightning speed and strike anything except non-conductive elements such as rubber. He can create powerful thunderstorms or spheres of lightning. By combining Haki with its lightning, its user can hear things from over 1 kilometer away. He can also revive himself if he falls unconscious.","Logia"
+"661",661,"Monkey D. Dragon",256,55,NA,"Commander-in-Chief","living",130,"Armée Révolutionnaire","actif",NA,NA,FALSE,NA,NA,NA
+"662",662,"Sabo",187,22,6.02e+08,"Chief of Staff","living",130,"Armée Révolutionnaire","actif",NA,NA,FALSE,"Pyro-Fruit","the body of the eater is transformed into fire. It can therefore create powerful explosions and control ambient temperatures. It can also use its fire to propel itself and move much faster. However, fire is no match for magma.","Logia"
+"663",663,"Emporio Ivankov",449,53,1e+08,"Command of troop G","living",130,"Armée Révolutionnaire","actif",NA,NA,FALSE,"Fruit of Hormones","Allows its user to secrete hormones and inject them into himself or someone else. These hormones can modify the body of the person to whom they are injected: for example, their sex can be changed. They can also heal, revitalize (adrenalin) or enlarge a body part.","Paramecia"
+"664",664,"Corbeau",265,47,4e+08,"Commander of the ""Septentrionale"" troop","living",130,"Armée Révolutionnaire","actif",NA,NA,FALSE,NA,NA,NA
+"665",665,"Belo Betty",196,34,4.57e+08,"Commander of the ""Oriental"" troop","living",130,"Armée Révolutionnaire","actif",NA,NA,FALSE,"Fruit of Exaltation","Allows the user to motivate people in a fight and awaken their latent power to fight.","Paramecia"
+"666",666,"Morley",1253,160,2.93e+08,"Western"" troop commander","living",130,"Armée Révolutionnaire","actif",NA,NA,FALSE,"Fruit of the Pousse-Pousse","Allows the user to manipulate and move through rock like clay. It can also be used to create tunnels.","Paramecia"
+"667",667,"Lindbergh",149,37,3.16e+08,"Commander of the ""southern"" troop","living",130,"Armée Révolutionnaire","actif",NA,NA,FALSE,NA,NA,NA
+"668",668,"Inazuma",228,29,1e+08,"Sub-Commander of ""G"" Troop","living",130,"Armée Révolutionnaire","actif",NA,NA,FALSE,"Fruit of the Scissors","Allows users to transform their hands into scissors that cut absolutely anything, from sheets of paper to brick walls. Any cut material can be handled with ease.","Paramecia"
+"669",669,"Canard",NA,NA,NA,"Commander of the ""Oriental"" troop","living",130,"Armée Révolutionnaire","actif",NA,NA,FALSE,NA,NA,NA
+"670",670,"Koala",160,23,NA,"Lieutenant","living",130,"Armée Révolutionnaire","actif",NA,NA,FALSE,NA,NA,NA
+"671",671,"Hack",280,38,NA,"Private","living",130,"Armée Révolutionnaire","actif",NA,NA,FALSE,NA,NA,NA
+"672",672,"Zala",187,28,3.5e+07,"Special Agent","living",131,"Anciens membres du Baroque Works","actif",NA,NA,FALSE,"Sea Urchin Fruit","Allows you to transform any part of your body (even your hair) into spikes strong enough to pierce stone walls. These spikes can also be used to perform acupuncture techniques to increase the user's own muscle mass.","Paramecia"
+"673",673,"Bentham",238,32,3.2e+07,"Special Agent","living",131,"Anciens membres du Baroque Works","actif",NA,NA,FALSE,"Travesti-Fruit","Allows you to change your appearance by touching your face with your right hand, and to return to your normal appearance by touching your face with your left hand. You only need to touch a person once for their appearance to be remembered forever. The user can also assemble parts of different people, but is unable to attack unless he possesses his own face and body.","Paramecia"
+"674",674,"Marianne",145,18,2.9e+07,"Special Agent","living",131,"Anciens membres du Baroque Works","actif",NA,NA,FALSE,NA,NA,NA
+"675",675,"Babe",218,30,3200000,"Special Agent","living",131,"Anciens membres du Baroque Works","actif",NA,NA,FALSE,NA,NA,NA
+"676",676,"Lassou",NA,NA,NA,"Special Agent","living",131,"Anciens membres du Baroque Works","actif",NA,NA,FALSE,"Fruit of the Canid, Basset version","whoever eats it becomes half basset hound. Given that its user is a firearm, this has turned it into a half-gun, half-dog creature.","Zoan"
+"677",677,"Drophy",156,51,1.4e+07,"Special Agent","living",131,"Anciens membres du Baroque Works","actif",NA,NA,FALSE,"Digging Fruit","whoever eats it becomes half-mole. It can dig gigantic galleries in almost any material.","Zoan"
+"678",678,"Gemme",197,26,1e+07,"Special Agent","living",131,"Anciens membres du Baroque Works","actif",NA,NA,FALSE,"Fruit Boum-Boum","The user can make any part of his body explode, including his boogers and breath, rendering him insensitive to explosions. The user can combine his power with a pistol, which he reloads by blowing into it.","Paramecia"
+"679",679,"Mikita",177,24,7500000,"Special Agent","living",131,"Anciens membres du Baroque Works","actif",NA,NA,FALSE,"Kilo-Kilo Fruit","Allows the user's mass to be varied between a featherweight and 10 tons. Note that the user's volume does not change when he changes his mass.","Paramecia"
+"680",680,"Jabura",212,37,NA,"Cipher Pol n°9","living",132,"Anciens membres du Cipher Pol","actif",NA,NA,FALSE,"Fruit of the Canid, Wolf version","whoever eats it becomes half-wolf. Its strength and speed are greater in hybrid form.","Zoan"
+"681",681,"Blueno",258,32,NA,"Cipher Pol n°9","living",132,"Anciens membres du Cipher Pol","actif",NA,NA,FALSE,"Fruit of the Porter","Allows the user to transform anything he touches into a door: a wall, part of a human body or a vacuum. In the latter case, the user 'disappears' into another dimension and can go anywhere by opening a door at a specific point.","Paramecia"
+"682",682,"Kumadori",338,36,NA,"Cipher Pol n°9","living",132,"Anciens membres du Cipher Pol","actif",NA,NA,FALSE,NA,NA,NA
+"683",683,"Fukuro",331,31,NA,"Cipher Pol n°9","living",132,"Anciens membres du Cipher Pol","actif",NA,NA,FALSE,NA,NA,NA
+"684",684,"Kalifa",185,27,NA,"Cipher Pol n°9","living",132,"Anciens membres du Cipher Pol","actif",NA,NA,FALSE,"Fruit des Bulles","Allows its possessor to produce soap bubbles that clean everything to the point of removing the force itself. It also soaps the skin, making enemies so slippery they can barely move or hold anything in their hands.","Paramecia"
+"685",685,"Nero",202,22,NA,"Cipher Pol n°9","living",132,"Anciens membres du Cipher Pol","actif",NA,NA,FALSE,NA,NA,NA
+"686",686,"Spandine",275,66,NA,"Cipher Pol n°9","living",132,"Anciens membres du Cipher Pol","actif",NA,NA,FALSE,NA,NA,NA
+"687",687,"Kuzan / Aokiji",298,49,NA,"Admiral","living",133,"Anciens membres de la Marine","actif",NA,NA,FALSE,"Frost Fruit","the body of the eater is transformed into ice. It can freeze anything and almost anyone, launching super-powerful waves of icy air that can freeze everything in their path, and is immune to temperature differentials when it intensifies the ambient cold. Its user can neutralize opponents in a flash, or even freeze a vast expanse of water for 1 week.","Logia"
+"688",688,"Morgan",285,44,NA,"Colonel","living",133,"Anciens membres de la Marine","actif",NA,NA,FALSE,NA,NA,NA
+"689",689,"Bellamy",240,27,1.95e+08,"Private","living",21,"Don Quixote's crew","inactive",23,1.113e+09,FALSE,"Fruit of the Spring","Transform parts of your body into springs that bounce back at impressive speed, increasing the power of your blows.","Paramecia"
+"690",690,"Bartholomew Kuma",689,47,2.96e+08,"Lieutenant","living",134,"Esclave","actif",NA,NA,FALSE,"Fruit of the Pads","Thanks to the pads held in the hands, the user can project powerful shockwaves, teleport or repel anything and everything, including pain and physical attacks. The user can 'dispatch' opponents anywhere.","Paramecia"
+"691",691,"César Clown",309,40,3e+08,"","living",118,"Punk Hazard","actif",NA,NA,FALSE,"Fruit of the Gas","the body of the eater is transformed into gas. As a result, his body can change shape at will. It can float high above the ground and slip through any narrow or otherwise inaccessible passage. It seems to be immune to certain poisons, can create others such as hallucinogenic gases and can even purify intoxicated air. He can suffocate his victims by depriving them of oxygen. It can also create an explosive gas and spit a beam capable of melting metal.","Logia"
+"692",692,"Morgans",305,53,NA,"World Economic Journal (boss)","living",145,"World Economic Journal","actif",NA,NA,FALSE,"Fruit du Volatile, Albatross version","whoever eats it can turn into an albatross.","Zoan"
+"693",693,"El Gorago",NA,NA,1e+07,"Captain","living",NA,NA,NA,NA,NA,NA,"Fruit of the Vocalise","the person who has eaten this fruit uses sound beams converted into lasers to destroy everything in his path.","Paramecia"
+"694",694,"Golass",NA,NA,8e+06,"Captain","living",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"695",695,"Tobio",NA,NA,NA,"","living",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"696",696,"Ganzo",NA,NA,NA,"","living",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"697",697,"Woonan",NA,NA,6e+07,"Captain","deceased",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"698",698,"Bear King",NA,NA,11600000,"Captain","living",72,"The Trump Pirates crew","unknown",8,38500000,FALSE,"Unbreakable Fruit","whoever eats it becomes as hard as rock, and can increase the heat of certain body parts so that his opponent burns himself by touching them.","Paramecia"
+"699",699,"Honey Queen",NA,NA,7800000,"","living",72,"The Trump Pirates crew","unknown",8,38500000,FALSE,"Fruit of Dissolution","This fruit enables its user to dissolve anything into liquid, including himself, by shooting rays into his opponents' eyes.","Paramecia"
+"700",700,"Pin Joker",NA,NA,9900000,"","living",72,"The Trump Pirates crew","unknown",8,38500000,FALSE,NA,NA,NA
+"701",701,"Boo Jack",NA,NA,3200000,"","living",72,"The Trump Pirates crew","unknown",8,38500000,FALSE,NA,NA,NA
+"702",702,"Skunk One",NA,NA,6e+06,"","living",72,"The Trump Pirates crew","unknown",8,38500000,FALSE,NA,NA,NA
+"703",703,"Borodo",NA,NA,NA,"","living",135,"Frères Voleurs","actif",NA,NA,FALSE,NA,NA,NA
+"704",704,"Akisu",NA,NA,NA,"","living",135,"Frères Voleurs","actif",NA,NA,FALSE,NA,NA,NA
+"705",705,"Bulter",NA,NA,14900000,"Earl Butler","living",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"706",706,"Hotdog",NA,NA,4e+06,"General Hotdog","living",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"707",707,"Mobambi",NA,NA,NA,"King","living",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"708",708,"Heaby",NA,NA,4200000,"Chairman Heaby","living",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"709",709,"Général Gasparde",NA,NA,9.5e+07,"Captain","living",73,"Gasparde's crew","unknown",6,1.52e+08,FALSE,"Candy Fruit","the body of the eater is transformed into syrup. It can also contain any solid mass passing through it (swords, fists, feet, etc.). However, it is vulnerable if hit by a mealy substance.","Logia"
+"710",710,"Needless",NA,NA,5.7e+07,"","living",73,"Gasparde's crew","unknown",6,1.52e+08,FALSE,NA,NA,NA
+"711",711,"Biera",NA,NA,NA,"","living",73,"Gasparde's crew","unknown",6,1.52e+08,FALSE,NA,NA,NA
+"712",712,"Shuraiya Bascùd",NA,20,NA,"","living",73,"Gasparde's crew","unknown",6,1.52e+08,FALSE,NA,NA,NA
+"713",713,"Adelle Bascùd",NA,11,NA,"","living",73,"Gasparde's crew","unknown",6,1.52e+08,FALSE,NA,NA,NA
+"714",714,"Saga",NA,NA,NA,"","living",137,"Île d'Asuka","actif",NA,NA,FALSE,NA,NA,NA
+"715",715,"Toma",NA,NA,NA,"","living",137,"Île d'Asuka","actif",NA,NA,FALSE,NA,NA,NA
+"716",716,"Bismarck",NA,NA,NA,"","living",137,"Île d'Asuka","actif",NA,NA,FALSE,NA,NA,NA
+"717",717,"Boo Kong",NA,NA,NA,"","living",137,"Île d'Asuka","actif",NA,NA,FALSE,NA,NA,NA
+"718",718,"Maya",NA,NA,NA,"Priestess","living",137,"Île d'Asuka","actif",NA,NA,FALSE,NA,NA,NA
+"719",719,"Izaya",NA,NA,NA,"Priestess","living",137,"Île d'Asuka","actif",NA,NA,FALSE,NA,NA,NA
+"720",720,"Lacos",NA,NA,NA,"Chief Warrior","living",137,"Île d'Asuka","actif",NA,NA,FALSE,NA,NA,NA
+"721",721,"Omatsuri",NA,NA,NA,"Captain","deceased",138,"Pirate des flèches rouges","actif",NA,NA,FALSE,NA,NA,NA
+"722",722,"Lily Carnation",NA,NA,NA,"Captain","deceased",138,"Pirate des flèches rouges","actif",NA,NA,FALSE,NA,NA,NA
+"723",723,"Papa",NA,NA,NA,"Captain","unknown",139,"Pirate au foyer","actif",NA,NA,FALSE,NA,NA,NA
+"724",724,"Brief",NA,NA,NA,"Captain","unknown",140,"Pirate Moustachus","actif",NA,NA,FALSE,NA,NA,NA
+"725",725,"Ratchet",NA,NA,NA,"Feudal lord","living",141,"Île de Mecha","actif",NA,NA,FALSE,NA,NA,NA
+"726",726,"Honki",NA,NA,NA,"Colonel","living",141,"Île de Mecha","actif",NA,NA,FALSE,NA,NA,NA
+"727",727,"Maji",NA,NA,NA,"General","living",141,"Île de Mecha","actif",NA,NA,FALSE,NA,NA,NA
+"728",728,"Roba",NA,NA,NA,"Resident","living",141,"Île de Mecha","actif",NA,NA,FALSE,NA,NA,NA
+"729",729,"Musshul",NA,NA,NA,"Prince","living",103,"Royaume maléfique de Black Drum","actif",NA,NA,FALSE,"Chamquipue fruit","the person eating the fruit can create poisonous spores. These spores can take various forms (laser beams, clones, etc.). Of course, the user is immune to poison, but his power is vulnerable to fire.","Paramecia"
+"730",730,"Scarlett",NA,NA,NA,"","living",45,"The crew of the Lion d'Or","unknown",NA,NA,FALSE,NA,NA,NA
+"731",731,"Billy",NA,NA,NA,"","living",45,"The crew of the Lion d'Or","unknown",NA,NA,FALSE,NA,NA,NA
+"732",732,"Xiao",NA,NA,NA,"","living",45,"The crew of the Lion d'Or","unknown",NA,NA,FALSE,NA,NA,NA
+"733",733,"Schneider",NA,NA,NA,"Captain","living",67,"The Schneider Pirates crew","unknown",2,NA,FALSE,NA,NA,NA
+"734",734,"Buzz",NA,NA,NA,"","living",67,"The Schneider Pirates crew","unknown",2,NA,FALSE,"Fruit of the Volatile, Eagle version","Very similar to the Falcon version of Fruit du Volatile","Zoan"
+"735",735,"Zéphyr",348,72,NA,"Chef","deceased",142,"Néo Marine","actif",NA,NA,FALSE,NA,NA,NA
+"736",736,"Ain",174,NA,NA,"Vice-Admiral","living",142,"Néo Marine","actif",NA,NA,FALSE,"Fruit Jeune-Jeune","This fruit allows its holder to rejuvenate people and return objects to their state 12 years ago (for example, volcanic rocks will return to their lava state). This power is manifested by the creation of a pink aura with which the user must touch the target to activate it. The more the object or person is touched by this power, the younger it becomes. If the number of touches exceeds the age of the person or object touched (minus 12 years for each touch), he/she disappears permanently.","Paramecia"
+"737",737,"Bins",435,NA,NA,"Lieutenant","living",142,"Néo Marine","actif",NA,NA,FALSE,"Fluffy Fruit","This fruit enables its user to accelerate the growth rate of plants and control them at will. Its user can use it mainly to trap or attack enemies with vines, but also to protect himself from enemy attacks. However, it can only grow plants in environments where vegetation is present.","Paramecia"
+"738",738,"Gild Tesoro",NA,41,NA,"Owner","living",143,"Gran Tesero","actif",NA,NA,FALSE,"Fruit of Gold","This fruit allows its user to manipulate gold at will. He can transform solid objects into gold and melt them as well. He can coat his body in gold, transforming himself into a giant solid gold golem. He can also make buildings out of gold and control them.","Paramecia"
+"739",739,"Baccarat",NA,NA,NA,"Concierge","living",143,"Gran Tesero","actif",NA,NA,FALSE,"Fruit of Luck","This fruit enables its user to steal luck from those he touches and use it for himself.","Paramecia"
+"740",740,"Dice",NA,NA,NA,"Dealer","living",143,"Gran Tesero","actif",NA,NA,FALSE,NA,NA,NA
+"741",741,"Tanaka",NA,NA,NA,"Safety Manager","living",143,"Gran Tesero","actif",NA,NA,FALSE,"Passe-Muraille fruit","This fruit allows its user to pass through solid objects to escape or pass through walls.","Paramecia"
+"742",742,"Carina",NA,19,NA,"Owner","living",143,"Gran Tesero","actif",NA,NA,FALSE,NA,NA,NA
+"743",743,"Douglas Bullet",NA,45,NA,"","living",NA,NA,NA,NA,NA,NA,"Fruit de la Ferraille","This fruit enables its user to manipulate and combine objects such as iron and weapons.","Paramecia"
+"744",744,"Buena Festa",NA,NA,NA,"","living",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"745",745,"Ann",NA,NA,NA,"","living",NA,NA,NA,NA,NA,NA,"Fruit of Vision","This fruit enables him to create temporary illusions in the shape of the desired person.","Paramecia"
+"746",746,"Donald Moderate",NA,NA,NA,"","living",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"747",747,"Uta",NA,21,NA,"Resident","living",144,"Elegia","actif",NA,NA,FALSE,NA,NA,NA
+"748",748,"Gordon",NA,NA,NA,"Resident","living",144,"Elegia","actif",NA,NA,FALSE,NA,NA,NA
+"749",749,"Tenguyama Hitetsu",NA,81,NA,"Blacksmith","living",117,"Pays des Wa","actif",NA,NA,FALSE,NA,NA,NA
+"750",750,"Gion",NA,NA,NA,"Vice-Admiral","living",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"751",751,"Musshuru",NA,33,NA,"","living",NA,NA,NA,NA,NA,NA,"Chamquipue fruit","the person eating the fruit can create poisonous spores. These spores can take various forms (laser beams, clones, etc.). Of course, the user is immune to poison, but his power is vulnerable to fire.","Paramecia"
+"752",752,"Apis",NA,NA,NA,"","living",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"753",753,"Bokuden",NA,NA,NA,"","living",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"754",754,"Orlombus",480,42,1.48e+08,"Admiral","living",57,"Fleet Yonta Maria","assets",4300,5e+07,FALSE,NA,NA,NA
+"755",755,"Macro",NA,NA,NA,"Captain","living",81,"L'Équipage des Maquereaux","inconnu",3,NA,FALSE,NA,NA,NA
+"756",756,"Pudding Pudding",NA,NA,NA,"Commodore","deceased",82,"Marine","actif",NA,NA,FALSE,NA,NA,NA
+"757",757,"Pandaman",200,NA,NA,"Fighter","unknown",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"758",758,"Zenny",NA,NA,NA,"Loan shark","living",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"759",759,"Wetton",NA,NA,14800000,"Mayor","deceased",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"760",760,"Bigalo",NA,NA,14900000,NA,NA,149,"Equipage de Bigalo","inconnu",NA,NA,FALSE,NA,NA,NA
+"761",761,"Végapunk",NA,65,NA,"Scientist","dead",NA,NA,NA,NA,NA,NA,"Fruit du Ciboulot","Nomi Nomi no Mi is a Paramecia-type Demon Fruit that allows the brain of its eater to grow indefinitely as it ingests new knowledge, transforming the eater into a Brain-Man.","Paramecia"
+"762",762,"Stronger",NA,NA,NA,"Doc Q's horse","living",22,"Blackbeard's crew","assets",10,2445800000,TRUE,"Horse fruit, Pegasus model","This demon fruit allows the user to transform into a flying winged horse or a hybrid flying winged horse.","Zoan Mythique"
+"763",763,"Punk 01 - Shaka",NA,NA,NA,"Vegapunk - the good","unknown",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"764",764,"Punk 02 - Lilith",NA,NA,NA,"Vegapunk - evil","living",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"765",765,"Punk 03 - Edison",NA,NA,NA,"Vegapunk - inventiveness","living",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"766",766,"Punk 04 - Pythagoras",NA,NA,NA,"Vegapunk - knowledge","living",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"767",767,"Punk 05 - Atlas",NA,NA,NA,"Vegapunk - violence","living",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"768",768,"Punk 06 - York",NA,NA,NA,"Vegapunk - envy","living",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"769",769,"S-Snake",NA,NA,NA,"Seraph-type pacifistas","living",NA,NA,NA,NA,NA,NA,"Passion fruit clone","Passion fruit clone","Clone"
+"770",770,"S-Hawk",NA,NA,NA,"Seraph-type pacifistas","living",NA,NA,NA,NA,NA,NA,"Clone of the fruit of the slasher","Clone of the fruit of the slasher","Clone"
+"771",771,"S-Bear",NA,NA,NA,"Seraph-type pacifistas","living",NA,NA,NA,NA,NA,NA,"Clone of the Pawpaw Fruit","Clone of the Pawpaw Fruit","Clone"
+"772",772,"S-Shark",NA,NA,NA,"Seraph-type pacifistas","living",NA,NA,NA,NA,NA,NA,"Clone of the Barbotage fruit","Clone of the Barbotage fruit","Clone"
+"773",773,"Karazu",NA,NA,NA,"Captain","living",130,"Armée Révolutionnaire","actif",NA,NA,FALSE,NA,NA,NA
+"774",774,"Jaygarcia Saturn",NA,NA,NA,"God of science / research-related matters","dead",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"775",775,"Marcus Mars",NA,NA,NA,"God of the environment / global communication","alive",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"776",776,"Topman Warcury",NA,NA,NA,"God of justice / military might","alive",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"777",777,"Ethanbaron V. Nusjuro",NA,NA,NA,"God of the global economy / global finance","alive",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"778",778,"Shepherd Ju Peter",NA,NA,NA,"God of agriculture / resources","alive",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"779",779,"Imu Neronna",NA,NA,NA,"Absolute ruler of the world","alive",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"780",780,"Figarland Shamrock",NA,NA,NA,"Leader of the Divine Knights","alive",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"781",781,"Vegapunk “Shaka”",NA,NA,NA,"Scientist - Justice / Logic","dead",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"782",782,"Vegapunk “Lilith”",NA,NA,NA,"Scientist - Malice/Survival","alive",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"783",783,"Vegapunk “Edison”",NA,NA,NA,"Scientist - Creativity/Engineering","dead",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"784",784,"Vegapunk “Pythagoras”",NA,NA,NA,"Scientist - Analysis/robotics","dead",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"785",785,"Vegapunk “Atlas”",NA,NA,NA,"Scientist - Strength/combat","dead",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"786",786,"Vegapunk “York”",NA,NA,NA,"Scientist - Desire / greed","alive",NA,NA,NA,NA,NA,NA,NA,NA,NA
