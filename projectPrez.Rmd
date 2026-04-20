@@ -431,7 +431,7 @@ fruit_counts %>%
 
 
 ## Most common DF types (in a plot)
-```{r}
+```{r message=FALSE, warning=FALSE, paged.print=FALSE}
 ggplot(fruit_counts, 
        aes(x = type, 
            y = n, 
@@ -698,7 +698,7 @@ full_character_df %>%
 
 
 ## Size Distribution (Density)
-```{r}
+```{r message=FALSE, warning=FALSE, paged.print=FALSE}
 
 ## size distribution (density)
 # density
@@ -718,7 +718,7 @@ full_character_df %>%
 
 
 ## Devil Fruit VS Non-Devil Fruit
-```{r}
+```{r message=FALSE, warning=FALSE, paged.print=FALSE}
 
 # fruit user vs non fruit users
 full_character_df %>%
@@ -767,7 +767,7 @@ episodes_df <- episodes_df %>%
   select(-saga_clean)
 
 
-episodes_df
+
 
 ```
 
@@ -814,7 +814,6 @@ episodes_df %>%
   theme_minimal(base_size = 14)
 
 ```
-
 
 
 ## Episodes per Year in each Saga
