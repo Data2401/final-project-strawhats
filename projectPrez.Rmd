@@ -402,6 +402,15 @@ full_character_df %>%
     fill = "Category"
   ) 
 ```
+```{r include=FALSE}
+# creating fruit_counts
+fruit_counts <- full_character_df %>%
+  filter(!is.na(type)) %>%
+  count(type, sort = TRUE)
+
+```
+
+
 
 ## Most Common Devil Fruit Types
 - Compares different types of Devil Fruits 
@@ -438,7 +447,7 @@ fruit_counts %>%
 
 ## Most common DF types (in a plot)
 
-```{r}
+```{r echo=FALSE}
 ggplot(fruit_counts, 
        aes(x = type, 
            y = n, 
