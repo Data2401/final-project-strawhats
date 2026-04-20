@@ -386,6 +386,16 @@ full_character_df %>%
   ) 
 ```
 
+```{r include=FALSE}
+# creating fruit_counts
+fruit_counts <- full_character_df %>%
+  filter(!is.na(type)) %>%
+  count(type, sort = TRUE)
+
+```
+
+
+
 ## Most Common Devil Fruit Types
 - Compares different types of Devil Fruits 
 - Some types appear more frequently than others
