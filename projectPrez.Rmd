@@ -839,6 +839,10 @@ episodes_df %>%
 
 ```
 
+## That is all!
 
+- Wish we had more time to work on more (and cooler) graphs
+- Working with this One Piece API was definitely an
+experience
 
 
