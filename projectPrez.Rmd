@@ -35,21 +35,21 @@ Zoro, Sanji, Nami, Brook, Robin, Jinbe, & Chopper.
 One Piece is essentially about pirate crews exploring different regions and competing for power, fame, and treasure. 
 (And for Luffy to make friends along the way)
 
-# What is a "Crew"?
+## What is a "Crew"?
 A crew is a team of pirates 
 Each crew has: 
 - Captain (Leader of the group) 
 - Members with roles (Navigator, Doctor, etc.)
 
 
-# What is a "Bounty"?
+## What is a "Bounty"?
 - A bounty is a price put on the head of certain
 individuals, typically pirates. 
 - the higher the bounty, the more dangerous
 the world government identifies you as
 
 
-# What is a "Devil Fruit"?
+## What is a "Devil Fruit"?
 - A devil fruit is a magical fruit in the One Piece
 universe. 
 - grant specific powers to the individual
@@ -357,12 +357,12 @@ would make the average look way bigger than normal.
 # Devil Fruits
 Devil Fruits are considered rare and powerful items scattered throughout the world of One Piece, but it's unclear how they are distributed amoung characters and how they influence factors like bounties. 
 
-# Why Study Devil Fruits? 
+## Why Study Devil Fruits? 
 - Known to be rare and powerful 
 - May influence strength and reputation 
 - We wanted to see how they appear in the data
 
-# Characters With vs Without Devil Fruits
+## Characters With vs Without Devil Fruits
 - Shows how many characters have Devil Fruits 
 - Majority of characters do not have one
 
@@ -401,7 +401,7 @@ full_character_df %>%
   ) 
 ```
 
-# Most Common Devil Fruit Types
+## Most Common Devil Fruit Types
 - Compares different types of Devil Fruits 
 - Some types appear more frequently than others
 
@@ -428,7 +428,7 @@ ggplot(fruit_counts,
 ```
 
 
-# Crews with Multiple Devil Fruit Users 
+## Crews with Multiple Devil Fruit Users 
 - Shows crews with more than one user 
 - Highlights where Devil Fruits are more concentrated 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
@@ -454,12 +454,12 @@ ggplot(crew_fruit_counts, aes(x = reorder(crew_name, n), y = n, fill = n)) +
 ```
 
 
-# Do Devil Fruits Affect Bounty?
+## Do Devil Fruits Affect Bounty?
 - Devil Fruits provide strong abilites
 - Bounties reflect danger and influence 
 - Do these two relate?
 
-# Do Devil Fruit users have higher bounties?
+## Do Devil Fruit users have higher bounties?
 - Compares bounty distribution between groups 
 - Median bounty is higher for devil fruit users 
 - Some non-users still have high bounties (outliers)
@@ -484,7 +484,7 @@ ggplot(bounty_df, aes(x = has_fruit, y = bounty, fill = has_fruit)) +
 ```
 
 
-# Average bounty of Devil Fruit users vs non-users?
+## Average bounty of Devil Fruit users vs non-users?
 - Comparing average bounty between the two groups 
 - devil fruit users have a higher bounty average
 -further supports data seen in the box plot
@@ -510,7 +510,7 @@ full_character_df %>%
 ```
 
 
-# Highest bounty characters without Devil Fruits?
+## Highest bounty characters without Devil Fruits?
 - Some non-Devil Fruit users still have high bounties 
 - Strength and influence are not limited to Devil Fruit powers 
 
@@ -564,7 +564,7 @@ ggplot(blue_counts, aes(x = sea_name, y = n)) +
   )
 ```
 
-# Island  Distribution by Region
+## Island  Distribution by Region
 - Compares number of islands across regions 
 Some regions appear more frequently in the dataset
 - Aligns with anime/manga
@@ -586,7 +586,7 @@ locations_df %>%
 
 # Characters
 
-How many members are in the Strawhats crew?
+## How many members are in the Strawhats crew?
 ```{r}
 characters_with_crews %>%
   filter(crew_name == "Straw Hat Pirates") %>% 
@@ -594,7 +594,7 @@ characters_with_crews %>%
 
 ```
 
-How many members are in the Big Mom crew? (comparing to other crews)
+## How many members are in the Big Mom crew? (comparing to other crews)
 ```{r}
 crew_counts <- full_character_df %>%
   filter(!is.na(crew_name)) %>%
@@ -616,7 +616,7 @@ ggplot(crew_counts, aes(x = reorder(crew_name, n), y = n,
 
 ```
 
-How many characters are captains of their crew? 
+## How many characters are captains of their crew? 
 ```{r}
 
 characters_with_crews %>%
@@ -625,11 +625,8 @@ characters_with_crews %>%
 
 ```
 
-<<<<<<< HEAD
-What occupations appear most often in pirate crews?
-=======
-# How many captains are there compared to navigators? 
->>>>>>> 60670da7c70d27407799a13bc17f1f60942dbbf0
+
+## What occupations appear most often in pirate crews?
 ```{r}
 library(dplyr)
 library(ggplot2)
@@ -661,7 +658,7 @@ ggplot(job_counts, aes(x = reorder(job, n), y = n, fill = n)) +
 #lets change this question up a bit, maybe include doctors, or just general crew members 
 ```
 
-# Distribution of character sizes
+## Distribution of character sizes
 What is the distribution of height among the characters? 
 
 ```{r}
@@ -701,20 +698,20 @@ full_character_df %>%
 
 
 # Episodes
-```{r}
+```{r message=FALSE, warning=FALSE, paged.print=FALSE}
 episodes_df
 ```
-How many episodes were released per decade?
+## How many episodes were released per decade?
 ```{r}
 
 ```
 
-What year had the most episode release?
+## What year had the most episode release?
 ```{r}
 
 ```
 
-What month has the most episode releases?
+## What month has the most episode releases?
 ```{r}
 
 ```
