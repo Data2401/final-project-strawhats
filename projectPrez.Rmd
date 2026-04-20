@@ -408,14 +408,37 @@ full_character_df %>%
 - Some types appear more frequently than others
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
-fruit_counts <- full_character_df %>%
-  filter(!is.na(type)) %>%
-  count(type, sort = TRUE)
+fruit_counts %>%
+  gt() %>%
+  tab_header(
+    title = "Devil Fruit Types",
+    subtitle = "Count of characters by fruit category"
+  ) %>%
+  cols_label(
+    type = "Fruit Type",
+    n = "Count"
+  ) %>%
+  fmt_number(columns = n, decimals = 0) %>%
+  tab_style(
+    style = list(
+      cell_fill(color = "azure"),
+      cell_text(weight = "bold")
+    ),
+    locations = cells_body(columns = n)
+  ) %>%
+  tab_options(
+    table.border.top.color = "azure",
+    table.border.top.width = px(3),
+    table.border.bottom.color = "azure",
+    table.border.bottom.width = px(3),
+    heading.align = "center"
+  )
+```
 
-fruit_counts
 
-library(ggplot2)
+## Most common DF types (in a plot)
 
+```{r}
 ggplot(fruit_counts, 
        aes(x = type, 
            y = n, 
@@ -546,8 +569,6 @@ full_character_df %>%
 - Shows which seas/regions have the most islands in the dataset
 
 - East Blue vs North Blue
-    - Focuses on two secific regions 
-    - Makes the comparison easier to see
 
 ```{r message=FALSE, warning=FALSE, include=FALSE, paged.print=FALSE}
 locations_df
@@ -588,6 +609,10 @@ locations_df %>%
 ```
 
 ## Characters
+- As we can see there are hundereds of characters
+in the One Piece Universe
+- We were limited on time, but here are some more plots!
+
 
 ## How many members are in the Strawhats crew?
 ```{r}
@@ -680,7 +705,7 @@ full_character_df %>%
 ```
 
 ## size distribution (density)
-```{r}
+```{r echo=FALSE, message=FALSE, warning=FALSE}
 # density
 full_character_df %>%
   filter(!is.na(size)) %>%
@@ -696,7 +721,7 @@ full_character_df %>%
 ```
 
 ## devil fruit vs non-devil fruit
-```{r}
+```{r echo=FALSE}
 # fruit user vs non fruit users
 full_character_df %>%
   mutate(has_fruit = !is.na(devil_fruit)) %>%
