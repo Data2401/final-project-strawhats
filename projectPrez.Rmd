@@ -590,7 +590,7 @@ locations_df %>%
 
 ## Characters
 
-How many members are in the Strawhats crew?
+## How many members are in the Strawhats crew?
 ```{r}
 characters_with_crews %>%
   filter(crew_name == "Straw Hat Pirates") %>% 
@@ -630,8 +630,7 @@ characters_with_crews %>%
 ```
 
 
-## How many captains are there compared to navigators? 
-
+## What occupations appear most often in pirate crews?
 ```{r}
 library(dplyr)
 library(ggplot2)
@@ -708,8 +707,6 @@ full_character_df %>%
 ```
 
 
-
-
 ## Episodes
 - As mentioned One Piece has been releasing since 1999
 - At the moment of this presentation being made it has
@@ -749,7 +746,8 @@ episodes_df
 ```
 
 
-##How many episodes were released per decade?
+## How many episodes were released per decade?
+
 ```{r}
 episodes_df %>%
   count(decade) %>%
@@ -773,6 +771,7 @@ episodes_df %>%
 
 ```
 
+
 ## which Saga has the most episodes?
 
 ```{r}
@@ -790,6 +789,7 @@ episodes_df %>%
   theme_minimal(base_size = 14)
 
 ```
+
 ## Episodes per Year in each Saga
 ```{r}
 episodes_df %>%
@@ -807,8 +807,5 @@ episodes_df %>%
 ```
 
 
-```{r}
-
-```
 
 
