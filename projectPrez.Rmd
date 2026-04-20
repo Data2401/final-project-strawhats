@@ -9,7 +9,7 @@ date: "2026-04-08"
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-# Project Overview: 
+## Project Overview: 
 
 ```{r, echo=FALSE, out.width="70%", fig.align="center"}
 knitr::include_graphics("https://logos-world.net/wp-content/uploads/2021/09/One-Piece-Logo-1999.png")
@@ -18,14 +18,14 @@ knitr::include_graphics("https://logos-world.net/wp-content/uploads/2021/09/One-
 - Exploring patterns in the One Piece world
 - Focusing on bounties, characters, Devil Fruits, Islands, and episodes.
 
-# Introduction 
+## Introduction 
 - One piece is a long running anime (1999) and manga series 
 - The world full of pirates, crews, bounties, and adventures
 - Using data science to explore and uncover patterns in this universe.
 
 
 
-# Background Information 
+## Background Information 
 One piece is a long time running (1999) anime/ manga about pirates looking for the One Piece,
 the greatest treasure in the world.
 
@@ -56,7 +56,7 @@ universe.
 - each fruit has a different power
 - The catch?
 
-# Tidying Data
+## Tidying Data
 
 - Lots of cleaning up 
 - Some things were in french...
@@ -126,7 +126,7 @@ crews_df
 
 > Join characters with crew df
 
-```{r include=FALSE}
+```{r message=FALSE, warning=FALSE, include=FALSE}
 # data cleaning
 
 # crew df inside characters df
@@ -167,7 +167,7 @@ characters_with_crews <- characters_with_crews %>%
 
 Devil Fruit joined with the rest of the DF
 
-```{r echo=FALSE, message=FALSE, warning=FALSE}
+```{r message=FALSE, warning=FALSE, include=FALSE}
 # data merging + cleaning
 
 # fruits df column
@@ -185,13 +185,13 @@ full_character_df <- bind_cols(
 full_character_df
 ```
 
-# Bounty
+## Bounty
 
 In One Piece, the more chaos you cause, the higher the bounty on your head is. The bounties reflect how dangerous each pirate is. 
 
 
-- Average bounty by age
-```{r}
+## Average bounty by age
+```{r echo=FALSE}
 full_character_df %>%
   filter(!is.na(bounty), !is.na(age)) %>%
   group_by(age) %>%
@@ -208,7 +208,7 @@ full_character_df %>%
 ```
 
 
-What percentage of characters have a bounty?
+## What percentage of characters have a bounty?
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 # computation
@@ -247,7 +247,7 @@ full_character_df %>%
   )
 ```
 
-# What is the average bounty between all pirates?
+## What is the average bounty between all pirates?
 ```{r message=FALSE, warning=FALSE}
 full_character_df %>%
   summarise(
@@ -275,7 +275,8 @@ full_character_df <- full_character_df %>%
 ```
 
 
-Which 5 crew's has the highest bounty in total?
+## Which 5 crew's has the highest bounty in total?
+- table
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 # table
 crews_high_bounty <- full_character_df %>%
@@ -283,7 +284,10 @@ crews_high_bounty <- full_character_df %>%
   distinct() %>%
   slice_max(order_by = crew_total_prime, n = 5)
 crews_high_bounty
+```
 
+## crew bounty (plot)
+```{r}
 #plot
 crews_high_bounty %>%
   ggplot(aes(x = crew_total_prime / 1e6,
@@ -297,8 +301,10 @@ crews_high_bounty %>%
     y = "Crew"
   ) +
   xlim(0, max(crews_high_bounty$crew_total_prime / 1e6) * 1.15)
+```
 
-
+## top crews w/ bounty (bubble plot)
+```{r}
 # crew members plot
 crews_high_bounty %>%
   left_join(
@@ -322,17 +328,14 @@ crews_high_bounty %>%
     y = "Crew Size",
     color = "Crew"         
   ) +
-  scale_size_continuous(range = c(5, 15))
+  scale_size_continuous(range = c(5, 15), guide = "none")
 ```
 
 
-What is the distribution of bounties? (high or low)
-```{r}
-
-```
 
 
-# Do the captains have a higher bounty than the fighters?
+
+## Do the captains have a higher bounty than the fighters?
 
 ```{r message=FALSE, warning=FALSE, paged.print=FALSE}
 library(kableExtra)
@@ -354,7 +357,7 @@ would make the average look way bigger than normal.
 
 
 
-# Devil Fruits
+## Devil Fruits
 Devil Fruits are considered rare and powerful items scattered throughout the world of One Piece, but it's unclear how they are distributed amoung characters and how they influence factors like bounties. 
 
 ## Why Study Devil Fruits? 
@@ -539,22 +542,23 @@ full_character_df %>%
 
 ```
 
-# Islands by Region
+## Islands by Region
 - Compares islands across regions 
 - Shows which seas/regions have the most islands in the dataset
 
-## East Blue vs North Blue
-- Focuses on two secific regions 
-- Makes the comparison easier to see
+- East Blue vs North Blue
+    - Focuses on two secific regions 
+    - Makes the comparison easier to see
 
-```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+```{r message=FALSE, warning=FALSE, include=FALSE, paged.print=FALSE}
 locations_df
 
 blue_counts <- locations_df %>%
   filter(sea_name %in% c("East Blue", "North Blue")) %>%
   count(sea_name)
+```
 
-
+```{r}
 ggplot(blue_counts, aes(x = sea_name, y = n)) +
   geom_bar(stat = "identity") +
   labs(
@@ -566,7 +570,7 @@ ggplot(blue_counts, aes(x = sea_name, y = n)) +
 
 ## Island  Distribution by Region
 - Compares number of islands across regions 
-Some regions appear more frequently in the dataset
+(Some regions appear more frequently in the dataset)
 - Aligns with anime/manga
 ```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
 locations_df %>%
@@ -584,7 +588,7 @@ locations_df %>%
   ) 
 ```
 
-# Characters
+## Characters
 
 ## How many members are in the Strawhats crew?
 ```{r}
@@ -625,8 +629,14 @@ characters_with_crews %>%
 
 ```
 
+<<<<<<< HEAD
 
 ## What occupations appear most often in pirate crews?
+=======
+What occupations appear most often in pirate crew?
+## How many captains are there compared to navigators? 
+
+>>>>>>> 91e5057df18456f708d4be8e65d39bcb88e7b085
 ```{r}
 library(dplyr)
 library(ggplot2)
@@ -674,7 +684,10 @@ full_character_df %>%
     y = ""
   ) +
   theme_minimal()
+```
 
+## size distribution (density)
+```{r}
 # density
 full_character_df %>%
   filter(!is.na(size)) %>%
@@ -687,7 +700,10 @@ full_character_df %>%
     x = "Size (cm)",
     y = "Density"
   )
+```
 
+## devil fruit vs non-devil fruit
+```{r}
 # fruit user vs non fruit users
 full_character_df %>%
   mutate(has_fruit = !is.na(devil_fruit)) %>%
@@ -697,9 +713,15 @@ full_character_df %>%
 ```
 
 
+<<<<<<< HEAD
 # Episodes
 ```{r message=FALSE, warning=FALSE, paged.print=FALSE}
 episodes_df
+=======
+## Episodes
+```{r}
+#episodes_df
+>>>>>>> 91e5057df18456f708d4be8e65d39bcb88e7b085
 ```
 ## How many episodes were released per decade?
 ```{r}
