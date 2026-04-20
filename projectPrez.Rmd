@@ -34,7 +34,9 @@ One Piece is essentially about pirate crews exploring different regions and comp
 
 ## What is a "Crew"?
 
-A crew is a team of pirates Each crew has: - Captain (Leader of the group) - Members with roles (Navigator, Doctor, etc.)
+A crew is a team of pirates Each crew has: 
+- Captain (Leader of the group) 
+- Members with roles (Navigator, Doctor, etc.)
 
 ## What is a "Bounty"?
 
@@ -366,7 +368,6 @@ full_character_df %>%
 ```
 
 ## Bar Graph (Correct Graph)
-
 -   Compared to the circle graph, this one is better
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
@@ -390,12 +391,37 @@ full_character_df %>%
 - Some types appear more frequently than others
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
-fruit_counts <- full_character_df %>%
-  filter(!is.na(type)) %>%
-  count(type, sort = TRUE)
+fruit_counts %>%
+  gt() %>%
+  tab_header(
+    title = "Devil Fruit Types",
+    subtitle = "Count of characters by fruit category"
+  ) %>%
+  cols_label(
+    type = "Fruit Type",
+    n = "Count"
+  ) %>%
+  fmt_number(columns = n, decimals = 0) %>%
+  tab_style(
+    style = list(
+      cell_fill(color = "azure"),
+      cell_text(weight = "bold")
+    ),
+    locations = cells_body(columns = n)
+  ) %>%
+  tab_options(
+    table.border.top.color = "azure",
+    table.border.top.width = px(3),
+    table.border.bottom.color = "azure",
+    table.border.bottom.width = px(3),
+    heading.align = "center"
+  )
+```
 
-library(ggplot2)
 
+
+## Most common DF types (in a plot)
+```{r}
 ggplot(fruit_counts, 
        aes(x = type, 
            y = n, 
@@ -520,8 +546,8 @@ full_character_df %>%
 ```
 
 
-# Islands by Region
 
+# Islands by Region
 
 ## East Blue vs North Blue
 ```{r message=FALSE, warning=FALSE, include=FALSE, paged.print=FALSE}
@@ -560,6 +586,12 @@ locations_df %>%
 ```
 
 # Characters
+
+## Characters in One Piece 
+- As we can see there are hundereds of characters
+in the One Piece Universe
+- We were limited on time, but here are some more plots!
+
 
 ## Strawhat Crew Members
 ```{r}
@@ -654,8 +686,11 @@ full_character_df %>%
 ```
 
 
+
 ## Size Distribution (Density)
 ```{r}
+
+## size distribution (density)
 # density
 full_character_df %>%
   filter(!is.na(size)) %>%
@@ -671,8 +706,10 @@ full_character_df %>%
 ```
 
 
+
 ## Devil Fruit VS Non-Devil Fruit
 ```{r}
+
 # fruit user vs non fruit users
 full_character_df %>%
   mutate(has_fruit = !is.na(devil_fruit)) %>%
