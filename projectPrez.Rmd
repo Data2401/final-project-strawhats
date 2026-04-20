@@ -703,10 +703,16 @@ full_character_df %>%
 
 
 # Episodes
+Why look at episodes? 
+- One piece has been running for DECADES 
+- Episode data helps to show how the series has grown overtime
+- We wanted to explore release patterns across years and months 
+
 ```{r message=FALSE, warning=FALSE, paged.print=FALSE}
 episodes_df
 
 ```
+
 ## How many episodes were released per decade?
 ```{r}
 
@@ -722,7 +728,7 @@ episodes_df
 
 ```
 
-What is the average amount of chapters per episode?
+## What is the average amount of chapters per episode?
 ```{r}
 
 ```
