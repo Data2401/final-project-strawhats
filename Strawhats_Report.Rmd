@@ -1,6 +1,6 @@
 ---
 title: "One Piece Data Science Project"
-author: "Jezel Valdez, John E., Shelby Townnsend"
+author: "Jezel Valdez, John Esparragoza, Shelby Townnsend"
 date: "May 3rd, 2026"
 output:
   html_document:
@@ -375,7 +375,7 @@ We also avoided:
 
 # Results & Discussion
 
-The analyses revealed several important patterns:
+The analysis revealed several important patterns:
 
 - Character bounties are highly skewed
 - Captains consistently possess larger bounties than fighters
