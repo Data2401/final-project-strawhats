@@ -119,6 +119,7 @@ Data preparation note: numeric variables such as bounty, age, and size originall
 To compare characters across pirate crews, we merged the crew dataset into the character dataset.
 
 ```{r crew-join}
+# seperating crew df
 crew_full_df <- as.data.frame(characters_df$crew)
 
 # converting data types
@@ -144,19 +145,12 @@ The merged dataset allows us to analyze how crew membership relates to bounty va
 
 We also converted some of the language from French to English, as well as joining the devil fruit data with the rest of the data frame.
 ```{r}
+# cleaning columns from devil fruit df
 dev_fruit_df <- as.data.frame(characters_with_crews$fruit) %>%
   select(-roman_name, -filename, -technicalFile)   # removing unwanted columns
 
-# merging table
-full_character_df <- bind_cols(
-  characters_with_crews %>% select(-fruit),
-  dev_fruit_df %>%
-    rename(devil_fruit = name) %>%
-    select(-id)
-)
-
-full_character_df
-
+# data cleaning before merging to character df
+# there is definitely a whole lot of french left to translate
 characters_with_crews <- characters_with_crews %>%
   mutate(
     crew_name = case_when(
@@ -167,6 +161,17 @@ characters_with_crews <- characters_with_crews %>%
       TRUE ~ crew_name
     )
   )
+
+# merging table
+full_character_df <- bind_cols(
+  characters_with_crews %>% select(-fruit),
+  dev_fruit_df %>%
+    rename(devil_fruit = name) %>%
+    select(-id)
+)
+
+# final df with all the columns we wanted
+full_character_df
 ```
 ---
 
