@@ -207,30 +207,27 @@ This skewness suggests that using only the mean could be misleading, so median v
 Not every character in the series is a pirate or criminal. The figure below compares how many characters have bounty values versus those without one.
 
 ```{r}
-characters_df %>%
+full_character_df %>%
   mutate(has_bounty = if_else(is.na(bounty), "No", "Yes")) %>%
   count(has_bounty) %>%
   ggplot(aes(x = has_bounty, y = n, fill = has_bounty)) +
-  geom_col() +
-  labs(
-    title = "Characters With and Without Bounties",
-    x = "Has Bounty",
-    y = "Character Count"
+  geom_col(binwidth = 2) +
+  scale_fill_manual(
+    values = c(
+      "Yes" = "darkcyan",   # characters WITH bounty
+      "No"  = "deeppink"      # characters WITHOUT bounty
+    )
   ) +
-  theme_minimal()
+  geom_text(aes(label = n), vjust = -0.3)+
+  labs(
+    title = "How Many Characters Have a Bounty?",
+    x = "Has Bounty",
+    y = "Count"
+  )
 ```
 
 The results show that many characters do not possess bounties. This makes sense because the dataset includes civilians, government members, and side characters in addition to pirates.
 
----
-
-# Inline Code Example
-
-The cleaned dataset contains `r nrow(characters_df)` total characters.
-
-Approximately `r round(mean(!is.na(characters_df$bounty)) * 100, 1)`% of characters possess a bounty.
-
-Using inline code ensures that values update automatically whenever the dataset changes.
 
 ---
 
@@ -261,11 +258,59 @@ Captains have substantially higher average bounty values than fighters. The medi
 ---
 
 #Devil Fruit Analysis
-```{r}
 
+One of the main questions we wanted to explore was whether processing a
+devil fruit makes a character more dangerous in the One Piece world.
+Since bounty values represent how threatening a character is to the
+World Government , comparing bounty values between devil fruit users and
+non-devil fruit users provides insight into how important these powers
+are.
+
+```{r}
+bounty_df <- full_character_df %>%
+  mutate(has_fruit = ifelse(is.na(devil_fruit), "No Fruit", "Has Fruit")) %>%
+  filter(!is.na(bounty))
+
+
+ggplot(bounty_df, aes(x = has_fruit, y = bounty, fill = has_fruit)) +
+  geom_boxplot() + 
+  geom_jitter(width = 0.2, alpha = 0.5) +
+
+  scale_y_log10(labels = scales::label_number(scale = 1/1e6, suffix = "M")) +
+  scale_fill_manual(values = c("Has Fruit" = "darkorchid", "No Fruit" = "plum2")) +
+  labs(
+    title = "Bounty Distribution (Log Scale): Devil Fruit Users vs Non-Users",
+    x = "Category",
+    y = "Bounty (log scale)"
+  )
 ```
 
-Although many characters do not possess devil fruits, fruit users are heavily represented among major pirates and important antagonists.
+
+```{r}
+full_character_df %>%
+  mutate(has_fruit = ifelse(is.na(devil_fruit), "No Fruit", "Has Fruit")) %>%
+  filter(!is.na(bounty)) %>%
+  group_by(has_fruit) %>%
+  summarise(avg_bounty = mean(bounty, na.rm = TRUE)) %>%
+  ggplot(aes(x = has_fruit, y = avg_bounty, fill = has_fruit)) +
+  geom_col() +
+  geom_text(
+    aes(label = paste0(round(avg_bounty / 1e6, 1), "M")),
+    vjust = -0.3
+  ) +
+  scale_y_continuous(labels = scales::label_number(scale = 1/1e6, suffix = "M")) +
+  scale_fill_manual(values = c("Has Fruit" = "darkorchid", "No Fruit" = "slateblue")) +
+  labs(
+    title = "Average Bounty: Devil Fruit Users vs Non-Users",
+    x = "Category",
+    y = "Average Bounty (Millions)"
+  ) +
+  theme(legend.position = "none")
+```
+To investigate this, we compared both the average and median bounty
+values for characters with and without devil fruits. Using both
+statistics is important because bounty distributions are heavily skewed
+by a few extremely powerful characters.
 
 ---
 
@@ -275,16 +320,18 @@ The *One Piece* world contains many different oceans and regions. We compared th
 
 ```{r islands, fig.cap="The Grand Line and major seas contain significantly different numbers of islands, highlighting the scale of the One Piece world."}
 locations_df %>%
+  filter(sea_name != "", !is.na(sea_name)) %>%   # remove empty + real NA
   count(sea_name) %>%
-  ggplot(aes(x = reorder(sea_name, n), y = n)) +
-  geom_col(fill = "darkorange") +
-  coord_flip() +
+  ggplot(aes(x = sea_name, y = n)) +
+  geom_col(fill = "darkcyan") +
+  geom_text(aes(label = n),
+            vjust = -0.3, 
+            size = 4) +
   labs(
-    title = "Number of Islands by Region",
+    title = "How Many Islands Are in Each Region?",
     x = "Region",
-    y = "Island Count"
-  ) +
-  theme_minimal()
+    y = "Number of Islands"
+  ) 
 ```
 
 Some regions contain substantially more islands than others, especially the Grand Line, which serves as the primary setting for much of the series.
